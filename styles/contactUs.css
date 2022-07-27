@@ -1,0 +1,244 @@
+.contactUsMainContainer{
+  display: flex;
+    width: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactUsContainer{
+  display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.topHeadingContainer{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.topHeadingContainer h1 {
+  font-size: xx-large;
+  font-weight: 100;
+  color: #0065cf;
+  margin: 15px 0px;
+}
+
+.topHeadingContainer p {
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-size: larger;
+  font-weight: 400;
+  color: black;
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.emailContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 35px 4px;
+}
+
+.fomeContainer {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  align-items: flex-start;
+
+}
+
+.fomeContainer form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: unset;
+}
+
+.fomeContainer form label{
+  font-size: smaller;
+  color: #666;
+}
+
+.fomeContainer form input {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin: 10px 0px 45px 0px;
+  box-shadow: none;
+  border-radius: unset;
+}
+
+.fomeContainer form textarea {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin: 30px 0px 50px 0px;
+}
+.fomeContainer form button{
+  background: #ff7a59;
+  border-color: #ff7a59;
+  color: #ffffff;
+  line-height: 12px;
+  padding: 15px;
+  font-size: medium;
+}
+
+.emailDetails {
+  width: 40%;
+  margin: 0px 20px;
+}
+
+.details {
+  margin: 0px 0px 65px 0px;
+}
+
+.details h1 {
+  font-size: x-large;
+  font-weight: 600;
+  margin: 0px 0px 25px 0px;
+}
+
+
+.details ul li {
+  font-size: large;
+  font-weight: 500;
+  margin: 0px 0px;
+}
+
+
+.adressContainer{
+  display: flex;
+}
+
+.adressBox{
+  width: 50%;
+}
+
+.adress{
+  margin: 50px 0px
+}
+
+.adress h1 {
+  font-size: x-large;
+  font-weight: 600;
+  margin: 0px 0px 25px 0px;
+}
+
+.adress h4 {
+  font-size: larger;
+  font-weight: 500;
+  margin: 0px 0px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 450px){
+  .emailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px 20px;
+}
+.fomeContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.fomeContainer form label {
+  font-size: small;
+  color: #666;
+}
+
+.fomeContainer form input {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin: 0px 0px 25px 0px;
+  box-shadow: none;
+}
+
+.emailDetails {
+  width: 100%;
+  margin: 20px 0px;
+ 
+}
+
+.details h1 {
+  font-size: large;
+  font-weight: 600;
+  margin: 0px 0px 25px 0px;
+}
+
+.details ul li {
+  font-size: medium;
+  font-weight: 400;
+  margin: 0px 0px;
+}
+.details {
+  margin: 0px 0px 50px 0px;
+}
+
+.adressContainer {
+  display: flex;
+  flex-direction: column;
+}
+.adressBox {
+  width: 100%;
+}
+
+.adress {
+  margin: 30px 0px;
+}
+
+.adress h1 {
+  font-size: large;
+  font-weight: 600;
+  margin: 0px 0px 10px 0px;
+}
+.adress h4 {
+  font-size: medium;
+  font-weight: 400;
+  margin: 0px 0px;
+  line-height: 1.6;
+}
+}
+
+@media screen and (max-width: 750px){
+  .details h1 {
+    font-size: large;
+    font-weight: 600;
+    margin: 0px 0px 25px 0px;
+  }
+  
+  .details ul li {
+    font-size: medium;
+    font-weight: 400;
+    margin: 0px 0px;
+  }
+  .details {
+    margin: 0px 0px 50px 0px;
+  }
+  
+ 
+  
+  
+  .adress {
+    margin: 30px 0px;
+  }
+  
+  .adress h1 {
+    font-size: large;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+  }
+  .adress h4 {
+    font-size: medium;
+    font-weight: 400;
+    margin: 0px 0px;
+    line-height: 1.6;
+  }
+}

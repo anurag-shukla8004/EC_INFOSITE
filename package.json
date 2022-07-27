@@ -1,0 +1,52 @@
+{
+  "name": "next-landing-vpn",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next -p 8000",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^10.0.4",
+    "axios": "^0.27.2",
+    "caniuse-lite": "^1.0.30001359",
+    "cors": "^2.8.5",
+    "framer-motion": "^2.9.5",
+    "next": "^12.2.3",
+    "nextjs-cors": "^2.1.1",
+    "postcss": "^8.1.10",
+    "postcss-import": "^13.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-loader-spinner": "^5.1.5",
+    "react-scroll": "^1.8.1",
+    "react-slick": "^0.27.13",
+    "react-youtube": "^9.0.2",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.2"
+  },
+  "description": "",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecinfo/EC_Website_NextJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecinfo/EC_Website_NextJS/issues"
+  },
+  "homepage": "https://github.com/ecinfo/EC_Website_NextJS#readme"
+}

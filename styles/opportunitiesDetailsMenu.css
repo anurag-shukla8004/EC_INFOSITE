@@ -1,0 +1,70 @@
+.opporDetailsMainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.opporDetailsContainer{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* background: #fbfbfb; */
+  padding: 15px;
+}
+
+.opporTopContainer{
+  display: flex;
+    flex-direction: column;
+}
+
+.opporMainTitle{
+  font-size: xx-large;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.ImageTitleBox{
+  display: flex;
+    align-items: center;
+}
+
+.mainCompanyTitle{
+  font-size: large;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.mainCompanyName{
+  font-size: medium;
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+.opporBottomContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.opporTitleText{
+  font-size: x-large;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.opporBottomright{
+  width: 30%;
+}
+
+.opporCompanyDetails{
+  border: 1px solid rgb(182, 182, 182);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.opporOrganisationDetails{
+  border: 1px solid rgb(182, 181, 181);
+    border-radius: 20px;
+    padding: 15px;
+}
