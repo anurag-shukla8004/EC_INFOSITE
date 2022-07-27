@@ -15,11 +15,11 @@ import "../styles/proMember.css";
 import "../styles/opportunitiesDetailsMenu.css";
 import "../styles/contactUs.css";
 import "../styles/pytDev.css";
-import "../styles/FreeVocal.css";
+import "../styles/freeVocal.css";
 import "../styles/labCore.css";
 import "../styles/pricing.css";
 import "../styles/eCommerce.css";
-import "../styles/Manufacturing.css";
+import "../styles/manufacturing.css";
 import "../styles/googleCloud.css";
 
 function MyApp({ Component, pageProps }) {
