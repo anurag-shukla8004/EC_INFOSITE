@@ -209,7 +209,7 @@ const Header = () => {
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
 
-          <Link href='signIn'>
+          <Link href='#'>
                <a className="  sm:mx-2 capitalize tracking-wide hover:text-black-500 cursor-pointer transition-all">
                <img className='searchSvg' src='/assets/search-svgrepo-com.svg' alt='next' /> 
 
