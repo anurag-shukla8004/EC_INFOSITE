@@ -1,17 +1,10 @@
-// next.config.js
 module.exports = {
-  async rewrites() {
-      return [
-        {
-          source: '/api/:path*',
-          destination: 'http://b3a7-123-201-213-104.ngrok.io/api/news/post/',
-        },
-      ]
-    },
-};
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [`@svgr/webpack`],
+    });
 
-module.exports = {
-  images: {
-      domains: ['ecinfosolutions.com'],
+    return config;
   },
-}
+};

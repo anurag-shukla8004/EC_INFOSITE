@@ -1,52 +1,73 @@
 {
-  "name": "next-landing-vpn",
-  "version": "0.1.0",
+  "name": "startd-theme",
+  "description": "A TypeScript/Next.js theme that includes everything you need to build amazing landing page!",
+  "version": "1.0.0",
   "private": true,
+  "author": "Jaakko Kytölä <kytola.jaakko@gmail.com> (jaakkokytola.com)",
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "starter",
+    "typescript",
+    "tailwind",
+    "theme"
+  ],
   "scripts": {
-    "dev": "next -p 8000",
+    "dev": "next -p 8888",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "type-check": "tsc",
+    "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
+    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "./src/**/*.{ts,js,jsx,tsx}": [
+      "yarn lint --fix",
+      "yarn format"
+    ]
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-regular-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.1.18",
-    "@fullhuman/postcss-purgecss": "^3.0.0",
-    "autoprefixer": "^10.0.4",
-    "axios": "^0.27.2",
-    "caniuse-lite": "^1.0.30001359",
-    "cors": "^2.8.5",
-    "framer-motion": "^2.9.5",
-    "next": "^12.2.3",
-    "nextjs-cors": "^2.1.1",
-    "postcss": "^8.1.10",
-    "postcss-import": "^13.0.0",
+    "@fontsource/inter": "4.2.1",
+    "@fontsource/jost": "4.5.10",
+    "@svgr/webpack": "5.5.0",
+    "add": "2.0.6",
+    "next": "10.0.7",
+    "next-seo": "4.20.0",
+    "radium": "0.26.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-loader-spinner": "^5.1.5",
-    "react-scroll": "^1.8.1",
-    "react-slick": "^0.27.13",
-    "react-youtube": "^9.0.2",
-    "slick-carousel": "^1.8.1",
-    "tailwindcss": "^2.2.19"
+    "react-particles-js": "3.4.1",
+    "react-youtube": "9.0.3",
+    "twind": "0.15.4"
   },
   "devDependencies": {
-    "babel-plugin-inline-react-svg": "^1.1.2"
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@types/node": "14.14.28",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.1",
+    "@typescript-eslint/eslint-plugin": "4.15.1",
+    "@typescript-eslint/parser": "4.15.1",
+    "commitizen": "4.2.3",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.20.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-import-resolver-typescript": "2.4.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "husky": "5.0.9",
+    "lint-staged": "10.5.4",
+    "prettier": "2.2.1",
+    "typescript": "4.1.5"
   },
-  "description": "",
-  "main": "next.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ecinfo/EC_Website_NextJS.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ecinfo/EC_Website_NextJS/issues"
-  },
-  "homepage": "https://github.com/ecinfo/EC_Website_NextJS#readme"
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
