@@ -13,7 +13,7 @@
     "theme"
   ],
   "scripts": {
-    "dev": "next -p 8888",
+    "dev": "next -p 8088",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
@@ -31,13 +31,11 @@
     "@fontsource/inter": "4.2.1",
     "@fontsource/jost": "4.5.10",
     "@svgr/webpack": "5.5.0",
-    "add": "2.0.6",
     "next": "10.0.7",
     "next-seo": "4.20.0",
     "radium": "0.26.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-particles-js": "3.4.1",
     "react-youtube": "9.0.3",
     "twind": "0.15.4"
   },
