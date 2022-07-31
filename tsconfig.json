@@ -23,7 +23,10 @@
         "./*"
       ]
     },
-    "incremental": true
+    "incremental": true,
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo",
+    "outDir": "dist"
+    
   },
   "exclude": [
     "node_modules"
