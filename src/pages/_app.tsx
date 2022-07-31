@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app';
 import '@/styles/global.css';
-import '@fontsource/inter';
-import "@fontsource/jost"
+// import '@fontsource/inter';
+// import "@fontsource/jost"
 import "../styles/index.css";
 
 import { setup } from 'twind';
@@ -12,5 +12,6 @@ if (typeof window !== `undefined`) {
 }
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  
   return <Component {...pageProps} />;
 }
