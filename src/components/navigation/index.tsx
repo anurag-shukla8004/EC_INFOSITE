@@ -224,7 +224,7 @@ const MobileMenu = () => {
            <a
            className={tw(`block px-3 py-2 text-base font-medium text-gray-500`)}
          >
-          CONSULTING SERVICES
+          REQUEST A QUOTE
          </a>
 
       </div>
