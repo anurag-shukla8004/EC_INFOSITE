@@ -81,17 +81,17 @@ box-shadow: rgb(204 204 204) 0px 3px 5px 0px;
   .TechServTitle {
     font-family: 'Jost' !important;
     margin: 22px;
-    font-size: medium;
+    font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: #3f3f3f;
     text-align: start;
 }
 
 
   
   .dropdown-content a {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
     font-family: 'Jost' !important;
     float: none;
     color: black;

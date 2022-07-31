@@ -16,7 +16,7 @@ function IndexPage({}) {
           <img src='home1.png'></img>
         </div>
         <div className='mobileTexBox'>
-         <h1 className={tw(`ecBlueColor font-semibold text-3xl`)}>Web & Mobile App Development</h1>
+         <h1 className={tw(`ecBlueColor font-semibold text-3xl headerMaiText`)}>Web & Mobile App Development</h1>
          <h3 className='homeTitleText'>MVP | PRODUCT ENGINEERING | QA & SCALING ON CLOUD</h3>
          <p className='homeParaText'>EC Infosolutions offers a range of product development services which include strategy, user experience, cloud architecture, web development & cross platform mobile app development for iOS, Android & Web apps. Our strong engineering team of 55 includes AWS Certified Solution Architects & Google Cloud Partners.</p>
         </div>

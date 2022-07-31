@@ -11,6 +11,16 @@ h2 { font-family: "Jost" !important; }
 
 /* Header navigation bar  */
 
+.dropbtn a{
+  font-size: 14px;
+    font-weight: 400;
+
+}
+
+.headerMaiText{
+  margin: 10px 0px;
+}
+
 .mainNavContainer{
 display: flex;
   justify-content: center;
@@ -195,9 +205,10 @@ color: #0065cf;
 .homeTitleText{
 letter-spacing: 1px;
 font-size: 20px;
-  font-weight: 500;
-  line-height: 3;
+  font-weight: 400;
+  line-height: 2;
   font-family: 'Jost', sans-serif;
+  margin: 10px 0px;
 }
 .homeParaText{
   font-size: 20px;
@@ -252,7 +263,7 @@ box-shadow: 3px 4px 10px #afadad;
 }
 
 .servicesContainer ul{
-font-size: larger;
+font-size: 18px;
   line-height: 2;
 }
 
@@ -388,12 +399,17 @@ justify-content: space-around;
 flex-direction: column;
 align-items: flex-start;
 }
+
 .mobileImg {
 width: 100%;
 display: flex;
 justify-content: center;
-margin: 10px 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 40px;
+margin-left: 0px;
 }
+
 .mobileTexBox {
 width: 100%;
 
@@ -413,7 +429,6 @@ font-family: 'Jost', sans-serif;
 .homeTitleText {
 letter-spacing: 1px;
 font-size: medium;
-font-weight: 500;
 line-height: 2;
 font-family: 'Jost', sans-serif;
 }
@@ -457,8 +472,37 @@ margin: 18px 0px;
 }
 
 .mobileTexBox{
-margin: 0px !important;
+  margin: 0px 0px 30px 0px !important;
 }
+}
+
+@media screen and (max-width: 550px){
+
+  .headerMaiText{
+    font-size: 26px !important;
+  }
+
+  .homeTitleText {
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: medium;
+    line-height: 2;
+    font-family: 'Jost', sans-serif;
+    }
+
+    .servicesContainer ul {
+      font-size: 14px;
+      line-height: 2;
+  }
+
+  .agileMainContainer{
+    margin: 0px;
+  }
+  .youtube{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    }
 }
 
 /* @media screen and (max-width: 850px){
