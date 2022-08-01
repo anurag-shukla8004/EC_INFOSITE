@@ -17,6 +17,20 @@ h2 { font-family: "Jost" !important; }
 
 }
 
+.menuAdj {
+
+  width: 50%;
+}
+.menuDiv {
+width: 50%;
+}
+
+.tech{
+  background-image: url(https://ecinfosolutions.b-cdn.net/wp-content/uploads/2020/12/nav-bg.jpg);
+  background-position: center center;
+  width: 80%;
+}
+
 .headerMaiText{
   margin: 10px 0px;
 }
@@ -341,6 +355,7 @@ width: 30%;
 }
 
 .tech {
+ 
 display: none;
 position: absolute;
 background-color: #f9f9f9;

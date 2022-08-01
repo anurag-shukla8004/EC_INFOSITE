@@ -3,6 +3,8 @@ import '@/styles/global.css';
 // import '@fontsource/inter';
 // import "@fontsource/jost"
 import "../styles/index.css";
+import "../styles/leaderShip.css";
+import "../styles/clientSuccess.css";
 
 import { setup } from 'twind';
 import twindConfig from '../twind.config';

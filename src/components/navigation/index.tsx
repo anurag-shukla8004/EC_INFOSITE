@@ -139,8 +139,8 @@ const MobileMenu = () => {
          </div>
          
         <div className='hamMenuList' style={{display: isShown ? 'none' : 'flex'}}>
-        <Link href="/#">Leadership</Link>
-        <Link href="/#">Client Success</Link>
+        <Link href="/leaderShip">Leadership</Link>
+        <Link href="/clientSuccess">Client Success</Link>
         <Link href="#">Careers</Link>
         <Link href="#">Partner with EC</Link>
         <Link href="/#">Contact Us</Link>
@@ -243,7 +243,10 @@ const Navigation = () => {
         <div className={tw(`flex items-center justify-between h-24`)}>
           <div className={tw(`flex items-center`)}>
             <div className={tw(`flex-shrink-0`)}>
-              <img className='ecLogoImg'src="ecLogo.png" alt="logo" width={48} height={48} />
+            <Link href="/" >
+               <img className='ecLogoImg'src="ecLogo.png" alt="logo" width={48} height={48} />
+            </Link>
+             
             </div>
             <div className={tw(`linkesNav`)}>
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
@@ -253,10 +256,10 @@ const Navigation = () => {
                        <Link href="#" >ABOUT EC </Link>
                     <img className={tw(`w-3 mx-2`)}src="downArrow.svg" alt="logo" />
                     </div>
-                   <div className="dropdown-content">
+                   <div  className={tw(`dropdown-content p-5`)} >
       
-      <Link href="/#">Leadership</Link>
-        <Link href="/#">Client Success</Link>
+      <Link href="/leaderShip">Leadership</Link>
+        <Link href="/clientSuccess">Client Success</Link>
         <Link href="#">Careers</Link>
         <Link href="#">Partner with EC</Link>
         <Link href="/#">Contact Us</Link>
@@ -271,10 +274,10 @@ const Navigation = () => {
                     </div>
                     <div className="dropdown-content tech">
       <div style={{display:'flex', justifyContent: 'space-around',
-    flexDirection: 'row'}}>
+    flexDirection: 'row', margin:'30px 0px'}}>
 
      <div className='menuAdj'>
-        <div style={{borderRight: '0.6px solid #c8c8c8'}}>
+        <div className='menuDiv' style={{borderRight: '0.6px solid #c8c8c8'}}>
         <h3 className='TechServTitle'>ENGINEERING</h3>
          <Link href="/customerAppDev">Custom App Development</Link>
       <Link href="/pytDev">Python Developer</Link>
@@ -282,7 +285,7 @@ const Navigation = () => {
       <Link href="#">React Native Developer</Link>
       <Link href="#">ReactJS Developer</Link>
       </div>
-      <div style={{borderRight: '0.6px solid #c8c8c8'}}>
+      <div className='menuDiv'  style={{borderRight: '0.6px solid #c8c8c8'}}>
       <h3 className='TechServTitle'>PLATFORM</h3>
 
          <Link href="#">Freedom CTRM</Link>
@@ -293,7 +296,7 @@ const Navigation = () => {
       </div>
      </div>
      <div className='menuAdj'>
-        <div style={{borderRight: '0.6px solid #c8c8c8'}}>
+        <div className='menuDiv'  style={{borderRight: '0.6px solid #c8c8c8'}}>
       <h3 className='TechServTitle'>INDUSTRIES</h3>
 
          <Link href="/labCore">Agribusinesses</Link>
@@ -302,8 +305,8 @@ const Navigation = () => {
       <Link href="/manufacturing">Manufacturing</Link>
       <Link href="#">Startups</Link>
       </div>
-      <div >
-      <h3 className='TechServTitle'>CLOUD PARTNERS</h3>
+      <div  className='menuDiv'>
+      <h3  className='TechServTitle '>CLOUD PARTNERS</h3>
 
          <Link href="/awsPartner">AWS Partner Network</Link>
       <Link href="#">Azure Partner</Link>
@@ -321,7 +324,7 @@ const Navigation = () => {
                        <Link href="#" >CONSULTING SERVICES</Link>
                     <img className={tw(`w-3 mx-2`)}src="downArrow.svg" alt="logo" />
                     </div>
-                    <div className="dropdown-content consl">
+                    <div className={tw(`dropdown-content consl p-5`)} >
       <Link href="#">AI & Predictive Analytics</Link>
       <Link href="#">BlockChain: dApps | STO | ICO</Link>
       <Link href="#">TechMergers</Link>
