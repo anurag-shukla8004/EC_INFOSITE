@@ -96,8 +96,7 @@ function Index({}) {
     </div>
        <div className='ourClientimgText'>
       <h1 className='clientHeaderText'>
-       Businesses&nbsp;<FaHeart style />&nbsp;
-      EC Infosolutions & we are thankful.</h1>
+       Businesses&nbsp;<FaHeart style />&nbsp;EC Infosolutions & we are thankful.</h1>
      <p className='homeParaText'>For EC, customer engagement means a coming together of ideas, strategies, execution, revenue acquisition, plan Bs, and the overall value creation for customers. We are proud to have numerous success stories, and are very thankful to our customers for them!
 Some of our happy customers from different businesses are:
 </p>
