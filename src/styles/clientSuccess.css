@@ -107,4 +107,12 @@
     align-items: center;
     flex-direction: column;
 }
+.modalName {
+  display: -moz-box;
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  background: #e6e6e6;
+}
  }
