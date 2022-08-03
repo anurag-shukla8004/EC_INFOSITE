@@ -14,7 +14,7 @@ import "../styles/freeVocal.css";
 import "../styles/labCore.css";
 import "../styles/pricing.css";
 import "../styles/eCommerce.css";
-import "../styles/Manufacturing.css";
+import "../styles/manufacturing.css";
 import "../styles/googleCloud.css";
 import "../styles/blog.css";
 import { setup } from 'twind';
