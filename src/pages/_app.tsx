@@ -10,7 +10,7 @@ import "../styles/customerAppDev.css";
 import "../styles/registration.css";
 import "../styles/contactUs.css";
 import "../styles/pytDev.css";
-import "../styles/FreeVocal.css";
+import "../styles/freeVocal.css";
 import "../styles/labCore.css";
 import "../styles/pricing.css";
 import "../styles/eCommerce.css";
