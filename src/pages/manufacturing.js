@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 import Page from '@/components/page';
-import LabCore from '@/components/Manufacturing/manufacturingPage.js';
-import Footer from '@/components/footer';
+import LabCore from '../components/manufacturing/manufacturingPage';
+import Footer from '../components/footer/index';
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Home() {
