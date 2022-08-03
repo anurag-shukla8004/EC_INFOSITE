@@ -26,7 +26,7 @@ width: 50%;
 }
 
 .tech{
-  background-image: url(https://ecinfosolutions.b-cdn.net/wp-content/uploads/2020/12/nav-bg.jpg);
+  background-image: url(../../public/navBack.png);
   background-position: right;
   background-repeat: no-repeat;
   background-color: #ffff;
