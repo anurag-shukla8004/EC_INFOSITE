@@ -5,7 +5,18 @@ import '@/styles/global.css';
 import "../styles/index.css";
 import "../styles/leaderShip.css";
 import "../styles/clientSuccess.css";
-
+import "../styles/agribusinesses.css";
+import "../styles/customerAppDev.css";
+import "../styles/registration.css";
+import "../styles/contactUs.css";
+import "../styles/pytDev.css";
+import "../styles/FreeVocal.css";
+import "../styles/labCore.css";
+import "../styles/pricing.css";
+import "../styles/eCommerce.css";
+import "../styles/Manufacturing.css";
+import "../styles/googleCloud.css";
+import "../styles/blog.css";
 import { setup } from 'twind';
 import twindConfig from '../twind.config';
 

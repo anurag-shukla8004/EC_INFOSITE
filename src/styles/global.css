@@ -64,7 +64,7 @@ h2 { font-family: "Jost" !important; }
   
   .dropdown-content {
     top: 90px;
-    padding: 5px;
+    padding: 20px 0px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -85,7 +85,7 @@ box-shadow: rgb(204 204 204) 0px 3px 5px 0px;
     font-weight: bold;
     color: #3f3f3f;
     text-align: start;
-    padding: 0px 12px;
+    padding: 0px 40px;
     margin-bottom: 12px;
 }
 
@@ -98,7 +98,7 @@ box-shadow: rgb(204 204 204) 0px 3px 5px 0px;
     font-family: 'Jost' !important;
     float: none;
     color: #020202;
-    padding: 10px 12px;
+    padding: 10px 40px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -110,7 +110,7 @@ box-shadow: rgb(204 204 204) 0px 3px 5px 0px;
   }
   
   .dropdown:hover .dropdown-content {
-display: block;
+   display: block;
   }
 
   .hamMenuList{

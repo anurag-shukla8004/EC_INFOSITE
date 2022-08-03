@@ -27,8 +27,11 @@ width: 50%;
 
 .tech{
   background-image: url(https://ecinfosolutions.b-cdn.net/wp-content/uploads/2020/12/nav-bg.jpg);
-  background-position: center center;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #ffff;
   width: 80%;
+  left: 50px;
 }
 
 .headerMaiText{
@@ -172,6 +175,7 @@ justify-content: space-around;
 .homeMainContainer{
 display: flex;
 justify-content: center;
+margin-top: 100px;
 }
 
 .homeContainer{

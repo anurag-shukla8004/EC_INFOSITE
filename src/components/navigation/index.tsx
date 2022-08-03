@@ -140,10 +140,10 @@ const MobileMenu = () => {
          
         <div className='hamMenuList' style={{display: isShown ? 'none' : 'flex'}}>
         <Link href="/leaderShip">Leadership</Link>
-        <Link href="/clientSuccess">Client Success</Link>
-        <Link href="#">Careers</Link>
-        <Link href="#">Partner with EC</Link>
-        <Link href="/#">Contact Us</Link>
+      <Link href="/clientSuccess">Client Success</Link>
+      <Link href="#">Careers</Link>
+      <Link href="#">Partner with EC</Link>
+      <Link href="/contactUs">Contact Us</Link>
         </div>
        </div>
         
@@ -159,9 +159,9 @@ const MobileMenu = () => {
           <div className='techList'  onClick={techHandile1}>
             <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Engineering</a>
             <div className='hamMenuList' style={{display: isShownTech1 ? 'none' : 'flex'}}>
-            <Link href="/#">Custom App Development</Link>
-      <Link href="/#">Python Developer</Link>
-      <Link href="/#">C# Developer</Link>
+            <Link href="/customerAppDev">Custom App Development</Link>
+      <Link href="/pytDev">Python Developer</Link>
+      <Link href="/customerAppDev">C# Developer</Link>
       <Link href="#">React Native Developer</Link>
       <Link href="#">ReactJS Developer</Link>
         </div>
@@ -169,28 +169,28 @@ const MobileMenu = () => {
           <div className='techList' onClick={techHandile2}>        <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Platforms</a>
           <div className='hamMenuList' style={{display: isShownTech2 ? 'none' : 'flex'}}>
           <Link href="#">Freedom CTRM</Link>
-      <Link href="/#">Freevocal</Link>
+      <Link href="/freeVocal">Freevocal</Link>
       <Link href="#">loT Core</Link>
-      <Link href="/#">Lab Core</Link>
-      <Link href="/#">Pricing | ROI Calculator</Link>
+      <Link href="/labCore">Lab Core</Link>
+      <Link href="/pricing">Pricing | ROI Calculator</Link>
         </div>
 </div>
           <div className='techList' onClick={techHandile3}>        <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Industries</a>
           <div className='hamMenuList' style={{display: isShownTech3 ? 'none' : 'flex'}}>
-          <Link href="/#">Agribusinesses</Link>
-      <Link href="/#">eCommerce & Retail</Link>
+          <Link href="/labCore">Agribusinesses</Link>
+      <Link href="/eCommerce">eCommerce & Retail</Link>
       <Link href="#">ESG</Link>
-      <Link href="/#">Manufacturing</Link>
-      <Link href="/#">Startups</Link>
+      <Link href="/manufacturing">Manufacturing</Link>
+      <Link href="#">Startups</Link>
         </div>
 </div>
           <div className='techList' onClick={techHandile4}>        <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Cloud Patners</a>
           <div className='hamMenuList' style={{display: isShownTech4 ? 'none' : 'flex'}}>
-          <Link href="/#">AWS Partner Network</Link>
+          <Link href="/awsPartner">AWS Partner Network</Link>
       <Link href="#">Azure Partner</Link>
-      <Link href="/#">Google Cloud Partner</Link>
-      <Link href="/#">Shopify Partner</Link>
-      <Link href="/#">UI Path Partner</Link>
+      <Link href="/googleCloud">Google Cloud Partner</Link>
+      <Link href="/shopify">Shopify Partner</Link>
+      <Link href="#">UIPath Partner</Link>
         </div>
 </div>
         
@@ -204,11 +204,10 @@ const MobileMenu = () => {
          </div>
          
         <div className='hamMenuList' style={{display: isShown3 ? 'none' : 'flex'}}>
-        <Link href="/#">Leadership</Link>
-        <Link href="/#">Client Success</Link>
-        <Link href="#">Careers</Link>
-        <Link href="#">Partner with EC</Link>
-        <Link href="/#">Contact Us</Link>
+        <Link href="#">AI & Predictive Analytics</Link>
+      <Link href="#">BlockChain: dApps | STO | ICO</Link>
+      <Link href="#">TechMergers</Link>
+      <Link href="/blog">Blog</Link>
         </div>
        </div>
       
@@ -256,13 +255,13 @@ const Navigation = () => {
                        <Link href="#" >ABOUT EC </Link>
                     <img className={tw(`w-3 mx-2`)}src="downArrow.svg" alt="logo" />
                     </div>
-                   <div  className={tw(`dropdown-content p-5`)} >
+                   <div  className={tw(`dropdown-content `)} >
       
-      <Link href="/leaderShip">Leadership</Link>
-        <Link href="/clientSuccess">Client Success</Link>
-        <Link href="#">Careers</Link>
-        <Link href="#">Partner with EC</Link>
-        <Link href="/#">Contact Us</Link>
+                   <Link href="/leaderShip">Leadership</Link>
+      <Link href="/clientSuccess">Client Success</Link>
+      <Link href="#">Careers</Link>
+      <Link href="#">Partner with EC</Link>
+      <Link href="/contactUs">Contact Us</Link>
       </div> 
                   </a>
                       
@@ -274,12 +273,12 @@ const Navigation = () => {
                     </div>
                     <div className="dropdown-content tech">
       <div style={{display:'flex', justifyContent: 'space-around',
-    flexDirection: 'row', margin:'30px 0px'}}>
+    flexDirection: 'row', margin:'15px 0px'}}>
 
      <div className='menuAdj'>
         <div className='menuDiv' style={{borderRight: '0.6px solid #c8c8c8'}}>
         <h3 className='TechServTitle'>ENGINEERING</h3>
-         <Link href="/customerAppDev">Custom App Development</Link>
+        <Link href="/customerAppDev">Custom App Development</Link>
       <Link href="/pytDev">Python Developer</Link>
       <Link href="/customerAppDev">C# Developer</Link>
       <Link href="#">React Native Developer</Link>
@@ -288,7 +287,7 @@ const Navigation = () => {
       <div className='menuDiv'  style={{borderRight: '0.6px solid #c8c8c8'}}>
       <h3 className='TechServTitle'>PLATFORM</h3>
 
-         <Link href="#">Freedom CTRM</Link>
+      <Link href="#">Freedom CTRM</Link>
       <Link href="/freeVocal">Freevocal</Link>
       <Link href="#">loT Core</Link>
       <Link href="/labCore">Lab Core</Link>
@@ -308,7 +307,7 @@ const Navigation = () => {
       <div  className='menuDiv'>
       <h3  className='TechServTitle '>CLOUD PARTNERS</h3>
 
-         <Link href="/awsPartner">AWS Partner Network</Link>
+      <Link href="/awsPartner">AWS Partner Network</Link>
       <Link href="#">Azure Partner</Link>
       <Link href="/googleCloud">Google Cloud Partner</Link>
       <Link href="/shopify">Shopify Partner</Link>
@@ -324,11 +323,11 @@ const Navigation = () => {
                        <Link href="#" >CONSULTING SERVICES</Link>
                     <img className={tw(`w-3 mx-2`)}src="downArrow.svg" alt="logo" />
                     </div>
-                    <div className={tw(`dropdown-content consl p-5`)} >
+                    <div className={tw(`dropdown-content consl`)} >
       <Link href="#">AI & Predictive Analytics</Link>
       <Link href="#">BlockChain: dApps | STO | ICO</Link>
       <Link href="#">TechMergers</Link>
-      <Link href="/opportunities">Blog</Link>
+      <Link href="/blog">Blog</Link>
     </div>
                   </a>
                
