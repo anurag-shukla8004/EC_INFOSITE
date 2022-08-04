@@ -117,6 +117,11 @@ useEffect(() => {
 
               
                /> */}
+                {/* <img
+        className="w-full"
+        src={blog.node.featuredImage?.node.sourceUrl}
+        alt={'some'}
+      /> */}
                              <Image
                              
       width={6000}

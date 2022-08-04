@@ -2,8 +2,6 @@ module.exports = {
   images: {
     domains: [
      'ecinfosolutions.com',
-      '2.gravatar.com',
-      'secure.gravatar.com',
     ],
   },
   webpack(config) {

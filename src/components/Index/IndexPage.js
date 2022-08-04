@@ -11,7 +11,7 @@ function IndexPage({}) {
     <div className='homeContainer'>
       <div className='mobileContainer'>
         <div className='mobileImg'>
-          <img src='./assets/cs-4.png'></img>
+          <img src='cs-4.png'></img>
         </div>
         <div className='mobileTexBox'>
          <h1 className='homeHeaderText'>Web & Mobile App Development</h1>
@@ -60,7 +60,7 @@ function IndexPage({}) {
           <p className='homeParaText'>Being agile allows us to focus on features & business value over everything else. In addition to this, you can be assured of predictable timelines, budget & complete transparency.</p>
           </div>
           <div className='aligeImg'>
-            <img src='./assets/app-1.png'></img>
+            <img src='app-1.png'></img>
           </div>
            </div>
 
@@ -93,7 +93,7 @@ function IndexPage({}) {
           <p className='homeParaText'>Founded in 2007, EC Infosolutions is rich in experience of having delivered more than 250 technology products in 18+ countries. What's more, our digital products are being used by over 100,000+ users across the world.</p>
           </div>
           <div className='aligeImg'>
-            <img src='./assets/app-1-2.png'></img>
+            <img src='app-1-2.png'></img>
           </div>
            </div>
 
