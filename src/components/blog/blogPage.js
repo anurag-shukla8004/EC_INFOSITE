@@ -97,12 +97,14 @@ useEffect(() => {
         {
           
            blog && blog.map((blog, idx)=>{
+             
             const date = parseISO(blog.node.date)
             // console.log(blog.node.featuredImage.node.sourceUrl)
+            let img = blog.node.featuredImage.node.sourceUrl
              return(
                
               
-              <div className="newsCardContainer">
+              <div className="newsCardContainer" key={blog.slug}>
               <div className="cardboxContainer">
                 <div className='cardLeft'>
                   <div className='cardLeftImage'>
@@ -110,7 +112,8 @@ useEffect(() => {
   
                <div style={{height: '97%',backgroundColor: '#000000' }}>
                     {/* <img
-               src={blog?.node.featuredImage?.node.sourceUrl}
+              //  src={blog.node.featuredImage?.node.sourceUrl}
+               src={`${blog.node.featuredImage?.node.sourceUrl}`}
                quality={100}
                width={82}
                height={50}
@@ -122,8 +125,7 @@ useEffect(() => {
         src={blog.node.featuredImage?.node.sourceUrl}
         alt={'some'}
       /> */}
-                             <Image
-                             
+    <Image                         
       width={6000}
       height={4500}
       className='blogImg'
