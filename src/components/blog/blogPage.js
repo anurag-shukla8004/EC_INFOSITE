@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 import { parseISO, format } from 'date-fns'
+import { idText } from 'typescript';
 
 
 const FeatureNewsDetails = ({}) => {
@@ -97,6 +98,7 @@ useEffect(() => {
           
            blog && blog.map((blog, idx)=>{
             const date = parseISO(blog.node.date)
+            // console.log(blog.node.featuredImage.node.sourceUrl)
              return(
                
               
@@ -107,21 +109,22 @@ useEffect(() => {
                
   
                <div style={{height: '97%',backgroundColor: '#000000' }}>
-                    <img
-               alt="VPN Illustrasi"
+                    {/* <img
+               src={blog?.node.featuredImage?.node.sourceUrl}
                quality={100}
                width={82}
                height={50}
-               layout="responsive"
-               src={blog.node.featuredImage.node.sourceUrl || ''}
-               />
-                             {/* <Image
+
+              
+               /> */}
+                             <Image
+                             
       width={6000}
       height={4500}
       className='blogImg'
       src={blog.node.featuredImage.node.sourceUrl}
      
-    /> */}
+    />
                </div>
      
     
