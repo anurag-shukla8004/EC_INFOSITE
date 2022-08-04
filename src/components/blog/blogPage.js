@@ -104,15 +104,17 @@ useEffect(() => {
               <div className="cardboxContainer">
                 <div className='cardLeft'>
                   <div className='cardLeftImage'>
-                  {/* <img
-               alt="VPN Illustrasi"
-               quality={100}
-              //  width={82}
-              //  height={50}
-               layout="responsive"
-               /> */}
+               
   
                <div style={{height: '97%',backgroundColor: '#000000' }}>
+                    {/* <img
+               alt="VPN Illustrasi"
+               quality={100}
+               width={82}
+               height={50}
+               layout="responsive"
+               src={blog?.node?.featuredImage?.node?.sourceUrl || ''}
+               /> */}
                              <Image
       width={6000}
       height={4500}
