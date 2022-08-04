@@ -1,204 +1,163 @@
 import React, { useEffect, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { parseISO, format } from 'date-fns'
+
 
 const FeatureNewsDetails = ({}) => {
+  
+ const  [blog, setBlog] = useState('')
+ const dataGet = async () => {
+const client = new ApolloClient({
+    uri: 'https://ecinfosolutions.com/graphql',
+    cache: new InMemoryCache(),
+  });
+  const response = await client.query({
+    query: gql`
+    query NewQuery {
+      posts {
+        edges {
+          node {
+            title
+            excerpt
+            slug
+            date
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+            author {
+              node {
+                name
+                firstName
+                lastName
+                avatar {
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    `,
+  })
+  // console.log('response', response.data.posts.edges);
+
+  const result = await response?.data?.posts?.edges;
+  setBlog(result)
+
+
+
+  // .then((result) => console.log('hello'));
+  // const result = await response.json();
+  // console.log('result', result);
+ }
+  
+
+  // const client = ...
+
+  // useEffect(() => {
+  //   const response = client.query({
+  //     query: gql`
+  //     query NewQuery {
+  //       posts {
+  //         edges {
+  //           node {
+  //             title
+  //             uri
+  //             excerpt
+  //             content
+  //           }
+  //         }
+  //       }
+  //     }
+  //     `,
+  //   }).then((result) => setBlog(result));
+  
+  // }, [])
+
+  console.log('blog', blog);
+
+
+useEffect(() => {
+  dataGet();
+}, [])
+
 
 
 
   return (
     <div className="homeMainContainer" >
       <div className="homeContainer ">
+      <div className='newsmainContaier'>
+        {
+          
+           blog && blog.map((blog, idx)=>{
+            const date = parseISO(blog.node.date)
+             return(
+               
+              
+              <div className="newsCardContainer">
+              <div className="cardboxContainer">
+                <div className='cardLeft'>
+                  <div className='cardLeftImage'>
+                  {/* <img
+               alt="VPN Illustrasi"
+               quality={100}
+              //  width={82}
+              //  height={50}
+               layout="responsive"
+               /> */}
+  
+               <div style={{height: '97%',backgroundColor: '#000000' }}>
+                             <Image
+      width={6000}
+      height={4500}
+      className='blogImg'
+      src={blog.node.featuredImage.node.sourceUrl}
+     
+    />
+               </div>
+     
+    
+                {/* src={blog.node.featuredImage.node.sourceUrl} */}
+                  </div>
+                  <div className='cardLeftText'>
+                  {/* <p  dangerouslySetInnerHTML={{ __html: blog.node.date }} /> */}
+                  <time >{format(date, 'LLLL	d, yyyy')}</time>
+                <h1>{blog.node.title}</h1>
+                <p className="blogPara" dangerouslySetInnerHTML={{ __html: blog.node.excerpt }} />
+                  </div>
+                </div>
+             
+              </div>
+              <div className="cardBottom">
+              {/* <Link  href={{ pathname:"/opportunitiesDetailsMenu/", query: { id: d.id } }}>   
+                </Link> */}
+             <h1 style={{cursor:'pointer'}}>Read more </h1>
+              </div>
+            </div> 
+      
+        
+             )
+           })
+        }
    
-        {/* blogApiData.map((d, idx)=>{
+       
        
 
-        return (  */}
-        <div className='newsmainContaier'>
-        <div className="newsCardContainer">
-        <div className="cardboxContainer">
-          <div className='cardLeft'>
-            <div className='cardLeftImage'>
-            <img
-        //  src={d.image}
-  src="/assets/blog1.png"
-
-         alt="VPN Illustrasi"
-         quality={100}
-        //  width={82}
-        //  height={50}
-         layout="responsive"
-         />
-            </div>
-            <div className='cardLeftText'>
-            <p>May 20, 2021</p>
-          <h1>3 Online Industries in Need of Better CRM</h1>
-            <p>
-            This article elaborates three online industries in the need for better CRM, and the importance of having an efficient software for the same.
-            </p>
-            </div>
-          </div>
-       
-        </div>
-        <div className="cardBottom">
-        <button>business</button>
-        {/* <Link  href={{ pathname:"/opportunitiesDetailsMenu/", query: { id: d.id } }}>
-             
-          </Link> */}
-       <h1 style={{cursor:'pointer'}}>Read more </h1>
-        </div>
-      </div> 
-
-
-      <div className="newsCardContainer">
-        <div className="cardboxContainer">
-          <div className='cardLeft'>
-            <div className='cardLeftImage'>
-            <img
-        //  src={d.image}
-  src="/assets/blog2.png"
-
-         alt="VPN Illustrasi"
-         quality={100}
-        //  width={82}
-        //  height={50}
-         layout="responsive"
-         />
-            </div>
-            <div className='cardLeftText'>
-            <p>April 23, 2021</p>
-          <h1>Digital Marketing Trends in 2021
-</h1>
-            <p>
-            Digital marketing has gained widespread popularity since 2017, but it gained rapid traction in 2020 following the lockdown in different parts of the world due to the outbreak of the... 
-            </p>
-            </div>
-          </div>
-       
-        </div>
-        <div className="cardBottom">
-        <button>business</button>
-        {/* <Link  href={{ pathname:"/opportunitiesDetailsMenu/", query: { id: d.id } }}>
-             
-          </Link> */}
-       <h1 style={{cursor:'pointer'}}>Read more </h1>
-        </div>
-      </div> 
-
-
-
-      <div className="newsCardContainer">
-        <div className="cardboxContainer">
-          <div className='cardLeft'>
-            <div className='cardLeftImage'>
-            <img
-        //  src={d.image}
-  src="/assets/blog3.png"
-
-         alt="VPN Illustrasi"
-         quality={100}
-        //  width={82}
-        //  height={50}
-         layout="responsive"
-         />
-            </div>
-            <div className='cardLeftText'>
-            <p>January 27, 2021</p>
-          <h1>Delaware Project Seeks to Stimulate Minority Startups</h1>
-            <p>
-            Delaware Project Seeks to Stimulate Minority Startups Delaware was the first state to approve the constitution back in 1787, and in 2021 it should be one of the first that...
-            </p>
-            </div>
-          </div>
-       
-        </div>
-        <div className="cardBottom">
-        <button>business</button>
-        {/* <Link  href={{ pathname:"/opportunitiesDetailsMenu/", query: { id: d.id } }}>
-             
-          </Link> */}
-       <h1 style={{cursor:'pointer'}}>Read more </h1>
-        </div>
-      </div> 
-
-
-
-
-      <div className="newsCardContainer">
-        <div className="cardboxContainer">
-          <div className='cardLeft'>
-            <div className='cardLeftImage'>
-            <img
-        //  src={d.image}
-  src="/assets/blog4.png"
-
-         alt="VPN Illustrasi"
-         quality={100}
-        //  width={82}
-        //  height={50}
-         layout="responsive"
-         />
-            </div>
-            <div className='cardLeftText'>
-            <p>December 18, 2020</p>
-          <h1>Zomato CRM – A Successful Balancing Act of Satisfying Customers & Their Customers</h1>
-            <p>
-            In this article, we intend to explore how Customer Relationship Management (CRM) works in the field of online food ordering and delivery. For this purpose, we have chosen to... 
-            </p>
-            </div>
-          </div>
-       
-        </div>
-        <div className="cardBottom">
-        <button>business</button>
-        {/* <Link  href={{ pathname:"/opportunitiesDetailsMenu/", query: { id: d.id } }}>
-             
-          </Link> */}
-       <h1 style={{cursor:'pointer'}}>Read more </h1>
-        </div>
-      </div> 
-
-
-
-      <div className="newsCardContainer">
-        <div className="cardboxContainer">
-          <div className='cardLeft'>
-            <div className='cardLeftImage'>
-            <img
-        //  src={d.image}
-  src="/assets/blog5.png"
-
-         alt="VPN Illustrasi"
-         quality={100}
-        //  width={82}
-        //  height={50}
-         layout="responsive"
-         />
-            </div>
-            <div className='cardLeftText'>
-            <p>December 18, 2020</p>
-          <h1>Swiggy CRM for Business Growth & Customer Satisfaction</h1>
-            <p>
-            In this article, we will explore the Customer Relationship Management strategies implemented by Swiggy. It is very interesting to see how different highly successful businesses implement different and...
-            </p>
-            </div>
-          </div>
-       
-        </div>
-        <div className="cardBottom">
-        <button>business</button>
-        {/* <Link  href={{ pathname:"/opportunitiesDetailsMenu/", query: { id: d.id } }}>
-             
-          </Link> */}
-       <h1 style={{cursor:'pointer'}}>Read more </h1>
-        </div>
-      </div> 
-
-
-      </div>
+         
+     
+   </div>
       </div>
     </div>
   );
 };
 
 export default FeatureNewsDetails;
+
+
+

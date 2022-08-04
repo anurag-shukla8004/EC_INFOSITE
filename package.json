@@ -28,12 +28,14 @@
     ]
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
     "@fontsource/inter": "4.2.1",
     "@fontsource/jost": "4.5.10",
     "@svgr/webpack": "5.5.0",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "date-fns": "^2.29.1",
+    "graphql": "^16.5.0",
     "next": "10.0.7",
     "next-seo": "4.20.0",
     "radium": "0.26.2",
