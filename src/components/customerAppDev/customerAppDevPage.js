@@ -1,6 +1,8 @@
 import React from 'react'
 import YouTube from "react-youtube";
 import { tw } from 'twind';
+import Link from 'next/link'
+
 
 
 function IndexPage({}) {
@@ -21,7 +23,7 @@ function IndexPage({}) {
          <p className='clientDevParaText'>EC Infosolutions offers a range of product development services which include strategy, user experience, cloud architecture, web development & cross platform mobile app development for iOS, Android & Web apps. Our strong engineering team of 55 includes AWS Certified Solution Architects & Google Cloud Partners.</p>
         </div>
       </div>
-      <div className='buildYourQuoteBtn'><div>Build Your Quote</div></div>
+      <Link href='/pricing'><div className='buildYourQuoteBtn'><div style={{cursor:'pointer'}}>Get Free Quote</div></div></Link>
 
       <div> <h1 style={{textAlign:'center', margin:'60px 0px'}} className='clientDevHeaderText'>Our Product Development Process</h1></div>
            
@@ -391,7 +393,7 @@ function IndexPage({}) {
             />
         </div>
       </div>
-      <div className='buildYourQuoteBtn'><div>Build Your Quote</div></div>
+      <Link href='/pricing'><div className='buildYourQuoteBtn'><div style={{cursor:'pointer'}}>Get Free Quote</div></div></Link>
         
     </div>
   </div>

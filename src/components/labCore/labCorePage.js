@@ -1,5 +1,7 @@
 import React from 'react'
 import YouTube from "react-youtube";
+import Link from 'next/link'
+
 
 function IndexPage({}) {
   return (
@@ -19,7 +21,7 @@ function IndexPage({}) {
       
       </div>
 
-      <div className='buildYourQuoteBtn'><div>Build Your Quote</div></div>
+      <Link href='/pricing'><div style={{cursor:'pointer'}} className='buildYourQuoteBtn'><div>Get Free Quote</div></div></Link>
 
 
       <div className='OverviewGoals'>

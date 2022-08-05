@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 
 // import the icons you need
 import {
@@ -158,9 +159,12 @@ function googleCloudPage({}) {
             </div>
           </div>
 
-          <div className="glbuildYourQuoteBtn">
+          <Link href='/pricing'><div className='glbuildYourQuoteBtn'><div style={{cursor:'pointer'}}>Cloud Services Order Form</div></div></Link>
+
+          {/* <Link href='/pricing'> <div className="glbuildYourQuoteBtn">
             <div>Cloud Services Order Form</div>
-          </div>
+          </div></Link> */}
+         
 
           <div className="gl">
             <div className="glBox">

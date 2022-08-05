@@ -130,6 +130,7 @@ useEffect(() => {
       height={4500}
       className='blogImg'
       src={blog.node.featuredImage.node.sourceUrl}
+      // src={`https://ecinfosolutions.com/graphql${blog.node.featuredImage.node.sourceUrl}`}
      
     />
                </div>
