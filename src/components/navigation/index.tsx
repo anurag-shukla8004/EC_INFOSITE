@@ -221,9 +221,15 @@ const MobileMenu = () => {
     <div className={tw(``)}>
       <div className={tw(``)}>
            <a
+          
            className={tw(`selectHamMenu`)}
          >
-          REQUEST A QUOTE
+
+           <Link href='/contactUs'>
+           REQUEST A QUOTE
+           </Link>
+           
+          
          </a>
 
       </div>
@@ -339,7 +345,8 @@ const Navigation = () => {
           <div className={tw(`linksBtn`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
               <Button modifier="border-0 mr-2">SEARCH</Button>
-              <Button primary>REQUEST A QUOTE</Button>
+              <Link href='/contactUs'><Button primary>REQUEST A QUOTE</Button></Link>
+             
             </div>
           </div>
           <div className='hamMenu'>
