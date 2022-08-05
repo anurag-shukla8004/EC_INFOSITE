@@ -2,6 +2,8 @@ import { tw } from 'twind';
 import { useState } from 'react';
 import Button from '@/components/button';
 import Link from 'next/link'
+import { RiArrowDownSLine} from 'react-icons/ri';
+import { BiSearch} from 'react-icons/bi';
 
 interface IMenuButton {
   toggleMenu: React.MouseEventHandler<HTMLButtonElement>;
@@ -129,12 +131,16 @@ const MobileMenu = () => {
 
   return <>
   <div className='hamMenuContainer'>
+    <div style={{width:'80%'}}>
+
+   
+    
     <div className={tw(`px-2 pt-2 pb-3 space-y-1 sm:px-3`)}>
 
        <div>
          <div  onClick={handleClick}>
-           <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-base font-medium`)}>
-         ABOUT EC
+           <a  className={tw(`selectHamMenu`)}>
+         ABOUT EC <RiArrowDownSLine/>
         </a>
          </div>
          
@@ -149,15 +155,15 @@ const MobileMenu = () => {
         
        <div>
          <div  onClick={handleClick2}>
-           <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-base font-medium`)}>
-         TECHNOLOGY SERVICES
+           <a  className={tw(`selectHamMenu `)}>
+         TECHNOLOGY SERVICES <RiArrowDownSLine/>
         </a>
          </div>
          
         <div className='hamMenuList' style={{display: isShown2 ? 'none' : 'flex'}}>
           
           <div className='techList'  onClick={techHandile1}>
-            <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Engineering</a>
+            <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Engineering <RiArrowDownSLine/></a>
             <div className='hamMenuList' style={{display: isShownTech1 ? 'none' : 'flex'}}>
             <Link href="/customerAppDev">Custom App Development</Link>
       <Link href="/pytDev">Python Developer</Link>
@@ -166,7 +172,7 @@ const MobileMenu = () => {
       <Link href="#">ReactJS Developer</Link>
         </div>
           </div>
-          <div className='techList' onClick={techHandile2}>        <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Platforms</a>
+          <div className='techList' onClick={techHandile2}>        <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Platforms <RiArrowDownSLine/></a>
           <div className='hamMenuList' style={{display: isShownTech2 ? 'none' : 'flex'}}>
           <Link href="#">Freedom CTRM</Link>
       <Link href="/freeVocal">Freevocal</Link>
@@ -175,7 +181,7 @@ const MobileMenu = () => {
       <Link href="/pricing">Pricing | ROI Calculator</Link>
         </div>
 </div>
-          <div className='techList' onClick={techHandile3}>        <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Industries</a>
+          <div className='techList' onClick={techHandile3}>        <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Industries <RiArrowDownSLine/></a>
           <div className='hamMenuList' style={{display: isShownTech3 ? 'none' : 'flex'}}>
           <Link href="/labCore">Agribusinesses</Link>
       <Link href="/eCommerce">eCommerce & Retail</Link>
@@ -184,7 +190,7 @@ const MobileMenu = () => {
       <Link href="#">Startups</Link>
         </div>
 </div>
-          <div className='techList' onClick={techHandile4}>        <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Cloud Patners</a>
+          <div className='techList' onClick={techHandile4}>        <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`)}>Cloud Patners <RiArrowDownSLine/></a>
           <div className='hamMenuList' style={{display: isShownTech4 ? 'none' : 'flex'}}>
           <Link href="/awsPartner">AWS Partner Network</Link>
       <Link href="#">Azure Partner</Link>
@@ -198,8 +204,8 @@ const MobileMenu = () => {
        </div>
        <div>
          <div  onClick={handleClick3}>
-           <a  className={tw(`selectHamMenu text-gray-500 block px-3 py-2 text-base font-medium`)}>
-         CONSULTING SERCIVES
+           <a  className={tw(`selectHamMenu `)}>
+         CONSULTING SERCIVES <RiArrowDownSLine/>
         </a>
          </div>
          
@@ -212,21 +218,16 @@ const MobileMenu = () => {
        </div>
       
     </div>
-    <div className={tw(`pt-4 pb-3 border-t border-gray-400`)}>
-      <div className={tw(`px-2 space-y-1`)}>
-
-          <a
-            className={tw(`block px-3 py-2 text-base font-medium text-gray-500`)}
-          >
-           SEARCH
-          </a>
+    <div className={tw(``)}>
+      <div className={tw(``)}>
            <a
-           className={tw(`block px-3 py-2 text-base font-medium text-gray-500`)}
+           className={tw(`selectHamMenu`)}
          >
           REQUEST A QUOTE
          </a>
 
       </div>
+    </div>
     </div>
   </div>
   </>
@@ -342,6 +343,10 @@ const Navigation = () => {
             </div>
           </div>
           <div className='hamMenu'>
+            <BiSearch style={{fontSize: '20px',
+    marginTop: '-1px',
+    cursor: 'pointer',
+    color: '#262626'}}/>
             <MenuButton showMenu={showMenu} toggleMenu={toggleMenu} />
           </div>
         </div>

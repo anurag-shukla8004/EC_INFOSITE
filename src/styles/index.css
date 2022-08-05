@@ -11,12 +11,7 @@ h2 { font-family: "Jost" !important; }
 
 /* Header navigation bar  */
 
-time{
-  color:#989898;
-  font-size: 13px;
-  font-family: "Jost";
-  font-weight: 600;
-}
+
 
 .dropbtn a{
   font-size: 14px;

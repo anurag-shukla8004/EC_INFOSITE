@@ -47,6 +47,21 @@ h2 { font-family: "Jost" !important; }
     float: left;
     overflow: hidden;
   }
+
+  .selectHamMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #0065cd !important;
+    border-color: #424242;
+    padding-bottom: 18px;
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
   
   .dropdown .dropbtn {
     display: flex;
@@ -121,16 +136,20 @@ box-shadow: rgb(204 204 204) 0px 3px 5px 0px;
   }
 
   .hamMenuList a{
+    display: flex;
     padding: 20px;
     padding: 5px 0px;
     font-size: 16px;
     color: #0065cd;
+    align-items: flex-end;
+    justify-content: center;
+    font-weight: normal !important;
+    border: none;
+}
     
-  }
+  
 
-  .selectHamMenu{
-    color: #6b7280 !important;
-  }
+  
 
   .techList{
     margin: 5px 0px;
@@ -138,11 +157,22 @@ box-shadow: rgb(204 204 204) 0px 3px 5px 0px;
 @media screen and (max-width: 1000px){
 
   .hamMenuContainer{
-    display: block;
-  }
+    display: flex;
+    /* height: 702.2px; */
+    background-color: rgb(255 250 255 / 88%);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 80px;
+    bottom: 0px;
+    z-index: 9999;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;}
 
   .hamMenu{
     display: flex;
+    align-items: center;
   }
 
   .linkesNav{
