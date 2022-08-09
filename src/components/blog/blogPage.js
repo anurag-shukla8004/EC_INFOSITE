@@ -218,6 +218,8 @@ useEffect(() => {
     //  src={blog?.node?.featuredImage?.node.sourceUrl}
     src={`${blog.node.featuredImage?.node.sourceUrl}`}
    /> 
+
+   <h1>hello word</h1>
               </div>
     
    
