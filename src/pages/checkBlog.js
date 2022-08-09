@@ -78,7 +78,7 @@ useEffect(() => {
       {
           
           chekapi && chekapi.map((blog, idx)=>{
-            console.log('blog main',blog.node.featuredImage?.node.sourceUrl)
+            console.log('blog main',blog.node)
             return(
              <div className="newsCardContainer" >
              <div className="cardboxContainer">
