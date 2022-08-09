@@ -2,7 +2,8 @@ module.exports = {
   images: {
     domains: [
      'ecinfosolutions.com',
-     "http://ecinfosolutions.com"
+     'http://ecinfosolutions.com',
+     'eclocalwebsite.local',
     ],
   },
   webpack(config) {
