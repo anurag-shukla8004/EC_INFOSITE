@@ -112,8 +112,8 @@ useEffect(() => {
   
                <div style={{height: '97%',backgroundColor: '#000000' }}>
                     {/* <img
-              //  src={blog.node.featuredImage?.node.sourceUrl}
-               src={`${blog.node.featuredImage?.node.sourceUrl}`}
+               src={blog.node.featuredImage?.node.sourceUrl}
+              //  src={`${blog.node.featuredImage?.node.sourceUrl}`}
                quality={100}
                width={82}
                height={50}
