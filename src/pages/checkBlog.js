@@ -73,6 +73,7 @@ useEffect(() => {
     <div className="homeMainContainer" >
       <div className="homeContainer ">
       <div className='newsmainContaier'>
+      <h1>hello word</h1>
 
       {
           
