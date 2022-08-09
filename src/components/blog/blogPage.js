@@ -112,8 +112,9 @@ const client = new ApolloClient({
 
 
 useEffect(() => {
-  dataGet();
   CheckdataGet();
+  dataGet();
+  
 }, [])
 
 
@@ -123,6 +124,58 @@ useEffect(() => {
     <div className="homeMainContainer" >
       <div className="homeContainer ">
       <div className='newsmainContaier'>
+
+
+      {
+          
+          chekapi && chekapi.map((blog, idx)=>{
+            console.log('blog main',blog.node.featuredImage?.node.sourceUrl)
+            return(
+             <div className="newsCardContainer" >
+             <div className="cardboxContainer">
+               <div className='cardLeft'>
+                 <div className='cardLeftImage'>
+              
+ 
+              <div style={{height: '97%',backgroundColor: '#000000' }}>
+                   {/* <img
+             //  src={blog.node.featuredImage?.node.sourceUrl}
+              src={`${blog.node.featuredImage?.node.sourceUrl}`}
+              quality={100}
+              width={82}
+              height={50}
+
+             
+              /> */}
+
+  <Image                         
+     width={6000}
+     height={4500}
+     className='blogImg'
+    //  src={blog?.node?.featuredImage?.node.sourceUrl}
+    src={`${blog.node.featuredImage?.node.sourceUrl}`}
+   /> 
+
+   <h1>hello word</h1>
+              </div>
+    
+   
+               {/* src={blog.node.featuredImage.node.sourceUrl} */}
+                 </div>
+              
+               </div>
+            
+             </div>
+            
+           </div> 
+     
+       
+            )
+          })
+       }
+
+
+
         {
           
            blog && blog.map((blog, idx)=>{
@@ -187,60 +240,7 @@ useEffect(() => {
              )
            })
         }
-   
-
-   {
-          
-          chekapi && chekapi.map((blog, idx)=>{
-            console.log('blog main',blog.node.featuredImage?.node.sourceUrl)
-            return(
-             <div className="newsCardContainer" >
-             <div className="cardboxContainer">
-               <div className='cardLeft'>
-                 <div className='cardLeftImage'>
-              
- 
-              <div style={{height: '97%',backgroundColor: '#000000' }}>
-                   {/* <img
-             //  src={blog.node.featuredImage?.node.sourceUrl}
-              src={`${blog.node.featuredImage?.node.sourceUrl}`}
-              quality={100}
-              width={82}
-              height={50}
-
-             
-              /> */}
-
-  <Image                         
-     width={6000}
-     height={4500}
-     className='blogImg'
-    //  src={blog?.node?.featuredImage?.node.sourceUrl}
-    src={`${blog.node.featuredImage?.node.sourceUrl}`}
-   /> 
-
-   <h1>hello word</h1>
-              </div>
-    
-   
-               {/* src={blog.node.featuredImage.node.sourceUrl} */}
-                 </div>
-              
-               </div>
-            
-             </div>
-            
-           </div> 
-     
-       
-            )
-          })
-       }
-       
-       
-
-         
-     
+      
    </div>
       </div>
     </div>
