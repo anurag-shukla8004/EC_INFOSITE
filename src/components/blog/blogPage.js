@@ -9,58 +9,6 @@ import { idText } from 'typescript';
 const FeatureNewsDetails = ({}) => {
   
  const  [blog, setBlog] = useState('')
- const  [chekapi, setChekapi] = useState('')
-
- const CheckdataGet = async () => {
-  const cli = new ApolloClient({
-      uri: 'http://eclocalwebsite.local/graphql',
-      cache: new InMemoryCache(),
-    });
-    const res = await cli.query({
-      query: gql`
-      query NewQuery {
-        posts {
-          edges {
-            node {
-              title
-              excerpt
-              slug
-              date
-              featuredImage {
-                node {
-                  sourceUrl
-                }
-              }
-              author {
-                node {
-                  name
-                  firstName
-                  lastName
-                  avatar {
-                    url
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      `,
-    })
-    // console.log('response', response.data.posts.edges);
-  
-    const check = await res?.data?.posts?.edges;
-    setChekapi(check)
-  
-  
-  
-    // .then((result) => console.log('hello'));
-    // const result = await response.json();
-    // console.log('result', result);
-   }
-
-
-
  const dataGet = async () => {
 const client = new ApolloClient({
     uri: 'https://ecinfosolutions.com/graphql',
@@ -104,17 +52,39 @@ const client = new ApolloClient({
 
 
 
- 
+  // .then((result) => console.log('hello'));
+  // const result = await response.json();
+  // console.log('result', result);
  }
+  
 
-  // console.log('checkblog', chekapi);
-  // console.log('blog', blog);
+  // const client = ...
+
+  // useEffect(() => {
+  //   const response = client.query({
+  //     query: gql`
+  //     query NewQuery {
+  //       posts {
+  //         edges {
+  //           node {
+  //             title
+  //             uri
+  //             excerpt
+  //             content
+  //           }
+  //         }
+  //       }
+  //     }
+  //     `,
+  //   }).then((result) => setBlog(result));
+  
+  // }, [])
+
+  console.log('blog', blog);
 
 
 useEffect(() => {
-  CheckdataGet();
   dataGet();
-  
 }, [])
 
 
@@ -124,58 +94,6 @@ useEffect(() => {
     <div className="homeMainContainer" >
       <div className="homeContainer ">
       <div className='newsmainContaier'>
-
-
-      {
-          
-          chekapi && chekapi.map((blog, idx)=>{
-            console.log('blog main',blog.node.featuredImage?.node.sourceUrl)
-            return(
-             <div className="newsCardContainer" >
-             <div className="cardboxContainer">
-               <div className='cardLeft'>
-                 <div className='cardLeftImage'>
-              
- 
-              <div style={{height: '97%',backgroundColor: '#000000' }}>
-                   {/* <img
-             //  src={blog.node.featuredImage?.node.sourceUrl}
-              src={`${blog.node.featuredImage?.node.sourceUrl}`}
-              quality={100}
-              width={82}
-              height={50}
-
-             
-              /> */}
-
-  <Image                         
-     width={6000}
-     height={4500}
-     className='blogImg'
-    //  src={blog?.node?.featuredImage?.node.sourceUrl}
-    src={`${blog.node.featuredImage?.node.sourceUrl}`}
-   /> 
-
-   <h1>hello word</h1>
-              </div>
-    
-   
-               {/* src={blog.node.featuredImage.node.sourceUrl} */}
-                 </div>
-              
-               </div>
-            
-             </div>
-            
-           </div> 
-     
-       
-            )
-          })
-       }
-
-
-
         {
           
            blog && blog.map((blog, idx)=>{
@@ -240,7 +158,12 @@ useEffect(() => {
              )
            })
         }
-      
+   
+       
+       
+
+         
+     
    </div>
       </div>
     </div>
