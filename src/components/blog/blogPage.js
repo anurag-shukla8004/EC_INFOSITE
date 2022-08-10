@@ -22,6 +22,7 @@ const client = new ApolloClient({
           node {
             title
             excerpt
+            content
             slug
             date
             featuredImage {
@@ -48,44 +49,18 @@ const client = new ApolloClient({
   // console.log('response', response.data.posts.edges);
 
   const result = await response?.data?.posts?.edges;
+  console.log(response)
   setBlog(result)
 
-
-
-  // .then((result) => console.log('hello'));
-  // const result = await response.json();
-  // console.log('result', result);
  }
-  
 
-  // const client = ...
-
-  // useEffect(() => {
-  //   const response = client.query({
-  //     query: gql`
-  //     query NewQuery {
-  //       posts {
-  //         edges {
-  //           node {
-  //             title
-  //             uri
-  //             excerpt
-  //             content
-  //           }
-  //         }
-  //       }
-  //     }
-  //     `,
-  //   }).then((result) => setBlog(result));
-  
-  // }, [])
-
-  console.log('blog', blog);
 
 
 useEffect(() => {
   dataGet();
 }, [])
+
+
 
 
 
@@ -96,14 +71,15 @@ useEffect(() => {
       <div className='newsmainContaier'>
         {
           
-           blog && blog.map((blog, idx)=>{
+           blog && blog.map((blog, id)=>{
              
             const date = parseISO(blog.node.date)
             // console.log(blog.node.featuredImage.node.sourceUrl)
             let img = blog.node.featuredImage.node.sourceUrl
              return(
                
-              
+              <Link   href={{ pathname: "/blogReadMore", query: { id: id, img: blog.node.featuredImage.node.sourceUrl } }}
+            >
               <div className="newsCardContainer" key={blog.slug}>
               <div className="cardboxContainer">
                 <div className='cardLeft'>
@@ -153,7 +129,7 @@ useEffect(() => {
              <h1 style={{cursor:'pointer'}}>Read more </h1>
               </div>
             </div> 
-      
+            </Link>
         
              )
            })

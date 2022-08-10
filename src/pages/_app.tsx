@@ -17,6 +17,7 @@ import "../styles/eCommerce.css";
 import "../styles/manufacturing.css";
 import "../styles/googleCloud.css";
 import "../styles/blog.css";
+import "../styles/blogReadMore.css";
 import { setup } from 'twind';
 import twindConfig from '../twind.config';
 

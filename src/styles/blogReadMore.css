@@ -1,0 +1,157 @@
+.opportunitiesDetailsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.smallBlogBox{
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  color: #ffffff;
+
+}
+
+.smallblogText{
+  font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.opporDetailsText div p {
+  margin: 10px;
+}
+
+
+
+/* .opporDetailsText div p span::after{
+  content: "\a";
+  white-space: pre;
+} */
+
+.opporDetailsText div p img  {
+display: none;
+}
+
+.opportunitiesDetailsImageContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+justify-content: center;
+width: 100%;
+
+}
+
+.opportunitiesDetailsImagebox{
+  width: 100%;
+  background: #000000;
+}
+
+.opportunitiesDetailsImagebox img{
+ opacity: 0.7;
+}
+
+.opportunitiesDetailsTextboxContainer{
+width: 85%;
+}
+
+.opportunitiesDetailsTextbox {
+  margin: 25px 0px 25px 0px;
+}
+
+.blogBox{
+  position: absolute;
+  width: 90%;
+  left: 82px;
+  bottom: 100px;
+}
+
+.oppoImageTextContainer {
+  display: flex;
+  align-items: center;
+  margin: 25px 0px 25px 0px;
+  flex-direction: column;
+}
+
+.opporDetailsImage{
+  width: 70%;
+  margin: 25px 30px 25px 0px;
+}
+.opporDetailsText{
+  width: 75%;
+  margin: 25px 0px 25px 0px;
+}
+
+
+.detailsHeading{
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+.mainTitle{
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 11px;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-left: 5px;
+
+}
+
+
+
+.detailsText{
+  font-size: 17px;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.LoginComment{
+
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 70px 0px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  padding: 21px 0px;
+  border-color: #e6e6e6;
+
+}
+
+.accountButton{
+display: flex;
+}
+
+.accountButotnLogin{
+  display: flex;
+    margin-right: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 20px;
+    color: #999;
+    font-weight: 800;
+    cursor: pointer;
+}
+.accountButotnSignup{
+  margin-right: 20px;
+  border: 1px solid 
+  #d6d6d6;
+  background: black;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
