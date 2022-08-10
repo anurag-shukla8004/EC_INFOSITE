@@ -1,6 +1,8 @@
 
 import next from 'next'
 import React, { useEffect, useState } from 'react';
+import PostBody from './blogPara'
+
 import Image from 'next/image'
 import Link from "next/link";
 import { useRouter } from 'next/router'
@@ -85,7 +87,6 @@ console.log(blog[id])
                <div className="opportunitiesDetailsImagebox">
    
        <Image
-        
        src={img}
        alt="VPN Illustrasi"
        layout="fill"
@@ -108,22 +109,22 @@ console.log(blog[id])
           <div className="blogBox">
            <h1 className='mainTitle'>{blog[id]?.node.title}</h1>
            <div className='smallBlogBox'>
-             <div className='smallBlogBox'>
+             <div className='smallBlogInBox'>
              <CgFileDocument/>
             <span className='smallblogText'>{blog[id]?.node.author.node.name}</span>
              </div>
-             <div className='smallBlogBox'>
+             <div className='smallBlogInBox'>
              <FiFolder/>
             <span className='smallblogText'>BLOG, BUSINESS, DECISIONS, INNOVATION IS LIFE, TECHNOLOGY, TRENDING</span>
              </div>
             
            </div >
            <div className='smallBlogBox'>
-             <div className='smallBlogBox'>
+             <div className='smallBlogInBox'>
              <AiOutlineTags/>
             <span className='smallblogText'>DIGITAL MARKETING-SOCIAL MEDIA MARKETING-DIGITAL MARKETING 2021-DIGITAL MARKETING TRENDS-SOCIAL MEDIA MARKETING TOOLS-DIGITAL TRENDS 20210</span>
              </div>
-             <div className='smallBlogBox'>
+             <div className='smallBlogInBox'>
              <FaRegComment/>
             <span className='smallblogText'>0</span>
              </div>
@@ -149,14 +150,13 @@ console.log(blog[id])
        objectFit="cover"
        quality={100}
        width={400}
-       height={115}
+       height={250}
        layout="responsive"
      /> 
             </div>
             <div className='opporDetailsText'>
-<div
-        dangerouslySetInnerHTML={{ __html: blog[id]?.node.content }}
-      />  </div>
+            <PostBody content={blog[id]?.node.content} />
+  </div>
          
           </div>
 
