@@ -1,4 +1,7 @@
 module.exports = {
+  
+  future: { webpack5: true },
+
   webpack: (config, { isServer }) => {
     if (!isServer) {
         // don't resolve 'fs' module on the client to prevent this error on build --> Error: Can't resolve 'fs'
@@ -18,7 +21,7 @@ module.exports = {
      'eclocalwebsite.local',
     ],
   },
-  future: { webpack5: true },
+
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
