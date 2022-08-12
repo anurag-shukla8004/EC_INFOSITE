@@ -47,7 +47,8 @@
     "react-icons": "^4.4.0",
     "react-youtube": "9.0.3",
     "tailwindcss": "^3.1.8",
-    "twind": "0.15.4"
+    "twind": "0.15.4",
+    "webpack": "^5.74.0"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
