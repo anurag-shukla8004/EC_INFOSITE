@@ -1,5 +1,5 @@
 .content {
-  font-size: 1.125rem !important;
+font-size: 1.125rem !important;
 line-height: 1.75rem !important; 
 line-height: 1.625 !important; 
 }
@@ -8,7 +8,7 @@ line-height: 1.625 !important;
 .content ul,
 .content ol,
 .content blockquote {
-  margin-top: 1.5rem !important;
+margin-top: 1.5rem !important;
 margin-bottom: 1.5rem !important; 
 }
 

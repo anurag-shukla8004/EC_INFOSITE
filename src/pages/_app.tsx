@@ -20,6 +20,7 @@ import "../styles/blog.css";
 import "../styles/blogReadMore.css";
 import { setup } from 'twind';
 import twindConfig from '../twind.config';
+import Head from 'next/head';
 
 if (typeof window !== `undefined`) {
   setup(twindConfig);
