@@ -1,13 +1,11 @@
 module.exports = {
-
-  target: 'serverless',
-
   reactStrictMode: true,
-  // images: {
-  //   domains: [
-  //    'ecinfosolutions.com',
-  //   ],
-  // },
+  images: {
+    domains: [
+     'ecinfosolutions.com',
+     'https://dreamy-medovik-9cddcf.netlify.app/'
+    ],
+  },
 
   webpack(config) {
     config.module.rules.push({
@@ -18,6 +16,7 @@ module.exports = {
     return config;
   },
     
+  target: 'serverless',
 };
 
 
