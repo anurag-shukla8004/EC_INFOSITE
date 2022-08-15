@@ -32,7 +32,6 @@
     "@fontsource/inter": "4.2.1",
     "@fontsource/jost": "4.5.10",
     "@netlify/ipx": "^1.2.1",
-    "@netlify/plugin-nextjs": "^4.15.0",
     "@svgr/webpack": "5.5.0",
     "autoprefixer": "^10.4.8",
     "axios": "^0.27.2",
@@ -59,6 +58,7 @@
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
+    "@netlify/plugin-nextjs": "^4.0.0-rc.2",
     "@types/node": "^14.14.28",
     "@types/react": "^17.0.2",
     "@types/react-dom": "17.0.1",
