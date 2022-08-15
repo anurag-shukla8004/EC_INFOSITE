@@ -1,5 +1,4 @@
 
-import next from 'next'
 import React, { useEffect, useState } from 'react';
 import PostBody from './blogPara'
 
