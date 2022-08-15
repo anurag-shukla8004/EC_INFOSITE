@@ -3,11 +3,11 @@ module.exports = {
   target: 'serverless',
 
   reactStrictMode: true,
-  images: {
-    domains: [
-     'ecinfosolutions.com',
-    ],
-  },
+  // images: {
+  //   domains: [
+  //    'ecinfosolutions.com',
+  //   ],
+  // },
 
   webpack(config) {
     config.module.rules.push({
