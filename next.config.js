@@ -1,5 +1,7 @@
 module.exports = {
 
+  target: 'serverless',
+
   reactStrictMode: true,
   images: {
     domains: [
@@ -17,7 +19,7 @@ module.exports = {
 
     return config;
   },
-    target: 'serverless'
+    
 };
 
 
