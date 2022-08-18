@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo';
 import Page from '@/components/page';
-import ContactUs from '@/components/contactUs/contactUsPage.js';
+import ContactUs from '../components/contactUs/contactUsPage.js';
 import Footer from '@/components/footer';
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 

@@ -1,6 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function contactUsPage({}) {
+
+  const [values, setValues] = useState({
+    email: "",
+    name: "",
+    companyName: "",
+    mobileNum: "",
+    message: "",
+  });
+
+  const { email, name, companyName,  mobileNum, message } = values;
+
+  const handleChange = (e) =>{
+    setValues({ ...values, [e.target.name]: e.target.value });
+  }
+    
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+    console.log('enter the input ')
+
+      await fetch("http://localhost:8008/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+    };
+
   return (
     <div className='contactUsMainContainer'>
       <div className='contactUsContainer'>
@@ -15,17 +44,17 @@ function contactUsPage({}) {
 
       <div className='emailContainer'>
          <div className='fomeContainer'>
-         <form action="/send-data-here" method="post">
+         <form action="/send-data-here" method="post" onSubmit={handleSubmit}>
   <label >Email</label>
-  <input type="email" id="email" name="email" />
+  <input type="email" id="email" name="email" value={email}  onChange={handleChange} />
   <label >Name</label>
-  <input type="text" id="last" name="last" />
+  <input type="text" id="last" name="name" value={name}  onChange={handleChange} />
   <label >Company Name</label>
-  <input type="text" id="companyName" name="companyName" />
+  <input type="text" id="companyName" name="companyName"  value={companyName}  onChange={handleChange}/>
   <label >Mobile phone number*</label>
-  <input type="tel" id="last" name="last" />
+  <input type="tel" id="last" name="mobileNum" value={mobileNum}  onChange={handleChange}/>
   <label >Describe your project requirements</label>
-  <textarea></textarea>
+  <textarea  name="message" value={message} onChange={handleChange}></textarea>
   <button type="submit">Request a Quote</button>
 </form>
          </div>
