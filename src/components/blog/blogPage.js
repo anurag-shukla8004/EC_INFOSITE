@@ -84,7 +84,7 @@ useEffect(() => {
                   <div className='cardLeftImage'>
                
   
-               <div style={{height: '97%',backgroundColor: '#000000' }}>
+               <div style={{height: '97%',backgroundColor: '#000000', overflow:'hidden' }}>
                     {/* <img
                src={blog.node.featuredImage?.node.sourceUrl}
               //  src={`${blog.node.featuredImage?.node.sourceUrl}`}
