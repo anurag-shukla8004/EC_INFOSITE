@@ -250,7 +250,7 @@ const Navigation = () => {
   const [serchShow, setSerchShow] = useState(false)
   const [serchValue, setSerchValue] = useState()
 
- const handleSerchValue = (e) => {
+ const handleSerchValue = (e : any) => {
    setSerchValue(e.target.value)
  }
 
