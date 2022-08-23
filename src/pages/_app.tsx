@@ -18,6 +18,8 @@ import "../styles/manufacturing.css";
 import "../styles/googleCloud.css";
 import "../styles/blog.css";
 import "../styles/blogReadMore.css";
+import "../styles/teamService.css";
+import "../styles/loader.css";
 import { setup } from 'twind';
 import twindConfig from '../twind.config';
 import Head from 'next/head';

@@ -21,7 +21,7 @@ function contactUsPage({}) {
       e.preventDefault();
     console.log('enter the input ')
 
-      await fetch("http://localhost:8008/api/contact", {
+      await fetch("http://localhost:8000/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

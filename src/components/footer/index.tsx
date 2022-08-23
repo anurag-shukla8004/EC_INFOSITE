@@ -1,17 +1,12 @@
 import { tw } from 'twind';
 import Button from '@/components/button';
+import Link from 'next/link'
 
-const productLinks = [`AWS`, `GOOGLE CLOUD`, `SHOPIFY PARTNER`];
-const aboutLinks = [`Privacy Policy`, `Terms of service`, `Cookie Policy (US)`, `Agreement`];
-const resourceLinks = [
-  `EC Infosolutions Blog`,
-  `Partner with EC`,
-  `Get Support`,
-  `Call: +1 (315) 703-3343`,
-];
+
+
 
 const Footer = () => (
-  <footer className={tw(`bg-white border-t border-gray-400 pt-14 pb-16`)}>
+  <footer className={tw(`bg-white border-t border-gray-400 pt-14 pb-16`)} style={{backgroundColor:'#f6faff'}}>
     <div className={tw(`max-w-7xl mx-auto text-gray-400 px-8 lg:px-4 flex flex-wrap`)}>
       <div className={tw(`mb-14 flex items-center w-full`)}>
       <img className='ecLogoImg'src="ecLogo.png" alt="logo" width={48} height={48} />
@@ -22,11 +17,17 @@ const Footer = () => (
             <div>
               <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Product</h4>
               <ul>
-                {productLinks.map((link) => (
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
-                    <a href="/">{link}</a>
+               
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)}>
+                    <Link href="/awsPartner">AWS</Link>
                   </li>
-                ))}
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)}>
+                    <Link href="/googleCloud">GOOGLE CLOUD</Link>
+                  </li>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)}>
+                    <Link href="/shopify">SHOPIFY PARTNER</Link>
+                  </li>
+
               </ul>
             </div>
           </li>
@@ -34,23 +35,43 @@ const Footer = () => (
             <div>
               <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Resources</h4>
               <ul>
-                {resourceLinks.map((link) => (
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
-                    <a href="/">{link}</a>
+         
+                
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
+                    <Link href="/blog">EC Infosolutions Blog</Link>
                   </li>
-                ))}
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
+                    <Link href="/#">Partner with EC</Link>
+                  </li>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
+                    <Link href="#">Get Support</Link>
+                  </li>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
+                    <Link href="#">Call: +1 (315) 703-3343</Link>
+                  </li>
+
               </ul>
             </div>
           </li>
           <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
             <div>
-              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>About Us</h4>
+              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Policies</h4>
               <ul>
-                {aboutLinks.map((link) => (
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
-                    <a href="/">{link}</a>
+
+              
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)}>
+                    <Link href="/privacyPolicy">Privacy Policy</Link>
                   </li>
-                ))}
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)}>
+                    <Link href="/teamService">Terms of service</Link>
+                  </li>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)}>
+                    <Link href="#">Cookie Policy (US)</Link>
+                  </li>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)}>
+                    <Link href="#">Agreement</Link>
+                  </li>
+            
               </ul>
             </div>
           </li>

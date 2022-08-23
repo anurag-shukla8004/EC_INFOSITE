@@ -1,9 +1,11 @@
 import { tw } from 'twind';
 import { useState } from 'react';
-import Button from '@/components/button';
+import Button from '@/components/button'; 
 import Link from 'next/link'
 import { RiArrowDownSLine} from 'react-icons/ri';
 import { BiSearch} from 'react-icons/bi';
+import { AiOutlineClose } from 'react-icons/ai';
+
 
 interface IMenuButton {
   toggleMenu: React.MouseEventHandler<HTMLButtonElement>;
@@ -53,6 +55,9 @@ const MenuButton = ({ toggleMenu, showMenu }: IMenuButton) => (
     )}
   </button>
 );
+
+
+
 
 const MobileMenu = () => {
   const [isShown, setIsShown] = useState(true);
@@ -242,6 +247,19 @@ const MobileMenu = () => {
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => setShowMenu(!showMenu);
+  const [serchShow, setSerchShow] = useState(false)
+  const [serchValue, setSerchValue] = useState()
+
+ const handleSerchValue = (e) => {
+   setSerchValue(e.target.value)
+ }
+
+  const searchToggle = () =>{
+  
+    !serchShow ?
+    setSerchShow(true) : setSerchShow(false)
+  }
+
 
   return (
     <nav className={tw(`bg-white fixed w-full z-50`)}>
@@ -344,21 +362,42 @@ const Navigation = () => {
           </div>
           <div className={tw(`linksBtn`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
-              <Button modifier="border-0 mr-2">SEARCH</Button>
-              <Link href='/contactUs'><Button primary>REQUEST A QUOTE</Button></Link>
-             
+            <Link href='/contactUs'><Button primary>REQUEST A QUOTE</Button></Link>
+            <div onClick={searchToggle} style={{marginLeft:'10px'}} >   <BiSearch style={{fontSize: '25px',
+    marginTop: '-1px',
+    cursor: 'pointer',
+    color: '#262626'}}/></div>
+              
             </div>
           </div>
           <div className='hamMenu'>
-            <BiSearch style={{fontSize: '20px',
+          <div onClick={searchToggle} ><BiSearch style={{fontSize: '20px',
     marginTop: '-1px',
     cursor: 'pointer',
-    color: '#262626'}}/>
+    color: '#262626'}}/></div>
             <MenuButton showMenu={showMenu} toggleMenu={toggleMenu} />
           </div>
         </div>
       </div>
       {showMenu ? <MobileMenu /> : null}
+     <div className='searchMainContainer' style={{display: !serchShow ? 'none' : 'flex'}}>
+     <form role="search" method="get" className="search-form" action="https://ecinfosolutions.com/" data-hs-cf-bound="true">
+	<input type="text" className="search-field" placeholder="Search..." value={serchValue} name="s" onChange={( e )=> handleSerchValue(e)}/>
+	<div className="seocrawler-top-search-submit"><button style={{outline:'none'}} type='submit'><BiSearch style={{fontSize: '30px',
+    marginTop: '-10px',
+    cursor: 'pointer',
+    marginRight:'10px',
+    color: '#ffffff'}}/></button> </div>
+	<div className="seocrawler-top-search-close">
+  <AiOutlineClose onClick={searchToggle} style={{fontSize: '30px',
+    marginTop: '-10px',
+    cursor: 'pointer',
+    color: '#ffffff'}}/>
+  </div>
+</form>
+
+     </div>
+
     </nav>
   );
 };
