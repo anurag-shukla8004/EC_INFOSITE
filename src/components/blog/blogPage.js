@@ -99,17 +99,14 @@ useEffect(() => {
         src={blog.node.featuredImage?.node.sourceUrl}
         alt={'some'}
       /> */}
-    {/* <Image                         
+    <Image                         
       width={6000}
       height={4500}
       className='blogImg'
-      // src={blog.node.featuredImage.node.sourceUrl}
-      src={`${blog.node.featuredImage.node.sourceUrl}`}
+      src={blog.node.featuredImage.node.sourceUrl}
+      // src={`https://ecinfosolutions.com/graphql${blog.node.featuredImage.node.sourceUrl}`}
      
-    /> */}
-    <img alt="img" src={blog.node.featuredImage.node.sourceUrl} width='60px'
-      height="45px"
-      className='blogImg' />
+    />
                </div>
      
     
