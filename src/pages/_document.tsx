@@ -37,6 +37,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <script async src="https://ucalc.pro/api/widget.js?id=295368" />
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
         </Head>
         <body>
           <Main />
