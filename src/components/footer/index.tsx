@@ -15,46 +15,24 @@ const Footer = () => (
         <ul className={tw(`text-lg font-light flex flex-wrap w-full`)}>
           <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
             <div>
-              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Product</h4>
+              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Partnerships</h4>
               <ul>
                
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)}>
-                    <Link href="/awsPartner">AWS</Link>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6 my-4 `)}>
+                    <Link href="/awsPartner"><img src="f1.png" alt="" width={120} height={48}/></Link>
                   </li>
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)}>
-                    <Link href="/googleCloud">GOOGLE CLOUD</Link>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6 my-4`)}>
+                    <Link href="/googleCloud"><img src="f2.png" alt="" width={120} height={48}/></Link>
                   </li>
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)}>
-                    <Link href="/shopify">SHOPIFY PARTNER</Link>
-                  </li>
-
-              </ul>
-            </div>
-          </li>
-          <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
-            <div>
-              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Resources</h4>
-              <ul>
-         
-                
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
-                    <Link href="/blog">EC Infosolutions Blog</Link>
-                  </li>
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
-                    <Link href="/#">Partner with EC</Link>
-                  </li>
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
-                    <Link href="#">Get Support</Link>
-                  </li>
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
-                    <Link href="#">Call: +1 (315) 703-3343</Link>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6 my-4`)}>
+                    <Link href="/shopify"><img src="f3.png" alt="" width={120} height={48}/></Link>
                   </li>
 
               </ul>
             </div>
           </li>
           <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
-            <div>
+             <div>
               <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Policies</h4>
               <ul>
 
@@ -72,6 +50,28 @@ const Footer = () => (
                     <Link href="#">Agreement</Link>
                   </li>
             
+              </ul>
+            </div>
+          </li>
+          <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
+          <div>
+              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Resources</h4>
+              <ul>
+         
+                
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
+                    <Link href="/blog">EC Infosolutions Blog</Link>
+                  </li>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
+                    <Link href="/#">Partner with EC</Link>
+                  </li>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
+                    <Link href="#">Get Support</Link>
+                  </li>
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} >
+                    <Link href="#">Call: +1 (315) 703-3343</Link>
+                  </li>
+
               </ul>
             </div>
           </li>
