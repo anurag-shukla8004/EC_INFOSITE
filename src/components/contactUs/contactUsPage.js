@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 function contactUsPage({}) {
 
   const [values, setValues] = useState({
     email: "",
     name: "",
-    companyName: "",
-    mobileNum: "",
-    message: "",
+    company_name: "",
+    mobile_number: "",
+    project_req: "",
   });
 
-  const { email, name, companyName,  mobileNum, message } = values;
+  const { email, name, company_name,  mobile_number, project_req } = values;
 
   const handleChange = (e) =>{
     setValues({ ...values, [e.target.name]: e.target.value });
@@ -21,13 +22,25 @@ function contactUsPage({}) {
       e.preventDefault();
     console.log('enter the input ')
 
-      await fetch("http://localhost:8000/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
+      // await fetch("http://localhost:8000/api/contact", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(values),
+      // });
+
+      axios({
+        method: 'post',
+        url: 'http://e04d-219-91-170-120.ngrok.io/api/inquery/',
+        data: values,
+    })
+    .then(function (response) {
+        console.log(response);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
     };
 
   return (
@@ -50,11 +63,11 @@ function contactUsPage({}) {
   <label >Name</label>
   <input type="text" id="last" name="name" value={name}  onChange={handleChange} />
   <label >Company Name</label>
-  <input type="text" id="companyName" name="companyName"  value={companyName}  onChange={handleChange}/>
+  <input type="text" id="company_name" name="company_name"  value={company_name}  onChange={handleChange}/>
   <label >Mobile phone number*</label>
-  <input type="tel" id="last" name="mobileNum" value={mobileNum}  onChange={handleChange}/>
+  <input type="tel" id="last" name="mobile_number" value={mobile_number}  onChange={handleChange}/>
   <label >Describe your project requirements</label>
-  <textarea  name="message" value={message} onChange={handleChange}></textarea>
+  <textarea  name="project_req" value={project_req} onChange={handleChange}></textarea>
   <button type="submit">Request a Quote</button>
 </form>
          </div>

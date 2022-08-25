@@ -5,7 +5,6 @@ import PostBody from './blogPara'
 import Image from 'next/image'
 import Link from "next/link";
 import { useRouter } from 'next/router'
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 import {CgFileDocument} from 'react-icons/cg';
 import {FiFolder} from 'react-icons/fi';
 import {AiOutlineTags} from 'react-icons/ai';
@@ -16,75 +15,82 @@ import {BiArrowBack } from 'react-icons/bi';
 function opportunitiesDetailsNews({}) {
   const router = useRouter();
   const value = router.query;
-  const img = value.img
-  const id = value.id
+  const author =  value.author;
+  const aboutAuthor =  value.aboutAuthor;
+  const shortDescription = value.short_description;
+  const img = value.img;
+  const data = value.para;
+  const tags =  value.tags;
+  const tittle =  value.tittle; 
   
+  console.log('data', aboutAuthor)
 
  
   const  [blog, setBlog] = useState('')
   // const  [id, setId] = useState(value)
   // console.log('id', )
- const dataGet = async () => {
-const client = new ApolloClient({
-    uri: 'https://ecinfosolutions.com/graphql',
-    cache: new InMemoryCache(),
-  });
-  const response = await client.query({
-    query: gql`
-    query NewQuery {
-      posts {
-        edges {
-          node {
-            title
-            excerpt
-            content
-            slug
-            date
-            featuredImage {
-              node {
-                sourceUrl
-              }
-            }
-            author {
-              node {
-                name
-                firstName
-                lastName
-                avatar {
-                  url
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    `,
-  })
-  // console.log('response', response.data.posts.edges);
+//  const dataGet = async () => {
+// const client = new ApolloClient({
+//     uri: 'https://ecinfosolutions.com/graphql',
+//     cache: new InMemoryCache(),
+//   });
+//   const response = await client.query({
+//     query: gql`
+//     query NewQuery {
+//       posts {
+//         edges {
+//           node {
+//             title
+//             excerpt
+//             content
+//             slug
+//             date
+//             featuredImage {
+//               node {
+//                 sourceUrl
+//               }
+//             }
+//             author {
+//               node {
+//                 name
+//                 firstName
+//                 lastName
+//                 avatar {
+//                   url
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//     `,
+//   })
 
-  const result = await response?.data?.posts?.edges;
-  setBlog(result)
+
+//   const result = await response?.data?.posts?.edges;
+//   setBlog(result)
  
  
- }
+//  }
 
 
 
-useEffect(() => {
-  dataGet();
-}, [])
-// setImg(blog[id.id].node.featuredImage.node.sourceUrl)
-console.log(blog[id])
+// useEffect(() => {
+//   dataGet();
+// }, [])
+
+
 
  
 
   return (
     
     <div className='opportunitiesDetailsContainer'>
+                  
           <div className='opportunitiesDetailsImageContainer'>
                <div className="opportunitiesDetailsImagebox">
-   
+{/*    
        <Image
        src={img}
        alt="VPN Illustrasi"
@@ -94,23 +100,25 @@ console.log(blog[id])
        width={400}
        height={115}
        layout="responsive"
-     /> 
+     />  */}
 
             
             
-
-            {/* <img style={{margin:'150px'}}  src={img}></img> */}
+<img 
+  src={img}
+  alt="VPN Illustrasi"
+></img> 
             
             
              
       
           </div>
           <div className="blogBox">
-           <h1 className='mainTitle'>{blog[id]?.node.title}</h1>
+           <h1 className='mainTitle'>{tittle}</h1>
            <div className='smallBlogBox'>
              <div className='smallBlogInBox'>
              <CgFileDocument/>
-            <span className='smallblogText'>{blog[id]?.node.author.node.name}</span>
+            <span className='smallblogText'>{author}</span>
              </div>
              <div className='smallBlogInBox'>
              <FiFolder/>
@@ -141,23 +149,35 @@ console.log(blog[id])
 
           <div className="oppoImageTextContainer">
             <div className='opporDetailsImage'>
-            <Image
+            <img
         
        src={img}
        alt="VPN Illustrasi"
        layout="fill"
        objectFit="cover"
        quality={100}
-       width={400}
+       width={700}
        height={250}
        layout="responsive"
-     /> 
+     ></img> 
             </div>
-            <div className='opporDetailsText'>
-            <PostBody content={blog[id]?.node.content} />
-  </div>
+
          
           </div>
+
+          </div>
+        
+
+          <div className='opporDetailsText'>
+            <PostBody content={data} />
+  </div>
+
+  <div className='aboutAuthorBox'>
+  <p className='aboutTheAuthor'>About the author</p>
+
+          <h4 className='authorName'>{author}</h4>
+          <p className='authorPara'>{aboutAuthor}</p>
+           
 
           </div>
 
