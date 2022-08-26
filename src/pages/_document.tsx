@@ -4,6 +4,7 @@ import { setup } from 'twind';
 import { asyncVirtualSheet, getStyleTagProperties } from 'twind/server';
 import twindConfig from '../twind.config';
 
+
 const sheet = asyncVirtualSheet();
 
 setup({ ...twindConfig, sheet });
@@ -36,7 +37,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <script async src="https://ucalc.pro/api/widget.js?id=295368" />
+          <script  src="https://ucalc.pro/api/widget.js?id=295368" defer />
           <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
         </Head>
         <body>

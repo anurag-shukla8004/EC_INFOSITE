@@ -1,18 +1,44 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState , useEffect} from 'react'
 import Link from "next/link";
-import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
+import { useRouter } from 'next/router'
+import Document, { DocumentContext, Html, Head, Main } from 'next/document';
 
 
 
 function pricingPage({}) {
 
-  const [value,onChange]=useState(1);
-  useEffect(()=>{
-    const ele = document.querySelector('.buble');
-  if (ele) {
-    ele.style.left = `${Number(value / 4)}px`;
-  }
-})
+//   const [value,onChange]=useState(1);
+//   useEffect(()=>{
+//     const ele = document.querySelector('.buble');
+//   if (ele) {
+//     ele.style.left = `${Number(value / 4)}px`;
+//   }
+// })
+
+// const router = useRouter()
+// const [Js, setJs] = useState(null)
+
+// const handleComplete = () => {
+//   setJs(null)
+//   setJs(
+
+//       <script src='https://ucalc.pro/api/widget.js?id=295368' />
+  
+//   )
+// }
+
+// useEffect(() => {
+//   setTimeout(() => {
+//     setJs(
+ 
+//       <script src='https://ucalc.pro/api/widget.js?id=295368' />
+   
+//   )
+//     }, 2000);
+  
+  
+//   router.events.on('routeChangeComplete', handleComplete)
+// }, [router.events])
 
   return (
   <>
@@ -20,8 +46,9 @@ function pricingPage({}) {
     <div className='pytDevMainContainer'>
      
     <div className='pytDevContainer'>
-
-    <div className="uCalc_295368">
+    {/* {Js} */}
+    {/* <script src='https://ucalc.pro/api/widget.js?id=295368' /> */}
+    <div className="uCalc_295368" data-ad="true">
     </div>
 
 <div className='moreFreedomContainer'>
