@@ -283,6 +283,8 @@ box-shadow: 3px 4px 10px #afadad;
 }
 
 .servicesContainer ul{
+  list-style-type: disc !important;
+    margin-left: 20px;
 font-size: 18px;
   line-height: 2;
 }

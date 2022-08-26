@@ -70,7 +70,7 @@ const [blogImage, setBlogImage] = useState('')
       try {
         // ⛔️ TypeError: Failed to fetch
         // 👇️ incorrect or incomplete URL
-        const response = await fetch('http://e22f-123-201-245-222.ngrok.io/api/blogs/');
+        const response = await fetch('http://dc7e-219-91-171-109.ngrok.io/api/blogs/');
     
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);

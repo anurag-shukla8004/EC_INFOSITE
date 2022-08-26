@@ -11,7 +11,7 @@ function IndexPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'http://c436-219-91-171-109.ngrok.io/api/homepage/'
+          'http://dc7e-219-91-171-109.ngrok.io/api/homepage/'
         );
 
         if (!response.ok) {
