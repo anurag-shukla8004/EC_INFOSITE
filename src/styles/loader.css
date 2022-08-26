@@ -1,6 +1,6 @@
 
 .loaderBox{
-  margin: 50px;
+  margin: 200px 0px ;
   display: flex;
   justify-content:center ;
 
@@ -15,6 +15,7 @@
 }
 
 .loader .cube {
+  border-radius: 50px;
   width: var(--cube-size);
   height: var(--cube-size);
   background: #7f438d;

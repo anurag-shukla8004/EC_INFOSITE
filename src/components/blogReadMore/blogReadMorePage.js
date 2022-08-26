@@ -21,9 +21,9 @@ function opportunitiesDetailsNews({}) {
   const img = value.img;
   const data = value.para;
   const tags =  value.tags;
-  const tittle =  value.tittle; 
+  const title =  value.title; 
   
-  console.log('data', aboutAuthor)
+  console.log('data',data )
 
  
   const  [blog, setBlog] = useState('')
@@ -90,31 +90,13 @@ function opportunitiesDetailsNews({}) {
                   
           <div className='opportunitiesDetailsImageContainer'>
                <div className="opportunitiesDetailsImagebox">
-{/*    
-       <Image
-       src={img}
-       alt="VPN Illustrasi"
-       layout="fill"
-       objectFit="cover"
-       quality={100}
-       width={400}
-       height={115}
-       layout="responsive"
-     />  */}
-
-            
-            
 <img 
   src={img}
   alt="VPN Illustrasi"
 ></img> 
-            
-            
-             
-      
-          </div>
+   </div>
           <div className="blogBox">
-           <h1 className='mainTitle'>{tittle}</h1>
+           <h1 className='mainTitle'>{title}</h1>
            <div className='smallBlogBox'>
              <div className='smallBlogInBox'>
              <CgFileDocument/>

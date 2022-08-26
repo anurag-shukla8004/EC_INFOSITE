@@ -108,18 +108,18 @@ const [blogImage, setBlogImage] = useState('')
 
      return(
        
-      <Link   href={{ pathname: "/blogReadMore", query: { 
+      <Link key={blog.id}   href={{ pathname: "/blogReadMore", query: { 
          author: blog.author.name,
          aboutAuthor: blog.author.about_author,
          shortDescription: blog.short_description,
          id: id,
          img: blog.blog_image,
-         para: blog.body,
+         para: blog.blog_body,
          tags: blog.tags,
-         tittle: blog.tittle 
+         title: blog.title 
           } }}
     >
-      <div className="newsCardContainer" key={blog.blog_categories}>
+      <div className="newsCardContainer" >
       <div className="cardboxContainer">
         <div className='cardLeft'>
           <div className='cardLeftImage'>
@@ -160,7 +160,7 @@ className='blogImg' />
           <div className='cardLeftText'>
           {/* <p  dangerouslySetInnerHTML={{ __html: blog.node.date }} /> */}
           <time >{format(date, 'LLLL	d, yyyy')}</time>
-        <h1>{blog.tittle}</h1>
+        <h1>{blog.title}</h1>
         <p className="blogPara" >{blog.short_description}</p>
           </div>
         </div>
