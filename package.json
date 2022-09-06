@@ -13,7 +13,7 @@
     "theme"
   ],
   "scripts": {
-    "dev": "next -p 8080",
+    "dev": "next -p 8088",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
@@ -42,6 +42,7 @@
     "webpack": "^5.74.0"
   },
   "devDependencies": {
+    "@types/react": "^18.0.18",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.20.0",
     "husky": "5.0.9",
