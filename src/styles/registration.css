@@ -1,4 +1,4 @@
-.form{
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,11 +7,12 @@
   padding: 20px;
 }
 
-.column1{
+.column1 {
   display: flex;
 }
 
-.column1 input,.column2 input{
+.column1 input,
+.column2 input {
   border-bottom: solid 1px rgba(0, 0, 0, 0.3);
   padding: 15px;
   margin-left: 10px;
@@ -22,7 +23,7 @@
   box-shadow: none;
 }
 
-.column2 textarea{
+.column2 textarea {
   border-bottom: solid 1px rgba(0, 0, 0, 0.3);
   padding: 15px;
   margin-left: 10px;
@@ -33,7 +34,7 @@
   box-shadow: none;
   height: 120px;
 }
-input[type="submit"]{
+input[type='submit'] {
   color: white;
   text-align: center;
   font-size: larger;
@@ -43,19 +44,19 @@ input[type="submit"]{
   cursor: pointer;
   padding: 20px 50px 15px 50px;
 }
-input[type="submit"]:hover{
+input[type='submit']:hover {
   border: solid #000000 1px;
   background-color: white;
   color: #000000;
 }
 
-.registrationMainContainer{
+.registrationMainContainer {
   display: flex;
   justify-content: center;
-  background: #CCCCCC;
+  background: #cccccc;
 }
 
-.submitContainer{
+.submitContainer {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -65,16 +66,17 @@ input[type="submit"]:hover{
   .column1 {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.column1 input, .column2 input {
-  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
-  padding: 15px;
-  margin-left: 10px;
-  display: block;
-  width: -webkit-fill-available;
-  border-radius: 0px;
-  border: 2px solid #bbbbbb;
-  box-shadow: none;
-}
+  .column1 input,
+  .column2 input {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-left: 10px;
+    display: block;
+    width: -webkit-fill-available;
+    border-radius: 0px;
+    border: 2px solid #bbbbbb;
+    box-shadow: none;
+  }
 }

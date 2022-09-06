@@ -1,19 +1,13 @@
-import { NextSeo } from 'next-seo';
-import Page from '@/components/page';
-import ContactUs from '@/components/googleCloud/googleCloudPage.js';
-import Footer from '@/components/footer';
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Clutch from '../components/Clutch';
+import Footer from '../components/footer';
+import ContactUs from '../components/googleCloud/googleCloudPage.js';
+import Page from '../components/page';
 
 export default function Home() {
   return (
     <Page>
-    
-      <NextSeo
-        title="STARTD - Template"
-        description="A TypeScript/Next.js theme that includes everything you need to build amazing landing page!"
-      />
       <ContactUs />
-      
+      <Clutch />
       <Footer />
     </Page>
   );

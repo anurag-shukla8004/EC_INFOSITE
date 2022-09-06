@@ -1,11 +1,8 @@
-
-.loaderBox{
-  margin: 200px 0px ;
+.loaderBox {
+  margin: 200px 0px;
   display: flex;
-  justify-content:center ;
-
+  justify-content: center;
 }
-
 
 .loader {
   --cube-size: 35px;
@@ -22,7 +19,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  animation: loader-cube-1 2.4s .2s cubic-bezier(.72,.01,.01,1) infinite;
+  animation: loader-cube-1 2.4s 0.2s cubic-bezier(0.72, 0.01, 0.01, 1) infinite;
 }
 
 .loader .cube:nth-of-type(2) {
@@ -30,7 +27,7 @@
   right: 0;
   left: auto;
   animation-name: loader-cube-2;
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 .loader .cube:nth-of-type(3) {
@@ -42,7 +39,8 @@
 }
 
 @keyframes loader-cube-1 {
-  from, to {
+  from,
+  to {
     transform: translate(0%);
   }
   25% {
@@ -57,7 +55,8 @@
 }
 
 @keyframes loader-cube-2 {
-  from, to {
+  from,
+  to {
     transform: translate(0);
   }
   25% {
@@ -72,14 +71,15 @@
 }
 
 @keyframes loader-cube-3 {
-  from, to {
+  from,
+  to {
     transform: translate(0);
   }
   25% {
     transform: translate(100%);
   }
   50% {
-    transform: translate(100%,-100%);
+    transform: translate(100%, -100%);
   }
   75% {
     transform: translateY(-100%);

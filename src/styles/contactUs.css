@@ -1,22 +1,41 @@
-.contactUsMainContainer{
+.contactUsMainContainer {
   display: flex;
-    width: 1;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
+  width: 1;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
 }
 
-.contactUsContainer{
-  display: flex;
-    flex-direction: column;
-    width: 90%;
+textarea{
+  outline: none;
+  border-bottom: 2px solid #cad5e2 !important;
 }
 
-.topHeadingContainer{
+label{
+  cursor: default;
+}
+
+
+.PhoneInput{
+  margin: 5px 2px 20px !important;
+  width: 100%;
+}
+
+.PhoneInput input{
+  margin: 20px 0px !important;
+}
+
+.contactUsContainer {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0px;
+  flex-direction: column;
+  width: 90%;
+}
+
+.topHeadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px;
 }
 
 .topHeadingContainer h1 {
@@ -49,10 +68,9 @@
   width: 60%;
   flex-direction: row;
   align-items: flex-start;
-
 }
 
-.fomeContainer form{
+.fomeContainer form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -60,14 +78,14 @@
   max-width: unset;
 }
 
-.fomeContainer form label{
+.fomeContainer form label {
   font-size: smaller;
   color: #666;
 }
 
 .fomeContainer form input {
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #cad5e2;
   margin: 10px 0px 45px 0px;
   box-shadow: none;
   border-radius: unset;
@@ -78,7 +96,7 @@
   border-bottom: 1px solid black;
   margin: 30px 0px 50px 0px;
 }
-.fomeContainer form button{
+.fomeContainer form button {
   background: #ff7a59;
   border-color: #ff7a59;
   color: #ffffff;
@@ -103,7 +121,6 @@
   margin: 0px 0px 25px 0px;
 }
 
-
 .details ul li {
   font-family: 'jost';
   font-size: 20px;
@@ -111,17 +128,16 @@
   margin: 0px 0px;
 }
 
-
-.adressContainer{
+.adressContainer {
   display: flex;
 }
 
-.adressBox{
+.adressBox {
   width: 50%;
 }
 
-.adress{
-  margin: 50px 0px
+.adress {
+  margin: 50px 0px;
 }
 
 .adress h1 {
@@ -137,86 +153,44 @@
   line-height: 2;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .emailContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     margin: 0px 20px;
-}
-.fomeContainer {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: flex-start;
-}
+  }
+  .fomeContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
-.fomeContainer form label {
-  font-size: small;
-  color: #666;
-}
+  .fomeContainer form label {
+    font-size: small;
+    color: #666;
+  }
 
-.fomeContainer form input {
-  width: 100%;
-  border-bottom: 1px solid black;
-  margin: 0px 0px 25px 0px;
-  box-shadow: none;
-}
+  .fomeContainer form input {
+    width: 100%;
+    border-bottom: 2px solid #cad5e2;
+    margin: 0px 0px 25px 0px;
+    box-shadow: none;
+  }
 
-.emailDetails {
-  width: 100%;
-  margin: 20px 0px;
- 
-}
+  .emailDetails {
+    width: 100%;
+    margin: 20px 0px;
+  }
 
-.details h1 {
-  font-size: large;
-  font-weight: 600;
-  margin: 0px 0px 25px 0px;
-}
-
-.details ul li {
-  font-size: medium;
-  font-weight: 400;
-  margin: 0px 0px;
-}
-.details {
-  margin: 0px 0px 50px 0px;
-}
-
-.adressContainer {
-  display: flex;
-  flex-direction: column;
-}
-.adressBox {
-  width: 100%;
-}
-
-.adress {
-  margin: 30px 0px;
-}
-
-.adress h1 {
-  font-size: large;
-  font-weight: 600;
-  margin: 0px 0px 10px 0px;
-}
-.adress h4 {
-  font-size: medium;
-  font-weight: 400;
-  margin: 0px 0px;
-  line-height: 1.6;
-}
-}
-
-@media screen and (max-width: 750px){
   .details h1 {
     font-size: large;
     font-weight: 600;
     margin: 0px 0px 25px 0px;
   }
-  
+
   .details ul li {
     font-size: medium;
     font-weight: 400;
@@ -225,14 +199,19 @@
   .details {
     margin: 0px 0px 50px 0px;
   }
-  
- 
-  
-  
+
+  .adressContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .adressBox {
+    width: 100%;
+  }
+
   .adress {
     margin: 30px 0px;
   }
-  
+
   .adress h1 {
     font-size: large;
     font-weight: 600;
@@ -246,6 +225,38 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .details h1 {
+    font-size: large;
+    font-weight: 600;
+    margin: 0px 0px 25px 0px;
+  }
+
+  .details ul li {
+    font-size: medium;
+    font-weight: 400;
+    margin: 0px 0px;
+  }
+  .details {
+    margin: 0px 0px 50px 0px;
+  }
+
+  .adress {
+    margin: 30px 0px;
+  }
+
+  .adress h1 {
+    font-size: large;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+  }
+  .adress h4 {
+    font-size: medium;
+    font-weight: 400;
+    margin: 0px 0px;
+    line-height: 1.6;
+  }
+}
 
 a {
   color: inherit;

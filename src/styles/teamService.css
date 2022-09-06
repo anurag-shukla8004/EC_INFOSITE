@@ -1,17 +1,15 @@
-
-
-.tve_shortcode_rendered h1{
+.tve_shortcode_rendered h1 {
   font-size: 52px;
   text-align: left;
   margin: 0 0 10px;
   color: #000000;
-  font-family: "Jost";
+  font-family: 'Jost';
   line-height: 1.2;
-    font-weight: 700;
-    padding: 0;
+  font-weight: 700;
+  padding: 0;
 }
 
-.tve_shortcode_rendered p{
+.tve_shortcode_rendered p {
   line-height: 1.7;
   margin-bottom: 20px !important;
   border: 0;
@@ -24,7 +22,7 @@
   font-size: 1em;
 }
 
-.tve_shortcode_rendered h3{
+.tve_shortcode_rendered h3 {
   color: #000000;
   font-size: 36px;
   margin-top: 0px;
@@ -34,20 +32,18 @@
   text-align: start;
 }
 @media screen and (max-width: 770px) {
-
-
-  .tve_shortcode_rendered h1{
+  .tve_shortcode_rendered h1 {
     font-size: 40px;
     text-align: left;
     margin: 0 0 10px;
     color: #000000;
-    font-family: "Jost";
+    font-family: 'Jost';
     line-height: 1.2;
-      font-weight: 700;
-      padding: 0;
+    font-weight: 700;
+    padding: 0;
   }
-  
-  .tve_shortcode_rendered p{
+
+  .tve_shortcode_rendered p {
     line-height: 1.7;
     margin-bottom: 20px !important;
     border: 0;
@@ -59,8 +55,8 @@
     color: #000000;
     font-size: 17px;
   }
-  
-  .tve_shortcode_rendered h3{
+
+  .tve_shortcode_rendered h3 {
     color: #000000;
     font-size: 36px;
     margin-top: 0px;
@@ -69,5 +65,4 @@
     font-weight: 700;
     text-align: start;
   }
-
 }

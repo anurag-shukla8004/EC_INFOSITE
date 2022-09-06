@@ -1,4 +1,4 @@
-.clientDevHeaderText{
+.clientDevHeaderText {
   color: #0065cf;
   font-size: 30px;
   font-weight: 600;
@@ -6,54 +6,54 @@
   font-family: 'Jost', sans-serif;
 }
 
-.AppDevMainContainer{
+.AppDevMainContainer {
   display: flex;
   justify-content: space-evenly;
   margin: 40px 0px;
 }
 
-.clientDevParaText{
+.clientDevParaText {
   line-height: 1.9;
-    letter-spacing: 1px;
-    font-size: 20px;
-    color: #222;
-    font-family: 'Jost', sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #222;
+  font-family: 'Jost', sans-serif;
 }
 
-.AppDevContainer{
+.AppDevContainer {
   width: 30%;
 }
 
-.smallTitileText{
-      margin-top: 20px;
-    font-size: 20px;
-    font-weight: 400;
+.smallTitileText {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
   .AppDevMainContainer {
     display: flex;
     justify-content: space-evenly;
     margin: 20px 0px;
     flex-direction: column;
     align-items: center;
-}
-.AppDevContainer {
-  width: 100%;
-  margin: 0px 0px;
-}
-.clientDevHeaderText {
-  color: #0065cf;
-  font-size: x-large;
-  font-weight: 600;
-  padding: 10px 0px;
-  font-family: 'Jost', sans-serif;
-}
-.djangoList {
-  list-style: disc;
-  font-size: medium;
-  font-weight: 500;
-  line-height: 1.6;
-  margin: 25px 15px;
-}
+  }
+  .AppDevContainer {
+    width: 100%;
+    margin: 0px 0px;
+  }
+  .clientDevHeaderText {
+    color: #0065cf;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 10px 0px;
+    font-family: 'Jost', sans-serif;
+  }
+  .djangoList {
+    list-style: disc;
+    font-size: medium;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 25px 15px;
+  }
 }

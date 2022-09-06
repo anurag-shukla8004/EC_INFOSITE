@@ -1,16 +1,15 @@
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 import * as React from 'react';
-import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
 import { setup } from 'twind';
 import { asyncVirtualSheet, getStyleTagProperties } from 'twind/server';
 import twindConfig from '../twind.config';
-
 
 const sheet = asyncVirtualSheet();
 
 setup({ ...twindConfig, sheet });
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
+  static async getInitialProps(ctx) {
     sheet.reset();
     const initialProps = await Document.getInitialProps(ctx);
     const { id, textContent } = getStyleTagProperties(sheet);
@@ -25,8 +24,6 @@ class MyDocument extends Document {
     return {
       ...initialProps,
       styles: [
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
         ...initialProps.styles,
         React.createElement(`style`, styleProps),
       ],
@@ -37,8 +34,10 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <script  src="https://ucalc.pro/api/widget.js?id=295368" defer />
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests"
+          />
         </Head>
         <body>
           <Main />

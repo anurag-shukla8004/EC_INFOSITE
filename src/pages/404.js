@@ -1,12 +1,12 @@
-import Link from 'next/link'
-
+import Link from 'next/link';
 export default function FourOhFour() {
-  return <>
-    <h1>404 - Page Not Found</h1>
-    <Link href="/">
-      <a>
-        Go back home
-      </a>
-    </Link>
-  </>
+  return (
+    <div id="main">
+    	<div class="fof">
+        		<h1>Error 404 </h1>
+            <Link href="/" > Go to Home Page</Link>
+    	</div>
+</div>
+   
+  );
 }

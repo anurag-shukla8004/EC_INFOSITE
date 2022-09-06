@@ -1,14 +1,14 @@
 import Clutch from '../components/Clutch';
-import Footer from '../components/footer';
+import Footer from '../components/footer/index';
 import Page from '../components/page';
-import PytDev from '../components/shopify/shopifyPage.js';
-
 
 export default function Home() {
   return (
     <Page>
-      <PytDev />
+      <div className='clutchBox'>
       <Clutch />
+      </div>
+     
       <Footer />
     </Page>
   );

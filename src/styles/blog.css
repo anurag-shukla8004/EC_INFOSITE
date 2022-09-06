@@ -1,106 +1,96 @@
-.newsCardContainer{
+.newsCardContainer {
   border: 1px solid #dad5d5;
-    width: 30%;
-margin: 20px;
-    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 9%), 0 3px 3px 0 rgb(0 0 0 / 19%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 30%;
+  margin: 20px;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 9%), 0 3px 3px 0 rgb(0 0 0 / 19%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-
-time{
-  color:#989898;
+time {
+  color: #989898;
   font-size: 13px;
-  font-family: "Jost";
+  font-family: 'Jost';
   font-weight: 600;
 }
-.cardHeader{
+.cardHeader {
   margin: 10px;
 }
 
-.blogImg{
+.blogImg {
   width: 100% !important;
-  transition: transform .5s;
+  transition: transform 0.5s;
   opacity: 1;
 }
 .blogImg:hover {
-  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.2);
   opacity: 0.5;
-  
 }
 
-.cardLeftImage{
+.cardLeftImage {
   width: 100%;
-  
-} 
+}
 
-
-
-
-.cardHeader h1{
+.cardHeader h1 {
   font-size: medium;
   font-weight: 500;
 }
-.cardHeader p{
- font-size: smaller;
+.cardHeader p {
+  font-size: smaller;
 }
 
-.cardboxContainer{
+.cardboxContainer {
   display: flex;
-
 }
 
-.newsmainContaier{
+.newsmainContaier {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }
 
-.cardLeft{
-
-align-items: center;
-    display: flex;
-    width: 100%;
-   flex-direction: column;
-    padding: 10px;
+.cardLeft {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 10px;
 }
-.cardLeft p{
+.cardLeft p {
   font-size: 17px;
   line-height: 1.7;
   margin: 20px 0px;
   color: #000000;
 }
-.cardLeft h1{     
+.cardLeft h1 {
   font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 0px;
+  font-weight: 600;
+  letter-spacing: 0px;
   margin: 20px 0px;
   color: #343434;
 }
 
-
-
-.cardLeftText{
+.cardLeftText {
   width: 100%;
   margin: 15px;
 }
 
-.cardRight{
+.cardRight {
   width: 40%;
-    border-top: 0.5px solid #333;
- 
-    border-bottom: 0.5px solid #333;
-    padding: 10px;
+  border-top: 0.5px solid #333;
+
+  border-bottom: 0.5px solid #333;
+  padding: 10px;
 }
 
-.cardPricing{
+.cardPricing {
   display: flex;
   margin: 10px;
 }
 
-.cardBottom{
+.cardBottom {
   margin: 10px;
   display: flex;
   justify-content: space-between;
@@ -120,40 +110,36 @@ button {
   border-radius: 6px;
 }
 
-
 /* media responsive */
 
 @media screen and (max-width: 700px) {
-
-  body{
+  body {
     font-size: medium;
   }
 
-  .cardboxContainer{
+  .cardboxContainer {
     display: flex;
     flex-direction: column;
   }
 
-  .cardLeft{
-
+  .cardLeft {
     align-items: center;
-        display: flex;
-        width: 100%;
-        border-top: 0.5px solid #333;
-        border-right: none;
-        border-bottom: 0.5px solid #333;
-        padding: 10px;
-    }
+    display: flex;
+    width: 100%;
+    border-top: 0.5px solid #333;
+    border-right: none;
+    border-bottom: 0.5px solid #333;
+    padding: 10px;
+  }
 
-    .cardRight{
-      width: 100%;
-        border-top: none;
-     
-        border-bottom: 0.5px solid #333;
-        padding: 10px;
-    }
+  .cardRight {
+    width: 100%;
+    border-top: none;
+
+    border-bottom: 0.5px solid #333;
+    padding: 10px;
+  }
 }
-
 
 @media screen and (max-width: 900px) {
   .newsmainContaier {
@@ -161,17 +147,17 @@ button {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-}
-.newsCardContainer {
-  border: 1px solid #dad5d5;
-  width: 100%;
-  margin: 20px;
-  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 9%), 0 3px 3px 0 rgb(0 0 0 / 19%);
-}
+  }
+  .newsCardContainer {
+    border: 1px solid #dad5d5;
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 9%), 0 3px 3px 0 rgb(0 0 0 / 19%);
+  }
 }
 
 @media screen and (max-width: 550px) {
-  body{
+  body {
     font-size: xx-small;
   }
 }

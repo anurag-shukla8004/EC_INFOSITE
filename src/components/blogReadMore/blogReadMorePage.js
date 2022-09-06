@@ -1,15 +1,14 @@
 
-import React, { useEffect, useState } from 'react';
-import PostBody from './blogPara'
-
-import Image from 'next/image'
 import Link from "next/link";
-import { useRouter } from 'next/router'
-import {CgFileDocument} from 'react-icons/cg';
-import {FiFolder} from 'react-icons/fi';
-import {AiOutlineTags} from 'react-icons/ai';
-import {FaRegComment} from 'react-icons/fa';
-import {BiArrowBack } from 'react-icons/bi';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
+import { AiOutlineTags } from 'react-icons/ai';
+import { BiArrowBack } from 'react-icons/bi';
+import { CgFileDocument } from 'react-icons/cg';
+import { FaRegComment } from 'react-icons/fa';
+import { FiFolder } from 'react-icons/fi';
+import PostBody from './blogPara';
+
 
 
 function opportunitiesDetailsNews({}) {
@@ -22,67 +21,33 @@ function opportunitiesDetailsNews({}) {
   const data = value.para;
   const tags =  value.tags;
   const title =  value.title; 
-  
-  console.log('data',data )
-
- 
   const  [blog, setBlog] = useState('')
-  // const  [id, setId] = useState(value)
-  // console.log('id', )
-//  const dataGet = async () => {
-// const client = new ApolloClient({
-//     uri: 'https://ecinfosolutions.com/graphql',
-//     cache: new InMemoryCache(),
-//   });
-//   const response = await client.query({
-//     query: gql`
-//     query NewQuery {
-//       posts {
-//         edges {
-//           node {
-//             title
-//             excerpt
-//             content
-//             slug
-//             date
-//             featuredImage {
-//               node {
-//                 sourceUrl
-//               }
-//             }
-//             author {
-//               node {
-//                 name
-//                 firstName
-//                 lastName
-//                 avatar {
-//                   url
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//     `,
-//   })
 
+  const [blogApiData, setBlogApiData] = useState([]);
+  const [blogImage, setBlogImage] = useState('');
+  useEffect(() => {
+    async function getUser() {
+      try {
+        const response = await fetch(
+          ''
+        );
 
-//   const result = await response?.data?.posts?.edges;
-//   setBlog(result)
+        if (!response.ok) {
+          throw new Error(`Error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        setBlogApiData(data);
+        return data;
+      } catch (err) {
+        console.log(err);
+      }
+    }
+
+    getUser();
+  }, []);
  
- 
-//  }
 
-
-
-// useEffect(() => {
-//   dataGet();
-// }, [])
-
-
-
- 
 
   return (
     

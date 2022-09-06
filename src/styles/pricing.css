@@ -5,27 +5,26 @@
   border-bottom: 2px solid #333;
 }
 
-.platformContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0px;
-
+.platformContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
 }
 
-.platform{
+.platform {
   display: flex;
   flex-direction: column;
-  margin:  0px 25px;
+  margin: 0px 25px;
 }
 
-.platform label{
+.platform label {
   font-size: large;
   font-weight: 400;
   margin: 15px 0px;
 }
 
-.platform select{
+.platform select {
   border-radius: 6px;
   font-size: 14px;
   padding: 8px 40px 8px 12px;
@@ -53,7 +52,7 @@
   -ms-user-select: none;
   user-select: none;
   font-weight: 400;
-    color: #333;
+  color: #333;
 }
 
 /* Hide the browser's default checkbox */
@@ -74,7 +73,7 @@
   width: 20px;
   background-color: #fff;
   border: 2px solid #6598ff;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 /* On mouse-over, add a grey background color */
@@ -89,7 +88,7 @@
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-  content: "";
+  content: '';
   top: 3px;
   left: 5px;
   position: absolute;
@@ -114,7 +113,7 @@
   transform: rotate(45deg);
 }
 
-.radioListContainer{
+.radioListContainer {
   width: 68%;
   display: flex;
   flex-direction: column;
@@ -122,13 +121,13 @@
   margin: 10px 0px;
 }
 
-.radioListHeading{
+.radioListHeading {
   color: #212121;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 0;
-    font-family: PTSans-Regular,sans-serif;
-    margin: 20px 0px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+  font-family: PTSans-Regular, sans-serif;
+  margin: 20px 0px;
 }
 
 .radioListMainContainer {
@@ -137,17 +136,15 @@
   align-items: center;
 }
 
-
-
-.slider-parent{
-  position:relative;
+.slider-parent {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 70%;
-  margin: 20px 0px
+  margin: 20px 0px;
 }
-.slider-parent input[type=range]{
+.slider-parent input[type='range'] {
   width: 100%;
   height: 3px;
   cursor: pointer;
@@ -161,19 +158,18 @@
   position:absolute;
 } */
 
-.priceMainTotalBox{
+.priceMainTotalBox {
   width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-align-items: center;
+  align-items: center;
   margin: 50px 0px;
 }
 
-
-.priceMainTotalBox h2{
-font-size: 22px;
-font-weight: 500;
+.priceMainTotalBox h2 {
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .priceTotalBox {
@@ -184,7 +180,6 @@ font-weight: 500;
   padding: 8px 20px;
 }
 
-
 .priceTotalBox p {
   font-size: larger;
   color: #e2e2e2;
@@ -192,9 +187,9 @@ font-weight: 500;
   font-weight: 100;
 }
 
-.priceTotalBox h3{
+.priceTotalBox h3 {
   font-size: x-large;
-    color: #fff;
+  color: #fff;
 }
 
 .priceTotal {
@@ -205,7 +200,6 @@ font-weight: 500;
   padding: 8px 20px;
 }
 
-
 .priceTotal p {
   font-size: larger;
   color: #e2e2e2;
@@ -213,65 +207,57 @@ font-weight: 500;
   font-weight: 100;
 }
 
-.priceTotal h3{
+.priceTotal h3 {
   font-size: x-large;
-    color: #fff;
+  color: #fff;
 }
 
-.priceMainTotal{
+.priceMainTotal {
   width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-align-items: center;
+  align-items: center;
   margin: 50px 0px;
 }
-.reqForm{
+.reqForm {
   width: 100%;
-  
 }
 
-
-.reqForm form{
+.reqForm form {
   width: 100%;
   max-width: 100%;
   margin: 30px 0px;
   box-shadow: none;
-
 }
 
-.reqForm form input{
+.reqForm form input {
   width: 70%;
   border: 2px solid #6598ff;
   padding: 10px;
   border-radius: 10px;
   margin: 20px 0px;
   box-shadow: none;
-
 }
 
-.reqForm form select{
+.reqForm form select {
   width: 70%;
   border: 2px solid #6598ff;
   padding: 10px;
   border-radius: 10px;
   margin: 20px 0px;
   box-shadow: none;
-
 }
-.reqForm form textarea{
+.reqForm form textarea {
   width: 70%;
   border: 2px solid #6598ff;
   padding: 10px;
   border-radius: 10px;
   margin: 20px 0px;
   box-shadow: none;
-
 }
 
-
- 
-.reqForm form input[type="submit"]{
+.reqForm form input[type='submit'] {
   width: 25%;
   border: 2px solid #6598ff;
   padding: 15px;
@@ -284,7 +270,7 @@ align-items: center;
   box-shadow: none;
 }
 
-.reqForm form input[type="submit"]:hover{
+.reqForm form input[type='submit']:hover {
   width: 25%;
   border: 2px solid #6598ff;
   padding: 15px;
@@ -296,102 +282,109 @@ align-items: center;
   font-size: 15px;
 }
 
-.questionTitle{
+.questionTitle {
   font-size: large;
-    font-weight: 600;
-    margin: 10px 0px;
+  font-weight: 600;
+  margin: 10px 0px;
 }
 
-.questonPara{
+.questonPara {
   color: black;
   font-size: medium;
   font-weight: 400;
   line-height: 1.8;
 }
-.questionContainer div{
+
+.questonPara li {
+ 
+  margin-left: 17px;
+
+}
+
+.questionContainer div {
   margin: 50px 0px;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
   .platformContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px 0px;
     flex-direction: column;
-}
+  }
 
-.platform {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 60px;
-  width: 90%;
-}
+  .platform {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 60px;
+    width: 90%;
+  }
 
-.radioListContainer {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0px;
-}
+  .radioListContainer {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+  }
 
-.radioListHeading {
-  color: #212121;
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 0;
-  font-family: PTSans-Regular,sans-serif;
-  margin: 15px 0px;
-}
+  .radioListHeading {
+    color: #212121;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-family: PTSans-Regular, sans-serif;
+    margin: 15px 0px;
+  }
 
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 15px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  font-weight: 400;
-  color: #333;
-}
-.priceMainTotalBox h2 {
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 25px;
-}
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-weight: 400;
+    color: #333;
+  }
+  .priceMainTotalBox h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
 
-.priceMainTotalBox {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20px 0px;
-}
-.priceTotalBox {
-  background: #6598ff;
-  width: 70%;
-  text-align: end;
-  padding: 8px 20px;
-}
-.priceTotal h3 {
-  font-size: large;
-  color: #fff;
-}
+  .priceMainTotalBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  .priceTotalBox {
+    background: #6598ff;
+    width: 70%;
+    text-align: end;
+    padding: 8px 20px;
+  }
+  .priceTotal h3 {
+    font-size: large;
+    color: #fff;
+  }
 
-.reqForm form input[type="submit"] {
-  width: 80%;
-  border: 2px solid #6598ff;
-  padding: 9px;
-  border-radius: 50px;
-  margin: 20px 0px;
-  background: #fff;
-  color: black;
-  font-weight: 100;
-  font-size: 12px;
-  box-shadow: none;
-}
+  .reqForm form input[type='submit'] {
+    width: 80%;
+    border: 2px solid #6598ff;
+    padding: 9px;
+    border-radius: 50px;
+    margin: 20px 0px;
+    background: #fff;
+    color: black;
+    font-weight: 100;
+    font-size: 12px;
+    box-shadow: none;
+  }
 }

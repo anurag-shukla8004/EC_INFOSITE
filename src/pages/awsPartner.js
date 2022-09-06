@@ -1,19 +1,13 @@
-import { NextSeo } from 'next-seo';
-import Page from '@/components/page';
-import FreeVocal from '@/components/awsPartner/awsPartnerPage.js';
-import Footer from '@/components/footer';
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import FreeVocal from '../components/awsPartner/awsPartnerPage.js';
+import Clutch from '../components/Clutch';
+import Footer from '../components/footer';
+import Page from '../components/page';
 
 export default function Home() {
   return (
     <Page>
-    
-      <NextSeo
-        title="STARTD - Template"
-        description="A TypeScript/Next.js theme that includes everything you need to build amazing landing page!"
-      />
       <FreeVocal />
-      
+      <Clutch />
       <Footer />
     </Page>
   );

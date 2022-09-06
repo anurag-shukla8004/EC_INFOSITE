@@ -35,8 +35,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/header/index.js",
+    "src/components/home/index.js",
     "src/components/button/index.js",
     "src/components/button/index.js"
-  ]
+, "src/pages/index.js", "src/components/page/index.js", "src/pages/index.js", "src/pages/index.js", "src/components/navigation/index.js", "src/components/footer/index.js", "src/components/page/index.js", "src/pages/index.js", "src/pages/_document.js", "src/pages/_app.js"  ]
 }

@@ -1,19 +1,13 @@
-import { NextSeo } from 'next-seo';
-import Page from '@/components/page';
+import Clutch from '../components/Clutch';
 import ContactUs from '../components/contactUs/contactUsPage.js';
-import Footer from '@/components/footer';
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Footer from '../components/footer';
+import Page from '../components/page';
 
 export default function Home() {
   return (
     <Page>
-    
-      <NextSeo
-        title="STARTD - Template"
-        description="A TypeScript/Next.js theme that includes everything you need to build amazing landing page!"
-      />
       <ContactUs />
-      
+      <Clutch />
       <Footer />
     </Page>
   );

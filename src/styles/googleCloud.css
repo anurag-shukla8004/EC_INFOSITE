@@ -1,9 +1,9 @@
-.gl{
+.gl {
   width: 100%;
   margin: 20px 0px;
 }
 
-.glUl{
+.glUl {
   font-size: large;
   font-weight: 400;
   line-height: 2.3;
@@ -11,23 +11,23 @@
   padding: 20px;
 }
 
-.glHeding{
+.glHeding {
   font-size: x-large;
-    font-weight: 600;
-    margin: 25px 0px;
+  font-weight: 600;
+  margin: 25px 0px;
 }
 
-.glBox{
+.glBox {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.glTextBox{
+.glTextBox {
   width: 60%;
 }
 
-.glFormBox{
+.glFormBox {
   width: 35%;
 }
 
@@ -56,7 +56,7 @@
 
 .glfomeContainer form input {
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #cad5e2;
   margin: 10px 0px 45px 0px;
   box-shadow: none;
   border-radius: unset;
@@ -68,8 +68,6 @@
   border-bottom: 1px solid black;
   margin: 30px 0px 50px 0px;
   background: #f6f9fe;
-
-  
 }
 
 .glfomeContainer form button {
@@ -81,32 +79,32 @@
   font-size: medium;
 }
 
-.glSmallPara{
+.glSmallPara {
   line-height: 1.7;
   margin-bottom: 20px;
   font-size: medium;
   color: black;
 }
 
-.glCard{
+.glCard {
   width: 30%;
   background-color: #e8e8e8;
-    padding: 20px 10px 10px 10px;
-    border-width: 2px 2px 2px 2px;
-    border-radius: 0px;
-    border-color: #cccccc;
-    padding: 20px;
+  padding: 20px 10px 10px 10px;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 0px;
+  border-color: #cccccc;
+  padding: 20px;
 }
 
-.glCardHeading{
+.glCardHeading {
   font-size: x-large;
   font-weight: 600;
 }
 
-.glCardUl{
+.glCardUl {
   list-style: unset;
-    line-height: 2;
-    padding: 20px;
+  line-height: 2;
+  padding: 20px;
 }
 .glbuildYourQuoteBtn {
   display: flex;
@@ -116,7 +114,6 @@
 }
 
 .glbuildYourQuoteBtn div {
-  /* background: #0065cf; */
   padding: 20px;
   border-radius: 5px;
   font-size: large;
@@ -125,12 +122,12 @@
   background: linear-gradient(#1e73be, #0065cd);
 }
 
-.glbusiness{
+.glbusiness {
   width: 23%;
   text-align: center;
 }
 
-.glBusiHeading{
+.glBusiHeading {
   background-color: #324968;
   padding: 20px;
   color: #fff;
@@ -138,7 +135,7 @@
   font-weight: 500;
 }
 
-.glbusiParaBox{
+.glbusiParaBox {
   border-color: #e6e6e6;
   display: flex;
   flex-direction: column;
@@ -146,7 +143,7 @@
   background: #f4f4f4;
 }
 
-.glBusiPara{
+.glBusiPara {
   width: 90%;
   font-size: medium;
   padding: 26px 5px;
@@ -155,107 +152,104 @@
   color: black;
 }
 
-.glLine{
+.glLine {
   width: 90%;
   height: 1px;
   background: #dadada;
 }
 
-.glservebox{
+.glservebox {
   width: 23%;
 }
-.glServeMainBox{
+.glServeMainBox {
   display: flex;
   margin: 20px 5px;
 }
 
-.blueText{
+.blueText {
   padding-left: 10px;
   padding-left: 10px;
-    font-size: larger;
-    color: #0065cd;
+  font-size: larger;
+  color: #0065cd;
 }
 
-.glBenifitMainContainer{
+.glBenifitMainContainer {
   background-color: #f2f3f9;
 }
 
-.glhomeContainer{
+.glhomeContainer {
   width: 85%;
   display: flex;
   flex-direction: column;
   margin: 0px 0px;
 }
 
-.glBenifitMainBox{
-  display: flex;
-    flex-direction: column;
-
-}
-
-.glBenifitBox{
-  width: 30%;
+.glBenifitMainBox {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-}
-.glBenifitBox img{
-  width: 30%;
-}
-
-.glImg img{
-  width: 100%;
-}
-
-.glBenifitHeading{
-  font-size: x-large;
-  font-weight: 600;
-  margin: 25px 0px;
-}
-
-
-@media screen and (max-width: 900px){
-  .glBox {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.glTextBox {
-  width: 100%;
-}
-.glFormBox {
-  width: 100%;
-}
-.glCard {
-  width: 100%;
-  background-color: #e8e8e8;
-  padding: 20px 10px 10px 10px;
-  border-width: 2px 2px 2px 2px;
-  border-radius: 0px;
-  border-color: #cccccc;
-  padding: 20px;
-  margin: 10px 0px;
-}
-.glbusiness {
-  width: 100%;
-  text-align: center;
-  margin: 15px 0px;
-}
-.glservebox {
-  width: 100%;
 }
 
 .glBenifitBox {
-  width: 100%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 .glBenifitBox img {
-  width: 20%;
+  width: 30%;
 }
+
+.glImg img {
+  width: 100%;
+}
+
+.glBenifitHeading {
+  font-size: x-large;
+  font-weight: 600;
+  margin: 25px 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .glBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .glTextBox {
+    width: 100%;
+  }
+  .glFormBox {
+    width: 100%;
+  }
+  .glCard {
+    width: 100%;
+    background-color: #e8e8e8;
+    padding: 20px 10px 10px 10px;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 0px;
+    border-color: #cccccc;
+    padding: 20px;
+    margin: 10px 0px;
+  }
+  .glbusiness {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0px;
+  }
+  .glservebox {
+    width: 100%;
+  }
+
+  .glBenifitBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .glBenifitBox img {
+    width: 20%;
+  }
 }
