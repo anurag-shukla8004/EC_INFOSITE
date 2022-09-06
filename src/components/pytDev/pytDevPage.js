@@ -30,7 +30,7 @@ function pytDevPage({}) {
         headers: {
           "Content-Type": 'application/json'
         },
-        url: 'https://13.233.111.218/api/python_django'
+        url: 'http://13.233.111.218/api/python_django'
       })
       .then(res => {
         console.log('res==>', res)
