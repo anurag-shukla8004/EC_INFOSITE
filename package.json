@@ -16,7 +16,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "start:prod": "next start -p 80",
+    "start:prod": "next start -p 30",
     "export":"next build && next export",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
