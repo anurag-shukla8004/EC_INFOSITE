@@ -5,7 +5,7 @@ import { tw } from 'twind';
 const Page = ({ children }) => (
   <div>
     <Head>
-      <link rel="icon" href="/logo.svg" />
+      <link rel="icon" href="./ecLogo2.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link

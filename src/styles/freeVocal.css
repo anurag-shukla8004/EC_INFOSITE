@@ -17,6 +17,51 @@
   box-shadow: 3px 4px 10px #afadad;
 }
 
+.vocalPre p:first-child b {
+  font-weight: 700;
+}
+.vocalPre p b {
+  font-weight: normal;
+}
+
+.vocalPre ul {
+  font-size: 20px !important;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.vocalPre ul b {
+  font-weight: normal;
+}
+
+.vocalPre p:first-child{
+  color: #0065cf !important;
+  font-size: 30px !important;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.vocalPre p:nth-child(2){
+  font-size: 20px !important;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.vocalPre p:nth-child(3){
+  font-size: 20px !important;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.vocalPre p:nth-child(4){
+  font-size: 20px !important;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
 .vocalImg {
   width: 70%;
 }
@@ -33,5 +78,30 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 3px 4px 10px #afadad;
+  }
+  .vocalPre p:first-child{
+    color: #0065cf !important;
+    font-size: 25px !important;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  .vocalPre p:nth-child(2){
+    font-size: 18px !important;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .vocalPre p:nth-child(3){
+    font-size: 18px !important;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .vocalPre p:nth-child(4){
+    font-size: 18px !important;
+    line-height: 1.7;
+    margin-bottom: 20px;
   }
 }

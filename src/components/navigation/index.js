@@ -172,8 +172,8 @@ const MobileMenu = () => {
                     style={{ display: isShownTech1 ? 'none' : 'flex' }}
                   >
                     <Link href="/customerAppDev">Custom App Development</Link>
-                    <Link href="/pytDev">Python Developer</Link>
-                    <Link href="/customerAppDev">C# Developer</Link>
+                    <Link href="/customerAppDev">C#.net & Sharepoint Developers</Link>
+                    <Link href="/pytDev">Django Python Developers</Link>
                     <Link href="#">ReactJS Developer</Link>
                     <Link href="#">React Native Developer</Link>
                   </div>
@@ -195,7 +195,7 @@ const MobileMenu = () => {
                     <Link href="#">HeadlessBlog.com</Link>
                     <Link href="#">loT Core</Link>
                     <Link href="/labCore">Lab Core</Link>
-                    <Link href="/pricing">Pricing | ROI Calculator</Link>
+                    <Link href="/pricing">Pricing</Link>
                   </div>
                 </div>
                 <div className="techList" onClick={techHandile3}>
@@ -211,7 +211,7 @@ const MobileMenu = () => {
                     className="hamMenuList"
                     style={{ display: isShownTech3 ? 'none' : 'flex' }}
                   >
-                    <Link href="/agribusiness">Agribusinesses</Link>
+                    <Link href="/labCore">Agribusinesses</Link>
                     <Link href="/eCommerce">eCommerce & Retail</Link>
                     <Link href="#">ESG</Link>
                     <Link href="/manufacturing">Manufacturing</Link>
@@ -372,7 +372,7 @@ const Navigation = () => {
                           <Link href="#">HeadlessBlog.com</Link>
                           <Link href="#">loT Core</Link>
                           <Link href="/labCore">Lab Core</Link>
-                          <Link href="/pricing">Pricing | ROI Calculator</Link>
+                          <Link href="/pricing">Pricing</Link>
                         </div>
                       </div>
                       <div className="menuAdj">
@@ -382,7 +382,7 @@ const Navigation = () => {
                         >
                           <h3 className="TechServTitle">INDUSTRIES</h3>
 
-                          <Link href="/agribusiness">Agribusinesses</Link>
+                          <Link href="/labCore">Agribusinesses</Link>
                           <Link href="/eCommerce">eCommerce & Retail</Link>
                           <Link href="#">ESG</Link>
                           <Link href="/manufacturing">Manufacturing</Link>

@@ -9,9 +9,7 @@ const FeatureNewsDetails = ({}) => {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch(
-          'http://dc7e-219-91-171-109.ngrok.io/api/blogs/'
-        );
+        const response = await fetch(' http://43.205.94.230/api/blogs');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -46,14 +44,7 @@ const FeatureNewsDetails = ({}) => {
                     href={{
                       pathname: '/blogReadMore',
                       query: {
-                        author: blog.author.name,
-                        aboutAuthor: blog.author.about_author,
-                        shortDescription: blog.short_description,
-                        id: id,
-                        img: blog.blog_image,
-                        para: blog.blog_body,
-                        tags: blog.tags,
-                        title: blog.title,
+                        id: blog.id,
                       },
                     }}
                   >
@@ -70,7 +61,7 @@ const FeatureNewsDetails = ({}) => {
                             >
                               <img
                                 alt="img"
-                                src={blog.blog_image}
+                                src={blog?.blog_image}
                                 width="60px"
                                 referrerPolicy="no-referrer"
                                 height="45px"
@@ -81,7 +72,17 @@ const FeatureNewsDetails = ({}) => {
                           <div className="cardLeftText">
                             <time>{format(date, 'LLLL	d, yyyy')}</time>
                             <h1>{blog.title}</h1>
-                            <p className="blogPara">{blog.short_description}</p>
+                            <pre
+                              className="blogPara"
+                              style={{
+                                fontFamily: 'jost',
+                                whiteSpace: 'pre-wrap',
+                              }}
+                              dangerouslySetInnerHTML={{
+                                __html: JSON.parse(blog.short_description)[0]
+                                  ?.value,
+                              }}
+                            />
                           </div>
                         </div>
                       </div>

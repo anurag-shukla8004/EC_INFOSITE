@@ -13,9 +13,11 @@
     "theme"
   ],
   "scripts": {
-    "dev": "next -p 8088",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:prod": "next start -p 80",
+    "export":"next build && next export",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",

@@ -17,7 +17,7 @@ function contactUsPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('');
+        const response = await fetch('http://43.205.94.230/api/contact/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -47,7 +47,7 @@ function contactUsPage({}) {
 
     axios({
       method: 'post',
-      url: 'http://e04d-219-91-170-120.ngrok.io/api/inquery/',
+      url: 'http://43.205.94.230/api/contact',
       data: values,
     })
       .then(function (response) {

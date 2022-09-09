@@ -1,3 +1,30 @@
+.mobileTexBox p:first-child b {
+  font-weight: 700;
+}
+.mobileTexBox p b {
+  font-weight: normal;
+}
+
+.evenOddText p:nth-child(odd) {
+  font-size: 20px !important;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.evenOddText p:nth-child(odd) b {
+  font-weight: normal;
+}
+.evenOddText p:nth-child(even) b {
+  font-weight: 700;
+}
+.evenOddText p:nth-child(even) {
+  color: #0065cf !important;
+  font-size: 30px !important;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
 .clientDevHeaderText {
   color: #0065cf;
   font-size: 30px;
@@ -31,6 +58,14 @@
 }
 
 @media screen and (max-width: 750px) {
+  .evenOddText p:nth-child(even) {
+    color: #0065cf !important;
+    font-size: 23px !important;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
   .AppDevMainContainer {
     display: flex;
     justify-content: space-evenly;

@@ -6,12 +6,12 @@ import Loader from '../loader/index';
 
 function IndexPage({}) {
   const [homeApiData, setHomeApiData] = useState([]);
+  const value = [{ hello: 'hello' }];
+  const [loader, setLoader] = useState(false);
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch(
-          'http://dc7e-219-91-171-109.ngrok.io/api/homepage/'
-        );
+        const response = await fetch('http://43.205.94.230/api/homepage/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -28,8 +28,6 @@ function IndexPage({}) {
     getUser();
   }, []);
 
-  console.log(homeApiData);
-
   return (
     <div>
       <div className={tw(` homeMainContainer mt-20 `)}>
@@ -39,23 +37,18 @@ function IndexPage({}) {
           <div className="homeContainer">
             <div className="mobileContainer">
               <div className="mobileImg">
-                <img src={homeApiData.mobile_app_image}></img>
+                <img src={homeApiData?.image_1}></img>
               </div>
-              <div className="mobileTexBox">
-                <h1
-                  className={tw(
-                    `ecBlueColor font-semibold text-3xl headerMaiText`
-                  )}
-                >
-                  Web & Mobile App Development
-                </h1>
-                <div
-                  style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
-                  dangerouslySetInnerHTML={{
-                    __html: homeApiData.web_and_mobile_app_development,
-                  }}
-                />
-              </div>
+
+              <div
+                className="mobileTexBox"
+                style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
+                dangerouslySetInnerHTML={{
+                  __html: JSON.parse(
+                    homeApiData?.web_and_mobile_app_devlopment
+                  )[0].value,
+                }}
+              />
             </div>
             <Link href="/pricing">
               <div className="buildYourQuoteBtn">
@@ -63,110 +56,103 @@ function IndexPage({}) {
               </div>
             </Link>
 
-            <div className="newApprochContainer">
-              <div className="newsApproch">
-                <h1 className="homeHeaderText">
-                  A new approach to Software Engineering
-                </h1>
-                <pre
-                  style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
-                  dangerouslySetInnerHTML={{
-                    __html: homeApiData.a_new_approch_to_software_development,
-                  }}
-                />
-              </div>
+            <div className="newsApproch">
+              <pre
+                className="newApprochContainer"
+                style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
+                dangerouslySetInnerHTML={{
+                  __html: JSON.parse(
+                    homeApiData?.new_approch_to_software_devlopment
+                  )[0].value,
+                }}
+              />
             </div>
-            <div className="servIndusMainContainer">
-              <div className="servicesContainer">
-                <h1 className="homeHeaderText">
-                  A new approach to Software Engineering
-                </h1>
-                <pre
-                  style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
-                  dangerouslySetInnerHTML={{
-                    __html: homeApiData.app_development_services,
-                  }}
-                />
-              </div>
 
-              <div className="servicesContainer">
-                <h1 className="homeHeaderText">Industry 4.0 & IoT</h1>
-                <pre
-                  style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
-                  dangerouslySetInnerHTML={{
-                    __html: homeApiData.industry_4_and_iot,
-                  }}
-                />
-              </div>
+            <div className="servIndusMainContainer">
+              <pre
+                className="servicesContainer"
+                style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
+                dangerouslySetInnerHTML={{
+                  __html: JSON.parse(homeApiData?.app_devlopment_services)[0]
+                    .value,
+                }}
+              />
+
+              <pre
+                className="servicesContainer"
+                style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
+                dangerouslySetInnerHTML={{
+                  __html: JSON.parse(homeApiData?.industry_4_and_iot)[0].value,
+                }}
+              />
             </div>
 
             <div className="agileMainContainer">
-              <div className="agileContainer">
-                <h1 className="homeHeaderText">Agile software development</h1>
-                <pre
-                  style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
-                  dangerouslySetInnerHTML={{
-                    __html: homeApiData.agile_software_development,
-                  }}
-                />
-              </div>
+              <pre
+                className="agileContainer"
+                style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
+                dangerouslySetInnerHTML={{
+                  __html: JSON.parse(homeApiData?.agile_software_devlopment)[0]
+                    .value,
+                }}
+              />
+
               <div className="aligeImg">
-                <img src={homeApiData.ssp_image}></img>
+                <img src={homeApiData.image_2}></img>
               </div>
             </div>
 
             <div className="servIndusMainContainer">
-              <div className="servicesContainer">
-                <h1 className="homeHeaderText">Digital services</h1>
-                <pre
-                  style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
-                  dangerouslySetInnerHTML={{
-                    __html: homeApiData.digital_services,
-                  }}
-                />
-              </div>
+              <pre
+                className="servicesContainer"
+                style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
+                dangerouslySetInnerHTML={{
+                  __html: JSON.parse(homeApiData?.digital_services)[0].value,
+                }}
+              />
 
-              <div className="servicesContainer">
-                <h1 className="homeHeaderText">Data science & analytics</h1>
-                <pre
-                  style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
-                  dangerouslySetInnerHTML={{
-                    __html: homeApiData.data_science_and_analyatics,
-                  }}
-                />
-              </div>
+              <pre
+                className="servicesContainer"
+                style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
+                dangerouslySetInnerHTML={{
+                  __html: JSON.parse(
+                    homeApiData?.data_science_and_analyatics
+                  )[0].value,
+                }}
+              />
             </div>
 
-            <div className="agileMainContainer ">
-              <div className="agileContainer">
-                <h1 className="homeHeaderText">Experience does count</h1>
-                <pre
-                  style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
-                  dangerouslySetInnerHTML={{
-                    __html: homeApiData.experiance_does_count,
-                  }}
-                />
-              </div>
+            <div className="agileMainContainer">
+              <pre
+                className="agileContainer"
+                style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
+                dangerouslySetInnerHTML={{
+                  __html: JSON.parse(homeApiData?.experiance_does_count)[0]
+                    .value,
+                }}
+              />
+
               <div className="aligeImg">
-                <img src={homeApiData.ppq_image}></img>
+                <img src={homeApiData.image_3}></img>
               </div>
             </div>
 
             <div className="mobileContainer" style={{ marginTop: '100px' }}>
-              <div
+              <pre
                 className="mobileTexBox"
-                style={{ marginLeft: '0px', marginRight: '20px' }}
-              >
-                <h1 className="homeHeaderText">
-                  Global Delivery & Exceptional Support
-                </h1>
-                <pre
-                  style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
-                  dangerouslySetInnerHTML={{
-                    __html: homeApiData.globle_delivary_and_exceptional_support,
-                  }}
-                />
-              </div>
+                style={{
+                  fontFamily: 'jost',
+                  whiteSpace: 'pre-wrap',
+                  marginLeft: '0px',
+                  marginRight: '20px',
+                }}
+                dangerouslySetInnerHTML={{
+                  __html: JSON.parse(
+                    homeApiData?.globle_delivary_and_exceptional_support
+                  )[0].value,
+                }}
+              />
+
               <div className="mobileImg">
                 <YouTube videoId="KJJeqr8POnE" className="youtube" />
               </div>

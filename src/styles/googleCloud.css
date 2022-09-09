@@ -3,7 +3,15 @@
   margin: 20px 0px;
 }
 
-.glUl {
+.glUl ul{
+  font-size: large;
+  font-weight: 400;
+  line-height: 2.3;
+  list-style: unset;
+  padding: 20px;
+}
+
+.djangoFormpre ul{
   font-size: large;
   font-weight: 400;
   line-height: 2.3;
@@ -79,7 +87,7 @@
   font-size: medium;
 }
 
-.glSmallPara {
+.glSmallPara p {
   line-height: 1.7;
   margin-bottom: 20px;
   font-size: medium;
@@ -96,12 +104,16 @@
   padding: 20px;
 }
 
-.glCardHeading {
-  font-size: x-large;
+.glCard h3{
+  font-size: 24px;
+  color: #000000;
+  font-weight: 600;
+}
+.glCard h3 b{
   font-weight: 600;
 }
 
-.glCardUl {
+.glCard ul {
   list-style: unset;
   line-height: 2;
   padding: 20px;
@@ -127,36 +139,40 @@
   text-align: center;
 }
 
-.glBusiHeading {
+.glbusiness h3 {
+  font-size: 24px;
+    text-transform: none;
+    color: #ffffff;
   background-color: #324968;
   padding: 20px;
   color: #fff;
-  font-size: larger;
   font-weight: 500;
 }
 
-.glbusiParaBox {
+.glbusiness h3 b {
+  font-weight: 600;
+}
+
+.glbusiness ul {
   border-color: #e6e6e6;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #f4f4f4;
+
 }
 
-.glBusiPara {
+.glbusiness ul li {
   width: 90%;
   font-size: medium;
   padding: 26px 5px;
   text-align: left;
   font-weight: 400;
   color: black;
+  border-bottom: 1px solid #dadada ;
 }
 
-.glLine {
-  width: 90%;
-  height: 1px;
-  background: #dadada;
-}
+
 
 .glservebox {
   width: 23%;

@@ -6,6 +6,13 @@ h1 {
 }
 p {
   font-family: 'Jost' !important;
+  color: #161616;
+}
+li {
+  color: #161616;
+}
+ul {
+  color: #161616;
 }
 a {
   font-family: 'Jost' !important;
@@ -217,6 +224,44 @@ h2 {
   padding: 35px;
   box-shadow: 3px 4px 10px #afadad;
 }
+.evenOddTextBox {
+  width: 70%;
+  height: 100%;
+  margin-left: 25px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 35px;
+  box-shadow: 3px 4px 10px #afadad;
+}
+.mobileTexBox p:first-child {
+  color: #0065cf !important;
+  font-size: 30px !important;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.mobileTexBox p:nth-child(2) {
+  font-size: 20px !important;
+  margin-bottom: 20px;
+}
+
+.mobileTexBox p:nth-child(3) {
+  font-size: 20px !important;
+}
+
+.mobileTexBox ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  list-style: decimal;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.mobileTexBox p:nth-child(4) {
+  font-size: 20px !important;
+}
 
 .homeHeaderText {
   color: #0065cf;
@@ -270,6 +315,27 @@ h2 {
   display: flex;
   justify-content: center;
   align-self: center;
+  flex-direction: column;
+}
+
+.newApprochContainer p b {
+ font-weight: 700;
+}
+
+.newApprochContainer p:nth-child(1) {
+  color: #0065cf !important;
+  font-size: 30px !important;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.newApprochContainer p:nth-child(2) {
+  font-size: 20px !important;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #000000;
 }
 
 .servIndusMainContainer {
@@ -284,6 +350,24 @@ h2 {
   border-radius: 10px;
   padding: 15px;
   box-shadow: 3px 4px 10px #afadad;
+}
+
+.servicesContainer p b {
+  font-weight: 700;
+}
+
+.servicesContainer p:nth-child(1) {
+  color: #0065cf !important;
+  font-size: 30px !important;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.servicesContainer p:nth-child(2) {
+  font-size: 20px !important;
+  margin-bottom: 20px;
 }
 
 .servicesContainer ul {
@@ -302,6 +386,23 @@ h2 {
 
 .agileContainer {
   width: 50%;
+}
+
+.agileContainer p:first-child {
+  color: #0065cf !important;
+  font-size: 30px !important;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.agileContainer p:first-child b {
+  font-weight: 700;
+}
+
+.agileContainer p:nth-child(2) {
+  font-size: 20px !important;
+  margin-bottom: 20px;
 }
 
 .aligeImg {
@@ -374,6 +475,14 @@ h2 {
 }
 
 @media screen and (max-width: 750px) {
+  .mobileTexBox p:first-child {
+    color: #0065cf !important;
+    font-size: 25px !important;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
   .mobileContainer {
     display: flex;
     align-items: center;
@@ -414,6 +523,17 @@ h2 {
     padding: 10px;
     box-shadow: 3px 4px 10px #afadad;
   }
+
+  .evenOddTextBox {
+    width: 100%;
+
+    margin-left: 25px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 4px 10px #afadad;
+  }
+
   .homeHeaderText {
     color: #0065cf;
     font-size: x-large;
@@ -459,6 +579,7 @@ h2 {
     text-align: center;
     width: 100%;
   }
+
   .aligeImg {
     width: auto;
     text-align: center;
@@ -466,6 +587,10 @@ h2 {
   }
 
   .mobileTexBox {
+    margin: 0px 0px 30px 0px !important;
+  }
+
+  .evenOddTextBox {
     margin: 0px 0px 30px 0px !important;
   }
 }

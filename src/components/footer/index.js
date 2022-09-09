@@ -22,7 +22,7 @@ function Footer() {
 
     axios({
       method: 'post',
-      url: 'http://e04d-219-91-170-120.ngrok.io/api/inquery/',
+      url: 'http://43.205.94.230/api/contact',
       data: values,
     })
       .then(function (response) {

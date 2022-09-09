@@ -29,9 +29,8 @@
   font-size: 30px !important;
 }
 
-.djangoHeadingText {
-  font-size: xx-large;
-  font-weight: 600;
+.djangoForm p {
+  font-size: 36px;
   margin-bottom: 15px;
 }
 
@@ -64,12 +63,33 @@
   background: #f7f7f7;
 }
 
-.djangoList {
+.djangoForm ul {
   list-style: disc;
-  font-size: larger;
-  font-weight: 500;
+  font-size: 20px;
   line-height: 2;
   margin: 25px 15px;
+}
+
+.djangoFormpre h3 {
+  padding-top: 0 !important;
+  margin: 0px 0px 20px 0px;
+
+  font-size: 30px !important;
+  line-height: 1.7;
+}
+
+.djangoFormpre p:first-child {
+  padding-top: 0 !important;
+  margin: 0px 0px 20px 0px;
+  font-size: 25px !important;
+  line-height: 1.7;
+}
+
+.djangoFormpre p {
+  font-size: 20px !important;
+  margin: 0px 0px 20px 0px;
+
+  line-height: 1.75em !important;
 }
 
 .Fixmyreoo img {
