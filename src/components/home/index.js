@@ -11,7 +11,7 @@ function IndexPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('https://43.205.94.230:8000/api/homepage/');
+        const response = await fetch('https://b0df-123-201-245-215.ngrok.io/api/homepage/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
