@@ -5,9 +5,6 @@ module.exports = {
     domains: ["ecinfosolutions.com"],
   },
 
-  future: {
-    webpack5: true,
-  },
 
   webpack(config) {
     config.module.rules.push({

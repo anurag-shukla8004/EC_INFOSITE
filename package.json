@@ -16,8 +16,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "start:prod": "next start -p 30",
-    "export":"next build && next export",
+    "start:prod": "next start -p 80",
+    "export": "next build && next export",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
@@ -40,11 +40,9 @@
     "react-icons": "^4.4.0",
     "react-phone-number-input": "^3.2.11",
     "react-youtube": "9.0.3",
-    "twind": "0.15.4",
-    "webpack": "^5.74.0"
+    "twind": "0.15.4"
   },
   "devDependencies": {
-    "@types/react": "^18.0.18",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.20.0",
     "husky": "5.0.9",

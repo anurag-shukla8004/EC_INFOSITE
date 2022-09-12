@@ -1,6 +1,6 @@
-import Navigation from '@/components/navigation';
 import Head from 'next/head';
 import { tw } from 'twind';
+import Navigation from '../../components/navigation/index';
 
 const Page = ({ children }) => (
   <div>

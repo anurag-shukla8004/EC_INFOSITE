@@ -1,10 +1,10 @@
-import Button from '@/components/button';
 import Link from 'next/link';
 import { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { BiSearch } from 'react-icons/bi';
 import { RiArrowDownSLine } from 'react-icons/ri';
 import { tw } from 'twind';
+import Button from '../../components/button/index';
 
 const MenuButton = ({ toggleMenu, showMenu }) => (
   <button

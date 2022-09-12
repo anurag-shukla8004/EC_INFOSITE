@@ -7,7 +7,7 @@ function Index({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch(' http://43.205.94.230/api/leadership/');
+        const response = await fetch(' http://43.205.94.230:8000/api/leadership/');
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
         }

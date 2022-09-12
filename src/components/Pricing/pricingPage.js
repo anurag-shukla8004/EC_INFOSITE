@@ -22,7 +22,7 @@ function pricingPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://43.205.94.230/api/prizing');
+        const response = await fetch('http://43.205.94.230:8000/api/prizing');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);

@@ -28,7 +28,7 @@ function pytDevPage({}) {
     console.log(values);
     axios({
       method: 'post',
-      url: 'http://43.205.94.230/api/contact',
+      url: 'http://43.205.94.230:8000/api/contact',
       data: values,
     })
       .then(function (response) {
