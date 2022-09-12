@@ -5,7 +5,7 @@ import Navigation from '../../components/navigation/index';
 const Page = ({ children }) => (
   <div>
     <Head>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/> 
+
       <link rel="icon" href="./ecLogo2.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
