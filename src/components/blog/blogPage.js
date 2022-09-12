@@ -9,7 +9,7 @@ const FeatureNewsDetails = ({}) => {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch(' http://43.205.94.230:8000/api/blogs');
+        const response = await fetch(' http://3.108.60.146:8000/api/blogs');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -25,7 +25,7 @@ const FeatureNewsDetails = ({}) => {
 
     getUser();
   }, []);
-  console.log(blogApiData);
+
 
   return (
     <div className="homeMainContainer">

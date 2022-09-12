@@ -22,7 +22,9 @@ function Index({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://43.205.94.230:8000/api/client_sucess/');
+        const response = await fetch(
+          'http://3.108.60.146:8000/api/client_sucess/'
+        );
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -39,71 +41,69 @@ function Index({}) {
     getUser();
   }, []);
 
-  console.log(apiData);
-
   const handleClick1 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown1((current) => !current);
   };
   const handleClick2 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown2((current) => !current);
   };
   const handleClick3 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown3((current) => !current);
   };
   const handleClick4 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown4((current) => !current);
   };
   const handleClick5 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown5((current) => !current);
   };
   const handleClick6 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown6((current) => !current);
   };
   const handleClick7 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown7((current) => !current);
   };
   const handleClick8 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown8((current) => !current);
   };
   const handleClick9 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown9((current) => !current);
   };
   const handleClick10 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown10((current) => !current);
   };
   const handleClick11 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown11((current) => !current);
   };
   const handleClick12 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown12((current) => !current);
   };
   const handleClick13 = (event) => {
     // 👇️ toggle visibility
-    console.log(event);
+
     setIsShown13((current) => !current);
   };
   return (
@@ -154,10 +154,6 @@ function Index({}) {
                 >
                   {apiData.client_category[0].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -183,10 +179,6 @@ function Index({}) {
                 >
                   {apiData.client_category[1].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -211,10 +203,6 @@ function Index({}) {
                 >
                   {apiData.client_category[2].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -238,10 +226,6 @@ function Index({}) {
                 >
                   {apiData.client_category[3].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -266,10 +250,6 @@ function Index({}) {
                 >
                   {apiData.client_category[4].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -294,10 +274,6 @@ function Index({}) {
                 >
                   {apiData.client_category[5].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -322,10 +298,6 @@ function Index({}) {
                 >
                   {apiData.client_category[6].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -350,10 +322,6 @@ function Index({}) {
                 >
                   {apiData.client_category[7].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -378,10 +346,6 @@ function Index({}) {
                 >
                   {apiData.client_category[8].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -406,10 +370,6 @@ function Index({}) {
                 >
                   {apiData.client_category[9].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -434,10 +394,6 @@ function Index({}) {
                 >
                   {apiData.client_category[10].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -462,10 +418,6 @@ function Index({}) {
                 >
                   {apiData.client_category[11].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );
@@ -490,10 +442,6 @@ function Index({}) {
                 >
                   {apiData.client_category[12].client_logos.map(
                     (value, index) => {
-                      {
-                        console.log(value.image);
-                      }
-
                       return (
                         <img className="partnerImg" src={value.image}></img>
                       );

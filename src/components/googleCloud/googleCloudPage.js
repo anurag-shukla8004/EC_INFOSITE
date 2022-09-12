@@ -40,7 +40,7 @@ function googleCloudPage({}) {
 
     axios({
       method: 'post',
-      url: 'http://43.205.94.230:8000/api/contact',
+      url: 'http://3.108.60.146:8000/api/contact',
       data: values,
     })
       .then(function (response) {
@@ -60,7 +60,7 @@ function googleCloudPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://43.205.94.230:8000/api/google_cloud');
+        const response = await fetch('http://3.108.60.146:8000/api/google_cloud');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);

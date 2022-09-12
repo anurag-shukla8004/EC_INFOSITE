@@ -17,7 +17,7 @@ function contactUsPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://43.205.94.230:8000/api/contact/');
+        const response = await fetch('http://3.108.60.146:8000/api/contact/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -43,11 +43,10 @@ function contactUsPage({}) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(values);
 
     axios({
       method: 'post',
-      url: 'http://43.205.94.230:8000/api/contact',
+      url: 'http://3.108.60.146:8000/api/contact',
       data: values,
     })
       .then(function (response) {
