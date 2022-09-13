@@ -25,10 +25,10 @@ function pytDevPage({}) {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(values);
+
     axios({
       method: 'post',
-      url: 'http://3.108.60.146:8000/api/contact',
+      url: 'http://techmergers.in:8000/api/contact/',
       data: values,
     })
       .then(function (response) {
@@ -50,7 +50,7 @@ function pytDevPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://3.108.60.146:8000/api/aws_cloud');
+        const response = await fetch('http://techmergers.in:8000/api/aws_cloud/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -66,6 +66,8 @@ function pytDevPage({}) {
 
     getUser();
   }, []);
+
+  console.log(apiData)
 
   return (
     <>

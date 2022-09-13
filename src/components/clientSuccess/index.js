@@ -23,7 +23,7 @@ function Index({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'http://3.108.60.146:8000/api/client_sucess/'
+          'http://techmergers.in:8000/api/client_sucess/'
         );
 
         if (!response.ok) {

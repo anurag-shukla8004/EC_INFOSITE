@@ -11,7 +11,7 @@ function IndexPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://3.108.60.146:8000/api/homepage/');
+        const response = await fetch('http://techmergers.in:8000/api/homepage/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);

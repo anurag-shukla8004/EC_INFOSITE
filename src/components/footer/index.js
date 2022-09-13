@@ -22,7 +22,7 @@ function Footer() {
 
     axios({
       method: 'post',
-      url: 'http://3.108.60.146:8000/api/contact',
+      url: 'http://techmergers.in:8000/api/contact/',
       data: values,
     })
       .then(function (response) {
