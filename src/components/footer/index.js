@@ -52,8 +52,8 @@ function Footer() {
     >
       <div className={tw(`mb-14 flex items-center w-full`)}>
         <img
-          className="ecLogoImg"
           src="ecLogo.png"
+          className="ecLogoImg"
           alt="logo"
           width={48}
           height={48}
