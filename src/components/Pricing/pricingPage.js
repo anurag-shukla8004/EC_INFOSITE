@@ -3,20 +3,18 @@ import React, { useEffect, useState } from 'react';
 import Loader from '../loader';
 
 function pricingPage({}) {
-  const [update, setUpdate] = useState(false);
+  // useEffect(() => {
+  //   const script = document.createElement('script');
 
-  useEffect(() => {
-    const script = document.createElement('script');
+  //   script.src = 'https://ucalc.pro/api/widget.js?id=295368';
+  //   script.async = true;
 
-    script.src = 'https://ucalc.pro/api/widget.js?id=295368';
-    script.async = true;
+  //   document.body.appendChild(script);
 
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
 
   const [apiData, setApiData] = useState([]);
   useEffect(() => {
@@ -53,7 +51,7 @@ function pricingPage({}) {
               <p>{apiData?.title}</p>
             </div>
 
-            <div className="uCalc_295368"></div>
+            {/* <div className="uCalc_295368"></div> */}
 
             <div className="moreFreedomContainer">
               <div className="partnerShips">
