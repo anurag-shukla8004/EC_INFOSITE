@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import YouTube from 'react-youtube';
 import Loader from '../loader';
 function IndexPage({}) {
   const [apiData, setApiData] = useState([]);
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://techmergers.in:8000/api/freevocal/');
+        const response = await fetch(
+          'http://techmergers.in:8000/api/freevocal/'
+        );
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -25,8 +26,6 @@ function IndexPage({}) {
     getUser();
   }, []);
 
-
-
   return (
     <div>
       <div className="homeMainContainer">
@@ -36,7 +35,10 @@ function IndexPage({}) {
           <div className="homeContainer">
             <div className="mobileContainer">
               <div className="vocalImg">
-                <YouTube videoId="_OaOBettt_8" className="youtube2" />
+                <iframe
+                  className="youtube2"
+                  src={`https://www.youtube.com/embed/${apiData[0].freevocal_youtube_url}`}
+                ></iframe>
               </div>
               <div className="VocalTexBox">
                 <pre
@@ -431,7 +433,10 @@ function IndexPage({}) {
 
             <div className="mobileContainer" style={{ marginTop: '100px' }}>
               <div className="mobileImg">
-                <YouTube videoId="KJJeqr8POnE" className="youtube" />
+                <iframe
+                  className="youtube"
+                  src={`https://www.youtube.com/embed/${apiData[0].youtube_url}`}
+                ></iframe>
               </div>
               <div
                 className="mobileTexBox"

@@ -37,7 +37,7 @@ function opportunitiesDetailsNews({}) {
     }
 
     getUser();
-  }, []);
+  }, [id]);
 
 
   return (
@@ -85,7 +85,6 @@ function opportunitiesDetailsNews({}) {
                   src={blogApiData.blog_image}
                   alt="VPN Illustrasi"
                   layout="fill"
-                  objectFit="cover"
                   quality={100}
                   width={700}
                   height={250}

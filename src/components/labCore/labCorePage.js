@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import YouTube from 'react-youtube';
 import Loader from '../loader/index';
 
 function IndexPage({}) {
@@ -298,7 +297,10 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <YouTube videoId="KJJeqr8POnE" className="youtube" />
+                <iframe
+                  className="youtube"
+                  src={`https://www.youtube.com/embed/KJJeqr8POnE`}
+                ></iframe>
               </div>
             </div>
 

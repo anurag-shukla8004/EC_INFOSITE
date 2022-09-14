@@ -59,7 +59,7 @@ function pricingPage({}) {
               <div className="partnerShips">
                 {apiData?.pafrtner_images.map((value, index) => {
                   return (
-                    <Link href="">
+                    <Link key={value.id} href="">
                       <img className="partnerImg" src={value.image}></img>
                     </Link>
                   );

@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import YouTube from 'react-youtube';
-import { tw } from 'twind';
 import Loader from '../loader/index';
 
 function IndexPage({}) {
@@ -11,7 +9,9 @@ function IndexPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://techmergers.in:8000/api/homepage/');
+        const response = await fetch(
+          'http://techmergers.in:8000/api/homepage/'
+        );
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -28,10 +28,9 @@ function IndexPage({}) {
     getUser();
   }, []);
 
-
   return (
     <div>
-      <div className={tw(` homeMainContainer mt-20 `)}>
+      <div className="homeMainContainer">
         {homeApiData == '' ? (
           <Loader />
         ) : (
@@ -155,7 +154,10 @@ function IndexPage({}) {
               />
 
               <div className="mobileImg">
-                <YouTube videoId="KJJeqr8POnE" className="youtube" />
+                <iframe
+                  className="youtube"
+                  src={`https://www.youtube.com/embed/${homeApiData.youtube_url}`}
+                ></iframe>
               </div>
             </div>
             <Link href="/pricing">

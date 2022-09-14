@@ -39,7 +39,7 @@
   margin: 40px 0px;
 }
 
-.clientDevParaText {
+.clientDevParaText p {
   line-height: 1.9;
   letter-spacing: 1px;
   font-size: 20px;

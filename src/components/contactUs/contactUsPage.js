@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 
@@ -11,29 +11,7 @@ function contactUsPage({}) {
     mobile_number: '',
     project_req: '',
   });
-  const [ApiData, setApiData] = useState([]);
-
-  // Dynamic Data Handling
-  useEffect(() => {
-    async function getUser() {
-      try {
-        const response = await fetch('http://techmergers.in:8000/api/contact/');
-
-        if (!response.ok) {
-          throw new Error(`Error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        setBlogApiData(data);
-        return data;
-      } catch (err) {
-        console.log(err);
-      }
-    }
-
-    getUser();
-  }, []);
-
+ 
   // Form handling -----
   const { email, name, company_name, mobile_number, project_req } = values;
 

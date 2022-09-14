@@ -302,12 +302,12 @@ const Navigation = () => {
                 />
               </Link>
             </div>
-            <div className={tw(`linkesNav`)}>
+            <div className="linkesNav">
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
                 <a
-                  className={tw(
-                    ` dropdown h-28 text-black-600 flex  hover:text-gray-600 px-3 py-2 text-center rounded-md font-medium text-sm `
-                  )}
+                  className={`dropdown ${tw(
+                    `  h-28  flex  hover:text-gray-600 px-3 py-2 text-center rounded-md font-medium text-sm `
+                  )}`}
                 >
                   <div className="dropbtn">
                     <Link href="#">ABOUT EC </Link>
@@ -317,7 +317,7 @@ const Navigation = () => {
                       alt="logo"
                     />
                   </div>
-                  <div className={tw(`dropdown-content `)}>
+                  <div className="dropdown-content">
                     <Link href="/leaderShip">Leadership</Link>
                     <Link href="/clientSuccess">Client Success</Link>
                     <Link href="#">Careers</Link>
@@ -327,9 +327,9 @@ const Navigation = () => {
                 </a>
 
                 <a
-                  className={tw(
-                    `h-28 text-black-600 flex  hover:text-gray-600 px-3 py-2 text-center rounded-md font-medium text-sm dropdown`
-                  )}
+                   className={`dropdown ${tw(
+                    `  h-28 flex  hover:text-gray-600 px-3 py-2 text-center rounded-md font-medium text-sm `
+                  )}`}
                 >
                   <div className="dropbtn">
                     <Link href="#">TECHNOLOGY SERVICES </Link>
@@ -402,9 +402,9 @@ const Navigation = () => {
                   </div>{' '}
                 </a>
                 <a
-                  className={tw(
-                    ` h-28 text-black-600 flex  hover:text-gray-600 px-3 py-2 text-center rounded-md font-medium text-sm dropdown`
-                  )}
+                  className={`dropdown ${tw(
+                    `  h-28  flex  hover:text-gray-600 px-3 py-2 text-center rounded-md font-medium text-sm `
+                  )}`}
                 >
                   <div className="dropbtn">
                     <Link href="#">CONSULTING SERVICES</Link>
@@ -414,7 +414,7 @@ const Navigation = () => {
                       alt="logo"
                     />
                   </div>
-                  <div className={tw(`dropdown-content consl`)}>
+                  <div className="dropdown-content consl">
                     <Link href="#">AI & Predictive Analytics</Link>
                     <Link href="#">BlockChain: dApps | STO | ICO</Link>
                     <Link href="#">Sales, Service & Marketing CRM</Link>
@@ -425,7 +425,7 @@ const Navigation = () => {
               </div>
             </div>
           </div>
-          <div className={tw(`linksBtn`)}>
+          <div className="linksBtn">
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
               <Link href="/contactUs">
                 <Button primary>REQUEST A QUOTE</Button>

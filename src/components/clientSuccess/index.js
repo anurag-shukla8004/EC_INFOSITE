@@ -155,7 +155,7 @@ function Index({}) {
                   {apiData.client_category[0].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -180,7 +180,7 @@ function Index({}) {
                   {apiData.client_category[1].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -204,7 +204,7 @@ function Index({}) {
                   {apiData.client_category[2].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -227,7 +227,7 @@ function Index({}) {
                   {apiData.client_category[3].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id}className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -251,7 +251,7 @@ function Index({}) {
                   {apiData.client_category[4].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -275,7 +275,7 @@ function Index({}) {
                   {apiData.client_category[5].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -299,7 +299,7 @@ function Index({}) {
                   {apiData.client_category[6].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -323,7 +323,7 @@ function Index({}) {
                   {apiData.client_category[7].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -347,7 +347,7 @@ function Index({}) {
                   {apiData.client_category[8].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -371,7 +371,7 @@ function Index({}) {
                   {apiData.client_category[9].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -395,7 +395,7 @@ function Index({}) {
                   {apiData.client_category[10].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -419,7 +419,7 @@ function Index({}) {
                   {apiData.client_category[11].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}
@@ -443,7 +443,7 @@ function Index({}) {
                   {apiData.client_category[12].client_logos.map(
                     (value, index) => {
                       return (
-                        <img className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.image}></img>
                       );
                     }
                   )}

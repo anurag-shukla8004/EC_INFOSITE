@@ -6,7 +6,6 @@ import { FaDiceD20, FaPenNib, FaSwatchbook } from 'react-icons/fa';
 import { RiPencilRuler2Line } from 'react-icons/ri';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
-import YouTube from 'react-youtube';
 import Loader from '../loader/index';
 
 function pytDevPage({}) {
@@ -70,7 +69,9 @@ function pytDevPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://techmergers.in:8000/api/aws_cloud/');
+        const response = await fetch(
+          'http://techmergers.in:8000/api/aws_cloud/'
+        );
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -87,8 +88,6 @@ function pytDevPage({}) {
 
     getUser();
   }, []);
-
-
 
   return (
     <>
@@ -110,9 +109,8 @@ function pytDevPage({}) {
                   }}
                   className="djangoForm"
                   dangerouslySetInnerHTML={{
-                    __html: JSON.parse(
-                      apiData2[0]?.shopify_developers
-                    )[0].value,
+                    __html: JSON.parse(apiData2[0]?.shopify_developers)[0]
+                      .value,
                   }}
                 />
                 <form
@@ -599,10 +597,10 @@ function pytDevPage({}) {
                   />
                 </div>
                 <div className="mobileImg">
-                  <YouTube
-                    videoId={apiData[0].youtube_url}
+                  <iframe
                     className="youtube"
-                  />
+                    src={`https://www.youtube.com/embed/${apiData[0].youtube_url}`}
+                  ></iframe>
                 </div>
               </div>
             </div>

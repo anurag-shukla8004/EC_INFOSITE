@@ -438,7 +438,7 @@ function googleCloudPage({}) {
                       {apiData.features.map((value, index) => {
                         if (index < 3) {
                           return (
-                            <div className="glBenifitBox">
+                            <div key={value.id} className="glBenifitBox">
                               <img src={value.feature_image}></img>
                               <h1 className="glBenifitHeading">
                                 {value.feature_name}
@@ -463,7 +463,7 @@ function googleCloudPage({}) {
                       {apiData.features.map((value, index) => {
                         if (index > 2) {
                           return (
-                            <div className="glBenifitBox">
+                            <div key={value.id} className="glBenifitBox">
                               <img src={value.feature_image}></img>
                               <h1 className="glBenifitHeading">
                                 {value.feature_name}

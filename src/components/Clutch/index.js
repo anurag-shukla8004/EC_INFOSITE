@@ -2,16 +2,6 @@ import React, { useEffect } from 'react';
 
 function index() {
   useEffect(() => {
-    // const script = document.createElement('script');
-    // script.type = 'text/javascript';
-    // script.src = 'https://widget.clutch.co/static/js/widget.js';
-
-    // document.body.appendChild(script);
-
-    // return () => {
-    //   document.body.removeChild(script);
-    // };
-    // add widget to end of body and run it
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = 'https://widget.clutch.co/static/js/widget.js';
@@ -19,13 +9,9 @@ function index() {
     document.body.appendChild(script);
     // run script
     script.onload = () => {
-      // @ts-expect-error Apparently we have to manually do this!! 🗑️
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
       window.CLUTCHCO.Init();
     };
     return () => {
-      // @ts-expect-error Apparently we have to manually do this!! 🗑️
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
       window.CLUTCHCO.Destroy();
       document.body.removeChild(script);
     };

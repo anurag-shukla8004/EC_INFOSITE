@@ -23,7 +23,7 @@ h2 {
   font-family: 'Jost' !important;
 }
 
-.ecBlue {
+#ecBlue {
   color: #fff !important;
   background: #0065cd !important;
 }
@@ -91,7 +91,6 @@ input {
   display: flex;
   justify-content: center;
   flex-direction: row;
-
   float: left;
   overflow: hidden;
 }

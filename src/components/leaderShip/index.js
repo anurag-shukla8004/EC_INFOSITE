@@ -185,7 +185,7 @@ function Index({}) {
                 {
                   apiData[0]?.partnerships_and_affection?.map((value, index)=>{
                     return (
-                      <Link href="">
+                      <Link key={value.id} href="">
                       <img className="partnerImg" key={value.id} src={value.file}></img>
                     </Link>
                     )

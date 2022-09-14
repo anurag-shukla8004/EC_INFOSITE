@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import YouTube from 'react-youtube';
-import { tw } from 'twind';
 import Loader from '../loader';
 
 function IndexPage({}) {
@@ -9,8 +7,10 @@ function IndexPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://techmergers.in:8000/api/custom_app/');
-        
+        const response = await fetch(
+          'http://techmergers.in:8000/api/custom_app/'
+        );
+
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
         }
@@ -27,7 +27,7 @@ function IndexPage({}) {
   }, []);
   return (
     <div>
-      <div className={tw(`homeMainContainer mt-20`)}>
+      <div className="homeMainContainer">
         {apiData == '' ? (
           <Loader />
         ) : (
@@ -126,189 +126,173 @@ function IndexPage({}) {
 
             <div className="AppDevMainContainer">
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.technology_and_strategy
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.technology_and_strategy)[0]
+                      .value,
+                  }}
+                />
               </div>
 
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.minimum_viable_product_devlopment
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(
+                      apiData[0]?.minimum_viable_product_devlopment
+                    )[0].value,
+                  }}
+                />
               </div>
 
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.mobile_and_desktop_apps
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.mobile_and_desktop_apps)[0]
+                      .value,
+                  }}
+                />
               </div>
             </div>
 
             <div className="AppDevMainContainer">
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.web_and_cloud_apps
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.web_and_cloud_apps)[0].value,
+                  }}
+                />
               </div>
 
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.user_experiance_design
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.user_experiance_design)[0]
+                      .value,
+                  }}
+                />
               </div>
 
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.cloud_deployment
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.cloud_deployment)[0].value,
+                  }}
+                />
               </div>
             </div>
 
             <div className="AppDevMainContainer">
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.anyalytics_and_insights
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.anyalytics_and_insights)[0]
+                      .value,
+                  }}
+                />
               </div>
 
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.internet_of_things
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.internet_of_things)[0].value,
+                  }}
+                />
               </div>
 
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.blockchain
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.blockchain)[0].value,
+                  }}
+                />
               </div>
             </div>
 
             <div className="AppDevMainContainer">
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.al_ml_and_data_science
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.al_ml_and_data_science)[0]
+                      .value,
+                  }}
+                />
               </div>
 
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.digital_marketing
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.digital_marketing)[0].value,
+                  }}
+                />
               </div>
 
               <div className="AppDevContainer">
-              <div
-            className="vocalPre"
-                style={{
-                  fontFamily: 'jost',
-                  whiteSpace: 'pre-wrap',
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: JSON.parse(
-                    apiData[0]?.qa_and_cyber_security
-                  )[0].value,
-                }}
-              />
+                <div
+                  className="vocalPre"
+                  style={{
+                    fontFamily: 'jost',
+                    whiteSpace: 'pre-wrap',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.parse(apiData[0]?.qa_and_cyber_security)[0]
+                      .value,
+                  }}
+                />
               </div>
             </div>
 
@@ -475,7 +459,10 @@ function IndexPage({}) {
               />
 
               <div className="mobileImg">
-                <YouTube videoId="KJJeqr8POnE" className="youtube" />
+                <iframe
+                  className="youtube"
+                  src={`https://www.youtube.com/embed/${apiData[0].youtube_url}`}
+                ></iframe>
               </div>
             </div>
             <Link href="/pricing">
