@@ -294,8 +294,8 @@ const Navigation = () => {
             <div className={tw(`flex-shrink-0`)}>
               <Link href="/">
                 <img
-                  src="ecLogo.png"
                   className="ecLogoImg"
+                  src="ecLogo.png"
                   alt="logo"
                   width={48}
                   height={48}
