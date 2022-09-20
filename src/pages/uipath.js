@@ -1,13 +1,15 @@
+import { NextSeo } from 'next-seo';
 import Clutch from '../components/Clutch';
-import Footer from '../components/footer';
-import LeaderShip from '../components/leaderShip';
+import Footer from '../components/footer/index';
 import Page from '../components/page';
 
 export default function Home() {
   return (
     <Page>
-      <LeaderShip />
+       <NextSeo title="UIPath | EC Infosolutions" />
+      <div className='clutchBox'>
       <Clutch />
+      </div>
       <Footer />
     </Page>
   );

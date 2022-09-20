@@ -52,7 +52,7 @@ function IndexPage({}) {
               </div>
             </div>
 
-            <Link href="/pricing">
+            <Link href="pricing">
               <div style={{ cursor: 'pointer' }} className="buildYourQuoteBtn">
                 <div>Get Free Quote</div>
               </div>
@@ -195,7 +195,7 @@ function IndexPage({}) {
               </div>
             </div>
 
-            <Link href="/pricing">
+            <Link href="pricing">
               <div style={{ cursor: 'pointer' }} className="buildYourQuoteBtn">
                 <div>Get Free Quote</div>
               </div>

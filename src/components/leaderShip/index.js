@@ -1,3 +1,5 @@
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader/index';
@@ -33,7 +35,7 @@ function Index({}) {
           <div className="leaderContainer">
             <div className="groupPhotoContaier">
               <div className="groupimg">
-                <img src={apiData[0]?.ec_family_photo}></img>
+                <img class="lazyload" src={apiData[0]?.ec_family_photo} alt={apiData[0]?.ec_family_photo}></img>
               </div>
             </div>
             <div className="groupimgText">
@@ -81,7 +83,7 @@ function Index({}) {
 
               <div className="imgDetailsContainer">
                 <div className="leaderimg">
-                  <img src={apiData[0]?.leaders[0]?.image}></img>
+                  <img class="lazyload" src={apiData[0]?.leaders[0]?.image} alt={apiData[0]?.leaders[0]?.image}></img>
                 </div>
                 <div className="leaderDetails">
                   <pre
@@ -100,7 +102,7 @@ function Index({}) {
 
               <div className="imgDetailsContainer">
                 <div className="leaderimg">
-                  <img src={apiData[0]?.leaders[1]?.image}></img>
+                  <img class="lazyload" src={apiData[0]?.leaders[1]?.image} alt={apiData[0]?.leaders[1]?.image}></img>
                 </div>
                 <div className="leaderDetails">
                   <pre
@@ -119,7 +121,7 @@ function Index({}) {
 
               <div className="imgDetailsContainer">
                 <div className="leaderimg">
-                  <img src={apiData[0]?.leaders[2]?.image}></img>
+                  <img class="lazyload" src={apiData[0]?.leaders[2]?.image} alt={apiData[0]?.leaders[2]?.image}></img>
                 </div>
                 <div className="leaderDetails">
                   <pre
@@ -186,7 +188,7 @@ function Index({}) {
                   apiData[0]?.partnerships_and_affection?.map((value, index)=>{
                     return (
                       <Link key={value.id} href="">
-                      <img className="partnerImg" key={value.id} src={value.file}></img>
+                      <img class="lazyload partnerImg"key={value.id} src={value.file} alt={value.file}></img>
                     </Link>
                     )
                   })

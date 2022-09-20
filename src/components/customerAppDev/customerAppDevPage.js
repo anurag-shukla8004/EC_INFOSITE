@@ -47,7 +47,7 @@ function IndexPage({}) {
                 }}
               />
             </div>
-            <Link href="/pricing">
+            <Link href="pricing">
               <div className="buildYourQuoteBtn">
                 <div style={{ cursor: 'pointer' }}>Get Free Quote</div>
               </div>
@@ -465,7 +465,7 @@ function IndexPage({}) {
                 ></iframe>
               </div>
             </div>
-            <Link href="/pricing">
+            <Link href="pricing">
               <div className="buildYourQuoteBtn">
                 <div style={{ cursor: 'pointer' }}>Get Free Quote</div>
               </div>

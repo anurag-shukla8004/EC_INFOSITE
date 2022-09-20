@@ -45,6 +45,7 @@ const FeatureNewsDetails = ({}) => {
                       pathname: '/blogReadMore',
                       query: {
                         id: blog.id,
+                        title: blog.title,
                       },
                     }}
                   >

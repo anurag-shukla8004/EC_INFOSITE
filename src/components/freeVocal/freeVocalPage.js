@@ -55,7 +55,7 @@ function IndexPage({}) {
               </div>
             </div>
 
-            <Link href="/contactUs">
+            <Link href="contactUs">
               <div className="buildYourQuoteBtn">
                 <div style={{ cursor: 'pointer' }}>Get Free Quote</div>
               </div>

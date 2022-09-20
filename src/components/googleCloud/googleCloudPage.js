@@ -221,7 +221,7 @@ function googleCloudPage({}) {
                 </div>
               </div>
 
-              <Link href="/pricing">
+              <Link href="pricing">
                 <div className="glbuildYourQuoteBtn">
                   <div style={{ cursor: 'pointer' }}>
                     Cloud Services Order Form

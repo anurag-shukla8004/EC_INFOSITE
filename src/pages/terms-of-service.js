@@ -1,13 +1,14 @@
+import { NextSeo } from 'next-seo';
 import Clutch from '../components/Clutch';
-import CustomerAppDev from '../components/customerAppDev/customerAppDevPage.js';
 import Footer from '../components/footer';
 import Page from '../components/page';
-
+import TeamService from '../components/teamService/index';
 
 export default function Home() {
   return (
     <Page>
-      <CustomerAppDev />
+       <NextSeo title="Terms and Conditions of Service | EC Infosolutions Pvt. Ltd. Pune" />
+      <TeamService />
       <Clutch />
       <Footer />
     </Page>

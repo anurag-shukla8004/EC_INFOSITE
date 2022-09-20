@@ -1,15 +1,15 @@
 import { NextSeo } from 'next-seo';
 import Clutch from '../components/Clutch';
-import Footer from '../components/footer';
-import FreeVocal from '../components/freeVocal/freeVocalPage.js';
+import Footer from '../components/footer/index';
 import Page from '../components/page';
 
 export default function Home() {
   return (
     <Page>
-      <NextSeo title="About EC Infosolutions - A custom software development company" />
-      <FreeVocal />
+       <NextSeo title="Partner with EC | EC Infosolutions" />
+      <div className='clutchBox'>
       <Clutch />
+      </div>
       <Footer />
     </Page>
   );

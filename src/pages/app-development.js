@@ -1,12 +1,14 @@
+import { NextSeo } from 'next-seo';
 import Clutch from '../components/Clutch';
-import ContactUs from '../components/contactUs/contactUsPage.js';
+import CustomerAppDev from '../components/customerAppDev/customerAppDevPage.js';
 import Footer from '../components/footer';
 import Page from '../components/page';
 
 export default function Home() {
   return (
     <Page>
-      <ContactUs />
+       <NextSeo title="App Development - EC Infosolutions Pvt. Ltd. Pune" />
+      <CustomerAppDev />
       <Clutch />
       <Footer />
     </Page>

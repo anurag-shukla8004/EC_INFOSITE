@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
@@ -45,7 +46,9 @@ function opportunitiesDetailsNews({}) {
       {blogApiData == '' ? (
         <Loader />
       ) : (
+       
         <div className="opportunitiesDetailsContainer">
+           <NextSeo title={blogApiData.title} />
           <div className="opportunitiesDetailsImageContainer">
             <div className="opportunitiesDetailsImagebox">
               <img src={blogApiData.blog_image} alt="VPN Illustrasi"></img>
@@ -116,7 +119,7 @@ function opportunitiesDetailsNews({}) {
           </div>
 
           <div className="LoginComment">
-            <Link href="/blog">
+            <Link href="blog">
               <div className="accountButton">
                 <div className="accountButotnLogin">
                   <BiArrowBack /> Prev

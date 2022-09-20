@@ -140,11 +140,11 @@ const MobileMenu = () => {
                 className="hamMenuList"
                 style={{ display: isShown ? 'none' : 'flex' }}
               >
-                <Link href="/leaderShip">Leadership</Link>
-                <Link href="/clientSuccess">Client Success</Link>
+                <Link href="custom-software-development">Leadership</Link>
+                <Link href="customers">Client Success</Link>
                 <Link href="#">Careers</Link>
-                <Link href="#">Partner with EC</Link>
-                <Link href="/contactUs">Contact Us</Link>
+                <Link href="partner-with-ec/">Partner with EC</Link>
+                <Link href="contact-us">Contact Us</Link>
               </div>
             </div>
 
@@ -171,9 +171,9 @@ const MobileMenu = () => {
                     className="hamMenuList"
                     style={{ display: isShownTech1 ? 'none' : 'flex' }}
                   >
-                    <Link href="/customerAppDev">Custom App Development</Link>
-                    <Link href="/customerAppDev">C#.net & Sharepoint Developers</Link>
-                    <Link href="/pytDev">Django Python Developers</Link>
+                    <Link href="app-development">Custom App Development</Link>
+                    <Link href="app-development">C#.net & Sharepoint Developers</Link>
+                    <Link href="django-python">Django Python Developers</Link>
                     <Link href="#">ReactJS Developer</Link>
                     <Link href="#">React Native Developer</Link>
                   </div>
@@ -191,11 +191,11 @@ const MobileMenu = () => {
                     className="hamMenuList"
                     style={{ display: isShownTech2 ? 'none' : 'flex' }}
                   >
-                    <Link href="/freeVocal">Freevocal</Link>
-                    <Link href="#">HeadlessBlog.com</Link>
+                    <Link href="freevocal">Freevocal</Link>
+                    <Link href="freedom-ctrm">HeadlessBlog.com</Link>
                     <Link href="#">loT Core</Link>
-                    <Link href="/labCore">Lab Core</Link>
-                    <Link href="/pricing">Pricing</Link>
+                    <Link href="agritech">Lab Core</Link>
+                    <Link href="app-cost-roi-calculator">Pricing</Link>
                   </div>
                 </div>
                 <div className="techList" onClick={techHandile3}>
@@ -211,10 +211,10 @@ const MobileMenu = () => {
                     className="hamMenuList"
                     style={{ display: isShownTech3 ? 'none' : 'flex' }}
                   >
-                    <Link href="/labCore">Agribusinesses</Link>
-                    <Link href="/eCommerce">eCommerce & Retail</Link>
-                    <Link href="#">ESG</Link>
-                    <Link href="/manufacturing">Manufacturing</Link>
+                    <Link href="agritech">Agribusinesses</Link>
+                    <Link href="freedom-ecommerce-2">eCommerce & Retail</Link>
+                    <Link href="#">ESG</Link> 
+                    <Link href="manufacturing">Manufacturing</Link>
                     <Link href="#">Startups</Link>
                   </div>
                 </div>
@@ -231,11 +231,11 @@ const MobileMenu = () => {
                     className="hamMenuList"
                     style={{ display: isShownTech4 ? 'none' : 'flex' }}
                   >
-                    <Link href="/awsPartner">AWS Partner Network</Link>
+                    <Link href="aws-developers">AWS Partner Network</Link>
                     <Link href="#">Azure Partner</Link>
-                    <Link href="/googleCloud">Google Cloud Partner</Link>
-                    <Link href="/shopify">Shopify Partner</Link>
-                    <Link href="/partnerWithEc">Zoho Partner</Link>
+                    <Link href="g-suite-google-partner">Google Cloud Partner</Link>
+                    <Link href="shopify">Shopify Partner</Link>
+                    <Link href="uipath">Zoho Partner</Link>
                   </div>
                 </div>
               </div>
@@ -254,15 +254,15 @@ const MobileMenu = () => {
                 <Link href="#">AI & Predictive Analytics</Link>
                 <Link href="#">BlockChain: dApps | STO | ICO</Link>
                 <Link href="#">Sales, Service & Marketing CRM</Link>
-                <Link href="/pricing">ROI Calculator</Link>
-                <Link href="/blog">Blog</Link>
+                <Link href="app-cost-roi-calculator">ROI Calculator</Link>
+                <Link href="blog">Blog</Link>
               </div>
             </div>
           </div>
           <div className={tw(``)}>
             <div className={tw(``)}>
               <a className={tw(`selectHamMenu`)}>
-                <Link href="/contactUs">REQUEST A QUOTE</Link>
+                <Link href="contact-us">REQUEST A QUOTE</Link>
               </a>
             </div>
           </div>
@@ -318,11 +318,11 @@ const Navigation = () => {
                     />
                   </div>
                   <div className="dropdown-content">
-                    <Link href="/leaderShip">Leadership</Link>
-                    <Link href="/clientSuccess">Client Success</Link>
+                    <Link href="custom-software-development">Leadership</Link>
+                    <Link href="customers">Client Success</Link>
                     <Link href="#">Careers</Link>
-                    <Link href="/partnerWithEc">Partner with EC</Link>
-                    <Link href="/contactUs">Contact Us</Link>
+                    <Link href="partner-with-ec/">Partner with EC</Link>
+                    <Link href="contact-us">Contact Us</Link>
                   </div>
                 </a>
 
@@ -354,11 +354,11 @@ const Navigation = () => {
                           style={{ borderRight: '0.6px solid #c8c8c8' }}
                         >
                           <h3 className="TechServTitle">ENGINEERING</h3>
-                          <Link href="/customerAppDev">
+                          <Link href="app-development">
                             Custom App Development
                           </Link>
-                          <Link href="/customerAppDev">C#.net & Sharepoint Developers</Link>
-                          <Link href="/pytDev">Django Python Developers</Link>
+                          <Link href="app-development">C#.net & Sharepoint Developers</Link>
+                          <Link href="django-python">Django Python Developers</Link>
                           <Link href="#">ReactJS Developer</Link>
                           <Link href="#">React Native Developer</Link>
                         </div>
@@ -368,11 +368,11 @@ const Navigation = () => {
                         >
                           <h3 className="TechServTitle">PLATFORM</h3>
 
-                          <Link href="/freeVocal">Freevocal</Link>
-                          <Link href="#">HeadlessBlog.com</Link>
+                          <Link href="freevocal">Freevocal</Link>
+                          <Link href="freedom-ctrm">HeadlessBlog.com</Link>
                           <Link href="#">loT Core</Link>
-                          <Link href="/labCore">Lab Core</Link>
-                          <Link href="/pricing">Pricing</Link>
+                          <Link href="agritech">Lab Core</Link>
+                          <Link href="app-cost-roi-calculator">Pricing</Link>
                         </div>
                       </div>
                       <div className="menuAdj">
@@ -382,20 +382,20 @@ const Navigation = () => {
                         >
                           <h3 className="TechServTitle">INDUSTRIES</h3>
 
-                          <Link href="/labCore">Agribusinesses</Link>
-                          <Link href="/eCommerce">eCommerce & Retail</Link>
+                          <Link href="agritech">Agribusinesses</Link>
+                          <Link href="freedom-ecommerce-2">eCommerce & Retail</Link>
                           <Link href="#">ESG</Link>
-                          <Link href="/manufacturing">Manufacturing</Link>
+                          <Link href="manufacturing">Manufacturing</Link>
                           <Link href="#">Startups</Link>
                         </div>
                         <div className="menuDiv">
                           <h3 className="TechServTitle ">CLOUD PARTNERS</h3>
 
-                          <Link href="/awsPartner">AWS Partner Network</Link>
+                          <Link href="aws-developers">AWS Partner Network</Link>
                           <Link href="#">Azure Partner</Link>
-                          <Link href="/googleCloud">Google Cloud Partner</Link>
-                          <Link href="/shopify">Shopify Partner</Link>
-                          <Link href="partnerWithEc">Zoho Partner</Link>
+                          <Link href="g-suite-google-partner">Google Cloud Partner</Link>
+                          <Link href="shopify">Shopify Partner</Link>
+                          <Link href="uipath">Zoho Partner</Link>
                         </div>
                       </div>
                     </div>
@@ -418,8 +418,8 @@ const Navigation = () => {
                     <Link href="#">AI & Predictive Analytics</Link>
                     <Link href="#">BlockChain: dApps | STO | ICO</Link>
                     <Link href="#">Sales, Service & Marketing CRM</Link>
-                    <Link href="/pricing">ROI Calculator</Link>
-                    <Link href="/blog">Blog</Link>
+                    <Link href="app-cost-roi-calculator">ROI Calculator</Link>
+                    <Link href="blog">Blog</Link>
                   </div>
                 </a>
               </div>
@@ -427,7 +427,7 @@ const Navigation = () => {
           </div>
           <div className="linksBtn">
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
-              <Link href="/contactUs">
+              <Link href="contact-us">
                 <Button primary>REQUEST A QUOTE</Button>
               </Link>
               <div onClick={searchToggle} style={{ marginLeft: '10px' }}>

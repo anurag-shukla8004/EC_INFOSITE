@@ -72,7 +72,7 @@ function Footer() {
                     `text-gray-800 text-sm font-medium leading-6 my-4 `
                   )}
                 >
-                  <Link href="/awsPartner">
+                  <Link href="aws-developers/">
                     <img src="f1.png" alt="" width={120} height={48} />
                   </Link>
                 </li>
@@ -81,7 +81,7 @@ function Footer() {
                     `text-gray-800 text-sm font-medium leading-6 my-4`
                   )}
                 >
-                  <Link href="/googleCloud">
+                  <Link href="g-suite-google-partner">
                     <img src="f2.png" alt="" width={120} height={48} />
                   </Link>
                 </li>
@@ -90,7 +90,7 @@ function Footer() {
                     `text-gray-800 text-sm font-medium leading-6 my-4`
                   )}
                 >
-                  <Link href="/shopify">
+                  <Link href="shopify">
                     <img src="f3.png" alt="" width={120} height={48} />
                   </Link>
                 </li>
@@ -106,17 +106,17 @@ function Footer() {
                 <li
                   className={tw(`text-gray-800 text-sm font-medium leading-6`)}
                 >
-                  <Link href="/privacyPolicy">Privacy Policy</Link>
+                  <Link href="privacy-policy">Privacy Policy</Link>
                 </li>
                 <li
                   className={tw(`text-gray-800 text-sm font-medium leading-6`)}
                 >
-                  <Link href="/teamService">Terms of service</Link>
+                  <Link href="terms-of-service">Terms of service</Link>
                 </li>
                 <li
                   className={tw(`text-gray-800 text-sm font-medium leading-6`)}
                 >
-                  <Link href="/partnerWithEc">Cookie Policy (US)</Link>
+                  <Link href="cookie-policy-us">Cookie Policy (US)</Link>
                 </li>
                 <li
                   className={tw(`text-gray-800 text-sm font-medium leading-6`)}
@@ -135,12 +135,12 @@ function Footer() {
                 <li
                   className={tw(`text-gray-800 text-sm font-medium leading-6`)}
                 >
-                  <Link href="/blog">EC Infosolutions Blog</Link>
+                  <Link href="blog">EC Infosolutions Blog</Link>
                 </li>
                 <li
                   className={tw(`text-gray-800 text-sm font-medium leading-6`)}
                 >
-                  <Link href="/partnerWithEc">Partner with EC</Link>
+                  <Link href="partner-with-ec">Partner with EC</Link>
                 </li>
                 <li
                   className={tw(`text-gray-800 text-sm font-medium leading-6`)}

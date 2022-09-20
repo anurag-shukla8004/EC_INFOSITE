@@ -2,8 +2,9 @@ module.exports = {
   compress: true,
   reactStrictMode: true,
   images: {
-    domains: ["ecinfosolutions.com"],
+    domains: ["techmergers.in"],
   },
+
 
   webpack(config) {
     config.module.rules.push({
