@@ -10,7 +10,7 @@ function IndexPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'http://techmergers.in:8000/api/homepage/'
+          'https://techmergers.in/api/homepage/'
         );
 
         if (!response.ok) {
@@ -37,7 +37,7 @@ function IndexPage({}) {
           <div className="homeContainer">
             <div className="mobileContainer">
               <div className="mobileImg">
-                <img src={homeApiData?.image_1}></img>
+                <img alt={homeApiData?.image_1} src={homeApiData?.image_1}></img>
               </div>
 
               <div
@@ -50,7 +50,7 @@ function IndexPage({}) {
                 }}
               />
             </div>
-            <Link href="pricing">
+            <Link href="app-cost-roi-calculator">
               <div className="buildYourQuoteBtn">
                 <div style={{ cursor: 'pointer' }}>Build Your Quote</div>
               </div>
@@ -98,7 +98,7 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img src={homeApiData.image_2}></img>
+                <img alt={homeApiData.image_2} src={homeApiData.image_2}></img>
               </div>
             </div>
 
@@ -133,7 +133,7 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img src={homeApiData.image_3}></img>
+                <img alt={homeApiData.image_3} src={homeApiData.image_3}></img>
               </div>
             </div>
 
@@ -160,7 +160,7 @@ function IndexPage({}) {
                 ></iframe>
               </div>
             </div>
-            <Link href="pricing">
+            <Link href="app-cost-roi-calculator">
               <div className="buildYourQuoteBtn">
                 <div style={{ cursor: 'pointer' }}>Build Your Quote</div>
               </div>

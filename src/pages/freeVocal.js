@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 import FreeVocal from '../components/freeVocal/freeVocalPage.js';
 import Page from '../components/page';
 
-export default function Home() {
+export default function Freevocal() {
   return (
     <Page>
       <NextSeo title="About EC Infosolutions - A custom software development company" />

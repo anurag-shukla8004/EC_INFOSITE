@@ -1,54 +1,21 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { BiShapeSquare } from 'react-icons/bi';
 import { BsGem, BsPalette } from 'react-icons/bs';
 import { FaDiceD20, FaPenNib, FaSwatchbook } from 'react-icons/fa';
 import { RiPencilRuler2Line } from 'react-icons/ri';
-import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
+import Form from '../hubForm/form';
 import Loader from '../loader/index';
+
 
 function pytDevPage({}) {
   const [apiData, setApiData] = useState([]);
   const [apiData2, setApiData2] = useState([]);
-  const [values, setValues] = useState({
-    email: '',
-    name: '',
-    company_name: '',
-    mobile_number: '',
-    project_req: '',
-  });
-  // Handling the form Data-----
-  const { email, name, company_name, mobile_number, project_req } = values;
-  const handleChange = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
-  };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log(values);
-    axios({
-      method: 'post',
-      url: 'http://techmergers.in:8000/api/contact/',
-      data: values,
-    })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
-  const handleChang = (value, name) => {
-    setValues({
-      ...values,
-      mobile_number: value,
-    });
-  };
 
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://techmergers.in:8000/api/shopify/');
+        const response = await fetch('https://techmergers.in/api/shopify/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -70,7 +37,7 @@ function pytDevPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'http://techmergers.in:8000/api/aws_cloud/'
+          'https://techmergers.in/api/aws_cloud/'
         );
 
         if (!response.ok) {
@@ -91,7 +58,7 @@ function pytDevPage({}) {
 
   return (
     <>
-      {apiData == '' ? (
+      {apiData == '' || apiData2 == "" ? (
         <Loader />
       ) : (
         <div className="pytDevMainContainer">
@@ -113,7 +80,9 @@ function pytDevPage({}) {
                       .value,
                   }}
                 />
-                <form
+                <Form/>
+                
+                {/* <form
                   action="/send-data-here"
                   method="post"
                   onSubmit={handleSubmit}
@@ -165,7 +134,7 @@ function pytDevPage({}) {
                     required
                   ></textarea>
                   <button type="submit">Submit</button>
-                </form>
+                </form> */}
               </div>
             </div>
 

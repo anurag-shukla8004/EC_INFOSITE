@@ -131,7 +131,7 @@ const MobileMenu = () => {
           <div className={tw(`px-2 pt-2 pb-3 space-y-1 sm:px-3`)}>
             <div>
               <div onClick={handleClick}>
-                <a className={tw(`selectHamMenu`)}>
+                <a href="#" className={tw(`selectHamMenu`)}>
                   ABOUT EC <RiArrowDownSLine />
                 </a>
               </div>
@@ -150,7 +150,7 @@ const MobileMenu = () => {
 
             <div>
               <div onClick={handleClick2}>
-                <a className={tw(`selectHamMenu `)}>
+                <a href="#" className={tw(`selectHamMenu `)}>
                   TECHNOLOGY SERVICES <RiArrowDownSLine />
                 </a>
               </div>
@@ -160,7 +160,7 @@ const MobileMenu = () => {
                 style={{ display: isShown2 ? 'none' : 'flex' }}
               >
                 <div className="techList" onClick={techHandile1}>
-                  <a
+                  <a href="#"
                     className={tw(
                       `selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`
                     )}
@@ -180,7 +180,7 @@ const MobileMenu = () => {
                 </div>
                 <div className="techList" onClick={techHandile2}>
                   {' '}
-                  <a
+                  <a href="#"
                     className={tw(
                       `selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`
                     )}
@@ -191,7 +191,7 @@ const MobileMenu = () => {
                     className="hamMenuList"
                     style={{ display: isShownTech2 ? 'none' : 'flex' }}
                   >
-                    <Link href="freevocal">Freevocal</Link>
+                    <Link href="freevocal/">Freevocal</Link>
                     <Link href="freedom-ctrm">HeadlessBlog.com</Link>
                     <Link href="#">loT Core</Link>
                     <Link href="agritech">Lab Core</Link>
@@ -200,7 +200,7 @@ const MobileMenu = () => {
                 </div>
                 <div className="techList" onClick={techHandile3}>
                   {' '}
-                  <a
+                  <a href="#"
                     className={tw(
                       `selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`
                     )}
@@ -220,7 +220,7 @@ const MobileMenu = () => {
                 </div>
                 <div className="techList" onClick={techHandile4}>
                   {' '}
-                  <a
+                  <a href="#"
                     className={tw(
                       `selectHamMenu text-gray-500 block px-3 py-2 text-sm font-medium`
                     )}
@@ -242,7 +242,7 @@ const MobileMenu = () => {
             </div>
             <div>
               <div onClick={handleClick3}>
-                <a className={tw(`selectHamMenu `)}>
+                <a href="#" className={tw(`selectHamMenu `)}>
                   CONSULTING SERCIVES <RiArrowDownSLine />
                 </a>
               </div>
@@ -261,7 +261,7 @@ const MobileMenu = () => {
           </div>
           <div className={tw(``)}>
             <div className={tw(``)}>
-              <a className={tw(`selectHamMenu`)}>
+              <a href="#" className={tw(`selectHamMenu`)}>
                 <Link href="contact-us">REQUEST A QUOTE</Link>
               </a>
             </div>
@@ -304,7 +304,7 @@ const Navigation = () => {
             </div>
             <div className="linkesNav">
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
-                <a
+                <a href="#"
                   className={`dropdown ${tw(
                     `  h-28  flex  hover:text-gray-600 px-3 py-2 text-center rounded-md font-medium text-sm `
                   )}`}
@@ -326,7 +326,7 @@ const Navigation = () => {
                   </div>
                 </a>
 
-                <a
+                <a href="#"
                    className={`dropdown ${tw(
                     `  h-28 flex  hover:text-gray-600 px-3 py-2 text-center rounded-md font-medium text-sm `
                   )}`}
@@ -368,7 +368,7 @@ const Navigation = () => {
                         >
                           <h3 className="TechServTitle">PLATFORM</h3>
 
-                          <Link href="freevocal">Freevocal</Link>
+                          <Link href="freevocal/">Freevocal</Link>
                           <Link href="freedom-ctrm">HeadlessBlog.com</Link>
                           <Link href="#">loT Core</Link>
                           <Link href="agritech">Lab Core</Link>
@@ -401,7 +401,7 @@ const Navigation = () => {
                     </div>
                   </div>{' '}
                 </a>
-                <a
+                <a href="#"
                   className={`dropdown ${tw(
                     `  h-28  flex  hover:text-gray-600 px-3 py-2 text-center rounded-md font-medium text-sm `
                   )}`}

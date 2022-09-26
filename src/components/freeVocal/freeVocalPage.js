@@ -7,7 +7,7 @@ function IndexPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'http://techmergers.in:8000/api/freevocal/'
+          'https://techmergers.in/api/freevocal/'
         );
 
         if (!response.ok) {
@@ -55,7 +55,7 @@ function IndexPage({}) {
               </div>
             </div>
 
-            <Link href="contactUs">
+            <Link href="contact-us">
               <div className="buildYourQuoteBtn">
                 <div style={{ cursor: 'pointer' }}>Get Free Quote</div>
               </div>

@@ -1,4 +1,3 @@
-import axios from 'axios';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import {
@@ -13,54 +12,18 @@ import {
   FaPhoneVolume,
   FaUniversity
 } from 'react-icons/fa';
-import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
+import Form from '../hubForm/form';
 import Loader from '../loader';
 
 function googleCloudPage({}) {
   const [apiData, SetApiData] = useState([]);
-
-  const [values, setValues] = useState({
-    email: '',
-    name: '',
-    company_name: '',
-    mobile_number: '',
-    project_req: '',
-  });
-
-  const { email, name, company_name, mobile_number, project_req } = values;
-
-  const handleChange = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log(values);
-
-    axios({
-      method: 'post',
-      url: 'http://techmergers.in:8000/api/contact/',
-      data: values,
-    })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
-  const handleChang = (value, name) => {
-    setValues({
-      ...values,
-      mobile_number: value,
-    });
-  };
-
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://techmergers.in:8000/api/google_cloud/');
+        const response = await fetch(
+          'https://techmergers.in/api/google_cloud/'
+        );
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -118,61 +81,7 @@ function googleCloudPage({}) {
                   </div>
                   <div className="glFormBox">
                     <div className="glfomeContainer">
-                      <form
-                        action="/send-data-here"
-                        method="post"
-                        onSubmit={handleSubmit}
-                      >
-                        <label>Email</label>
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          value={email}
-                          onChange={handleChange}
-                          required
-                        />
-                        <label>Name</label>
-                        <input
-                          type="text"
-                          id="last"
-                          name="name"
-                          value={name}
-                          onChange={handleChange}
-                          minlength="3"
-                          required
-                        />
-                        <label>Company Name</label>
-                        <input
-                          type="text"
-                          id="company_name"
-                          name="company_name"
-                          value={company_name}
-                          onChange={handleChange}
-                          required
-                        />
-                        <label>Mobile phone number*</label>
-                        <PhoneInput
-                          type="tel"
-                          id="last"
-                          name="mobile_number"
-                          value={mobile_number}
-                          onChange={(value) =>
-                            handleChang(value, mobile_number)
-                          }
-                          defaultCountry="IN"
-                          required
-                        />
-
-                        <label>Describe your project requirements</label>
-                        <textarea
-                          name="project_req"
-                          value={project_req}
-                          onChange={handleChange}
-                          required
-                        ></textarea>
-                        <button type="submit">Request a Quote</button>
-                      </form>
+                      <Form />
                     </div>
                   </div>
                 </div>
@@ -221,7 +130,7 @@ function googleCloudPage({}) {
                 </div>
               </div>
 
-              <Link href="pricing">
+              <Link href="app-cost-roi-calculator">
                 <div className="glbuildYourQuoteBtn">
                   <div style={{ cursor: 'pointer' }}>
                     Cloud Services Order Form

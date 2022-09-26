@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import React, { useEffect } from 'react';
 import { setup } from 'twind';
 import '../styles/404.css';
 import '../styles/blog.css';
@@ -25,6 +26,18 @@ if (typeof window !== `undefined`) {
 }
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    const script = document.createElement('script');
+
+    script.src = 'http://js.hs-scripts.com/9316836.js';
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <>
       <NextSeo title="EC infosolutions" />

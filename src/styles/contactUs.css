@@ -161,12 +161,7 @@ label{
     align-items: flex-start;
     margin: 0px 20px;
   }
-  .fomeContainer {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: flex-start;
-  }
+  
 
   .fomeContainer form label {
     font-size: small;
@@ -230,6 +225,13 @@ label{
     font-size: large;
     font-weight: 600;
     margin: 0px 0px 25px 0px;
+  }
+
+  .fomeContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .details ul li {

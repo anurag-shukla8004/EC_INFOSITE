@@ -1,56 +1,22 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { BiShapeSquare } from 'react-icons/bi';
 import { BsGem, BsPalette } from 'react-icons/bs';
 import { FaDiceD20, FaPenNib, FaSwatchbook } from 'react-icons/fa';
 import { RiPencilRuler2Line } from 'react-icons/ri';
-import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
+import Form from '../hubForm/form';
 import Loader from '../loader/index';
+
+
 
 function pytDevPage({}) {
   const [apiData, SetApiData] = useState([]);
-  const [values, setValues] = useState({
-    email: '',
-    name: '',
-    company_name: '',
-    mobile_number: '',
-    project_req: '',
-  });
-  // Handling the form Data-----
-  const { email, name, company_name, mobile_number, project_req } = values;
-  const handleChange = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
-  };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    axios({
-      method: 'post',
-      url: 'http://techmergers.in:8000/api/contact/',
-      data: values,
-    })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
-  const handleChang = (value, name) => {
-    setValues({
-      ...values,
-      mobile_number: value,
-    });
-  };
-
-  // Handling the dynamic content data-----
 
   useEffect(() => {
     async function getUser() {
       try {
         const response = await fetch(
-          'http://techmergers.in:8000/api/aws_cloud/'
+          'https://techmergers.in/api/aws_cloud/'
         );
 
         if (!response.ok) {
@@ -94,59 +60,7 @@ function pytDevPage({}) {
                       .value,
                   }}
                 />
-                <form
-                  action="/send-data-here"
-                  method="post"
-                  onSubmit={handleSubmit}
-                >
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={email}
-                    onChange={handleChange}
-                    required
-                  />
-                  <label>Name</label>
-                  <input
-                    type="text"
-                    id="last"
-                    name="name"
-                    value={name}
-                    onChange={handleChange}
-                    minlength="3"
-                    required
-                  />
-                  <label>Company Name</label>
-                  <input
-                    type="text"
-                    id="company_name"
-                    name="company_name"
-                    value={company_name}
-                    onChange={handleChange}
-                    required
-                  />
-                  <label>Mobile phone number*</label>
-                  <PhoneInput
-                    type="tel"
-                    id="last"
-                    name="mobile_number"
-                    value={mobile_number}
-                    onChange={(value) => handleChang(value, mobile_number)}
-                    defaultCountry="IN"
-                    required
-                  />
-
-                  <label>Describe your project requirements</label>
-                  <textarea
-                    name="project_req"
-                    value={project_req}
-                    onChange={handleChange}
-                    required
-                  ></textarea>
-                  <button type="submit">Submit</button>
-                </form>
+                <Form />
               </div>
             </div>
 

@@ -8,7 +8,7 @@ function IndexPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'http://techmergers.in:8000/api/custom_app/'
+          'https://techmergers.in/api/custom_app/'
         );
 
         if (!response.ok) {
@@ -47,7 +47,7 @@ function IndexPage({}) {
                 }}
               />
             </div>
-            <Link href="pricing">
+            <Link href="app-cost-roi-calculator">
               <div className="buildYourQuoteBtn">
                 <div style={{ cursor: 'pointer' }}>Get Free Quote</div>
               </div>
@@ -465,7 +465,7 @@ function IndexPage({}) {
                 ></iframe>
               </div>
             </div>
-            <Link href="pricing">
+            <Link href="app-cost-roi-calculator">
               <div className="buildYourQuoteBtn">
                 <div style={{ cursor: 'pointer' }}>Get Free Quote</div>
               </div>

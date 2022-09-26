@@ -517,6 +517,15 @@ h2 {
     margin-bottom: 40px;
     margin-left: 0px;
   }
+  .mobileImg img{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
 
   .mobileTexBox {
     width: 100%;

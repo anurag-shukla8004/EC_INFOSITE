@@ -7,7 +7,7 @@ function IndexPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://techmergers.in:8000/api/labcore/');
+        const response = await fetch('https://techmergers.in/api/labcore/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -51,7 +51,7 @@ function IndexPage({}) {
               </div>
             </div>
 
-            <Link href="pricing">
+            <Link href="app-cost-roi-calculator">
               <div style={{ cursor: 'pointer' }} className="buildYourQuoteBtn">
                 <div>Get Free Quote</div>
               </div>

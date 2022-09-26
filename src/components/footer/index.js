@@ -22,7 +22,7 @@ function Footer() {
 
     axios({
       method: 'post',
-      url: 'http://techmergers.in:8000/api/contact/',
+      url: 'https://techmergers.in/api/contact/',
       data: values,
     })
       .then(function (response) {
@@ -72,7 +72,7 @@ function Footer() {
                     `text-gray-800 text-sm font-medium leading-6 my-4 `
                   )}
                 >
-                  <Link href="aws-developers/">
+                  <Link href="aws-developers">
                     <img src="f1.png" alt="" width={120} height={48} />
                   </Link>
                 </li>

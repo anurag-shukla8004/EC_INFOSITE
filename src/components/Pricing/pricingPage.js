@@ -22,7 +22,7 @@ function pricingPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://techmergers.in:8000/api/prizing/');
+        const response = await fetch('https://techmergers.in/api/prizing/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);

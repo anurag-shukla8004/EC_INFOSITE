@@ -4,9 +4,10 @@ import { BiShapeSquare } from 'react-icons/bi';
 import { BsGem, BsPalette } from 'react-icons/bs';
 import { FaDiceD20, FaPenNib, FaSwatchbook } from 'react-icons/fa';
 import { RiPencilRuler2Line } from 'react-icons/ri';
-import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
+import Form from '../hubForm/form';
 import Loader from '../loader/index';
+
 
 function pytDevPage({}) {
   const [apiData, setApiData] = useState([]);
@@ -28,7 +29,7 @@ function pytDevPage({}) {
     console.log(values);
     axios({
       method: 'post',
-      url: 'http://techmergers.in:8000/api/contact/',
+      url: 'https://techmergers.in/api/contact/',
       data: values,
     })
       .then(function (response) {
@@ -49,7 +50,7 @@ function pytDevPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'http://techmergers.in:8000/api/python_django/'
+          'https://techmergers.in/api/python_django/'
         );
 
         if (!response.ok) {
@@ -72,7 +73,7 @@ function pytDevPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'http://techmergers.in:8000/api/aws_cloud/'
+          'https://techmergers.in/api/aws_cloud/'
         );
 
         if (!response.ok) {
@@ -116,59 +117,7 @@ function pytDevPage({}) {
                     )[0].value,
                   }}
                 />
-                <form
-                  action="/send-data-here"
-                  method="post"
-                  onSubmit={handleSubmit}
-                >
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={email}
-                    onChange={handleChange}
-                    required
-                  />
-                  <label>Name</label>
-                  <input
-                    type="text"
-                    id="last"
-                    name="name"
-                    value={name}
-                    onChange={handleChange}
-                    minlength="3"
-                    required
-                  />
-                  <label>Company Name</label>
-                  <input
-                    type="text"
-                    id="company_name"
-                    name="company_name"
-                    value={company_name}
-                    onChange={handleChange}
-                    required
-                  />
-                  <label>Mobile phone number*</label>
-                  <PhoneInput
-                    type="tel"
-                    id="last"
-                    name="mobile_number"
-                    value={mobile_number}
-                    onChange={(value) => handleChang(value, mobile_number)}
-                    defaultCountry="IN"
-                    required
-                  />
-
-                  <label>Describe your project requirements</label>
-                  <textarea
-                    name="project_req"
-                    value={project_req}
-                    onChange={handleChange}
-                    required
-                  ></textarea>
-                  <button type="submit">Submit</button>
-                </form>
+                <Form/>
               </div>
             </div>
 
