@@ -23,7 +23,7 @@ function Index({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'https://techmergers.in/api/client_sucess/'
+          'https://ecinfosolutions.com/api/client_success/'
         );
 
         if (!response.ok) {
@@ -115,7 +115,7 @@ function Index({}) {
           <div className="clientContainer">
             <div className="ourClientContaier">
               <div className="outClientimg">
-                <img src={apiData.image_1}></img>
+                <img src={apiData.globle_business_image.file}></img>
               </div>
             </div>
             <div className="ourClientimgText">
@@ -152,10 +152,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[0].client_logos.map(
+                  {apiData.client_category[0].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -177,10 +177,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[1].client_logos.map(
+                  {apiData.client_category[1].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -201,10 +201,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[2].client_logos.map(
+                  {apiData.client_category[2].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -224,10 +224,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[3].client_logos.map(
+                  {apiData.client_category[3].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id}className="partnerImg" src={value.image}></img>
+                        <img key={value.id}className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -248,10 +248,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[4].client_logos.map(
+                  {apiData.client_category[4].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -272,10 +272,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[5].client_logos.map(
+                  {apiData.client_category[5].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -296,10 +296,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[6].client_logos.map(
+                  {apiData.client_category[6].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -320,10 +320,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[7].client_logos.map(
+                  {apiData.client_category[7].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -344,10 +344,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[8].client_logos.map(
+                  {apiData.client_category[8].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -368,10 +368,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[9].client_logos.map(
+                  {apiData.client_category[9].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -392,10 +392,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[10].client_logos.map(
+                  {apiData.client_category[10].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -416,10 +416,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[11].client_logos.map(
+                  {apiData.client_category[11].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}
@@ -440,10 +440,10 @@ function Index({}) {
                     flexWrap: 'wrap',
                   }}
                 >
-                  {apiData.client_category[12].client_logos.map(
+                  {apiData.client_category[12].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.image}></img>
+                        <img key={value.id} className="partnerImg" src={value.file}></img>
                       );
                     }
                   )}

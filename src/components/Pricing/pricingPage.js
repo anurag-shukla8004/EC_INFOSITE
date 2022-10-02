@@ -22,7 +22,7 @@ function pricingPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('https://techmergers.in/api/prizing/');
+        const response = await fetch('https://ecinfosolutions.com/api/prizing/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -50,7 +50,7 @@ function pricingPage({}) {
         <div className="pytDevMainContainer">
           <div className="pytDevContainer">
             <div className="titlecost">
-              <p>{apiData?.title}</p>
+              <p>{apiData?.prizing_title}</p>
             </div>
 
             <div className="uCalc_295368"></div>
@@ -60,7 +60,7 @@ function pricingPage({}) {
                 {apiData?.pafrtner_images.map((value, index) => {
                   return (
                     <Link key={value.id} href="">
-                      <img className="partnerImg" src={value.image}></img>
+                      <img className="partnerImg" src={value.file}></img>
                     </Link>
                   );
                 })}

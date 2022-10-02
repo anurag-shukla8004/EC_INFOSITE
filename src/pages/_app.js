@@ -20,6 +20,8 @@ import '../styles/pytDev.css';
 import '../styles/registration.css';
 import '../styles/teamService.css';
 import twindConfig from '../twind.config';
+import Script from 'next/script';
+
 
 if (typeof window !== `undefined`) {
   setup(twindConfig);
@@ -41,6 +43,19 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <NextSeo title="EC infosolutions" />
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-44857748-3"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-44857748-3');
+        `}
+      </Script>
       <Component {...pageProps} />
     </>
   );

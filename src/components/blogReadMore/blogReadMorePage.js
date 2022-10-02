@@ -23,7 +23,7 @@ function opportunitiesDetailsNews({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch(`https://techmergers.in/api/blogs/${id}`);
+        const response = await fetch(`http://techmergers.in:8000/api/blogs/${id}`);
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -91,7 +91,7 @@ function opportunitiesDetailsNews({}) {
                   quality={100}
                   width={700}
                   height={250}
-                  layout="responsive"
+                  // layout="responsive"
                 ></img>
               </div>
             </div>

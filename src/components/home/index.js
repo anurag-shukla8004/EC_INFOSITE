@@ -10,7 +10,7 @@ function IndexPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'https://techmergers.in/api/homepage/'
+          'https://ecinfosolutions.com/api/homepage/'
         );
 
         if (!response.ok) {
@@ -28,6 +28,8 @@ function IndexPage({}) {
     getUser();
   }, []);
 
+  console.log('con--->',homeApiData?.image_1?.file)
+
   return (
     <div>
       <div className="homeMainContainer">
@@ -37,7 +39,7 @@ function IndexPage({}) {
           <div className="homeContainer">
             <div className="mobileContainer">
               <div className="mobileImg">
-                <img alt={homeApiData?.image_1} src={homeApiData?.image_1}></img>
+                <img src={homeApiData?.image_1?.file} alt={'home'}></img>
               </div>
 
               <div
@@ -62,7 +64,7 @@ function IndexPage({}) {
                 style={{ fontFamily: 'jost', whiteSpace: 'pre-wrap' }}
                 dangerouslySetInnerHTML={{
                   __html: JSON.parse(
-                    homeApiData?.new_approch_to_software_devlopment
+                    homeApiData?.new_approch_to_software_ddevlopment
                   )[0].value,
                 }}
               />
@@ -98,7 +100,7 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img alt={homeApiData.image_2} src={homeApiData.image_2}></img>
+                <img alt={homeApiData.image_2} src={homeApiData.image_2.file}></img>
               </div>
             </div>
 
@@ -133,7 +135,7 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img alt={homeApiData.image_3} src={homeApiData.image_3}></img>
+                <img alt={homeApiData.image_3} src={homeApiData.image_3.file}></img>
               </div>
             </div>
 

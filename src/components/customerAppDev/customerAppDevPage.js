@@ -8,7 +8,7 @@ function IndexPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'https://techmergers.in/api/custom_app/'
+          'https://ecinfosolutions.com/api/custom_dev/'
         );
 
         if (!response.ok) {
@@ -34,7 +34,7 @@ function IndexPage({}) {
           <div className="homeContainer">
             <div className="mobileContainer">
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_App_image}></img>
+                <img src={apiData[0]?.mobile_App_image.file}></img>
               </div>
 
               <div
@@ -72,7 +72,7 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img src={apiData[0]?.discovery_phage_image}></img>
+                <img src={apiData[0]?.discovery_phage_image.file}></img>
               </div>
             </div>
 
@@ -86,7 +86,7 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img src={apiData[0]?.engineering_phage_image}></img>
+                <img src={apiData[0]?.engineering_phage_image.file}></img>
               </div>
             </div>
 
@@ -100,7 +100,7 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img src={apiData[0]?.launch_phage_image}></img>
+                <img src={apiData[0]?.launch_phage_image.file}></img>
               </div>
             </div>
 
@@ -120,7 +120,7 @@ function IndexPage({}) {
               />
 
               <div className="mobileImg">
-                <img src={apiData[0]?.crm_screen_image}></img>
+                <img src={apiData[0]?.crm_screen_image.file}></img>
               </div>
             </div>
 
@@ -298,7 +298,7 @@ function IndexPage({}) {
 
             <div className="mobileContainer">
               <div className="mobileImg">
-                <img src={apiData[0]?.screen_image_2}></img>
+                <img src={apiData[0]?.screen_image_2.file}></img>
               </div>
               <div
                 className="mobileTexBox"
@@ -322,13 +322,13 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image}></img>
+                <img src={apiData[0]?.mobile_image.file}></img>
               </div>
             </div>
 
             <div className="mobileContainer" style={{ margin: '50px 0px' }}>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_2}></img>
+                <img src={apiData[0]?.mobile_image_2.file}></img>
               </div>
 
               <div className="evenOddTextBox" style={{ margin: '0px 30px' }}>
@@ -356,13 +356,13 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_3}></img>
+                <img src={apiData[0]?.mobile_image_3.file}></img>
               </div>
             </div>
 
             <div className="mobileContainer" style={{ margin: '50px 0px' }}>
               <div className="mobileImg">
-                <img src={apiData[0]?.desktop_image}></img>
+                <img src={apiData[0]?.desktop_image.file}></img>
               </div>
 
               <div className="evenOddTextBox" style={{ margin: '0px 30px' }}>
@@ -388,13 +388,13 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_4}></img>
+                <img src={apiData[0]?.mobile_image_4.file}></img>
               </div>
             </div>
 
             <div className="mobileContainer" style={{ margin: '50px 0px' }}>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_5}></img>
+                <img src={apiData[0]?.mobile_image_5.file}></img>
               </div>
 
               <div className="evenOddTextBox" style={{ margin: '0px 30px' }}>
@@ -420,13 +420,13 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_6}></img>
+                <img src={apiData[0]?.mobile_image_6.file}></img>
               </div>
             </div>
 
             <div className="mobileContainer" style={{ margin: '50px 0px' }}>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_7}></img>
+                <img src={apiData[0]?.mobile_image_7.file}></img>
               </div>
 
               <div className="evenOddTextBox" style={{ margin: '0px 30px' }}>

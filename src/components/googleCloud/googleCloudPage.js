@@ -22,7 +22,7 @@ function googleCloudPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'https://techmergers.in/api/google_cloud/'
+          'https://ecinfosolutions.com/api/google/'
         );
 
         if (!response.ok) {
@@ -47,7 +47,7 @@ function googleCloudPage({}) {
       ) : (
         <div style={{ marginTop: '100px' }}>
           <div className="glImg">
-            <img src={apiData.google_image}></img>
+            <img src={apiData.google_image.file}></img>
           </div>
           <div className="homeMainContainer">
             <div className="homeContainer">
@@ -217,7 +217,7 @@ function googleCloudPage({}) {
                           paddingLeft: '5px',
                         }}
                       />
-                      <h1 className="blueText">Automobiles</h1>
+                      <h1 className="blueText">Banking</h1>
                     </div>
                     <div className="glLine"></div>
                     <div className="glServeMainBox">
@@ -228,7 +228,7 @@ function googleCloudPage({}) {
                           paddingLeft: '5px',
                         }}
                       />
-                      <h1 className="blueText">Automobiles</h1>
+                      <h1 className="blueText">Real Estate</h1>
                     </div>
                     <div className="glLine"></div>
                   </div>
@@ -242,7 +242,7 @@ function googleCloudPage({}) {
                           paddingLeft: '5px',
                         }}
                       />
-                      <h1 className="blueText">Automobiles</h1>
+                      <h1 className="blueText">Financial Services</h1>
                     </div>
                     <div className="glLine"></div>
                     <div className="glServeMainBox">
@@ -253,7 +253,7 @@ function googleCloudPage({}) {
                           paddingLeft: '5px',
                         }}
                       />
-                      <h1 className="blueText">Automobiles</h1>
+                      <h1 className="blueText">Telecommunications</h1>
                     </div>
                     <div className="glLine"></div>
                     <div className="glServeMainBox">
@@ -264,7 +264,7 @@ function googleCloudPage({}) {
                           paddingLeft: '5px',
                         }}
                       />
-                      <h1 className="blueText">Automobiles</h1>
+                      <h1 className="blueText">IT & ITES</h1>
                     </div>
                     <div className="glLine"></div>
                   </div>
@@ -278,7 +278,7 @@ function googleCloudPage({}) {
                           paddingLeft: '5px',
                         }}
                       />
-                      <h1 className="blueText">Automobiles</h1>
+                      <h1 className="blueText">Manufacturing</h1>
                     </div>
                     <div className="glLine"></div>
                     <div className="glServeMainBox">
@@ -289,7 +289,7 @@ function googleCloudPage({}) {
                           paddingLeft: '5px',
                         }}
                       />
-                      <h1 className="blueText">Automobiles</h1>
+                      <h1 className="blueText">Textiles</h1>
                     </div>
                     <div className="glLine"></div>
                     <div className="glServeMainBox">
@@ -300,7 +300,7 @@ function googleCloudPage({}) {
                           paddingLeft: '5px',
                         }}
                       />
-                      <h1 className="blueText">Automobiles</h1>
+                      <h1 className="blueText">Pharmaceuticals</h1>
                     </div>
                     <div className="glLine"></div>
                   </div>
@@ -314,7 +314,7 @@ function googleCloudPage({}) {
                           paddingLeft: '5px',
                         }}
                       />
-                      <h1 className="blueText">Automobiles</h1>
+                      <h1 className="blueText">Power</h1>
                     </div>
                     <div className="glLine"></div>
                     <div className="glServeMainBox">
@@ -325,7 +325,7 @@ function googleCloudPage({}) {
                           paddingLeft: '5px',
                         }}
                       />
-                      <h1 className="blueText">Automobiles</h1>
+                      <h1 className="blueText">Infrastructure</h1>
                     </div>
 
                     <div className="glLine"></div>
@@ -348,7 +348,7 @@ function googleCloudPage({}) {
                         if (index < 3) {
                           return (
                             <div key={value.id} className="glBenifitBox">
-                              <img src={value.feature_image}></img>
+                              <img src={value.feature_image.file}></img>
                               <h1 className="glBenifitHeading">
                                 {value.feature_name}
                               </h1>
@@ -373,7 +373,7 @@ function googleCloudPage({}) {
                         if (index > 2) {
                           return (
                             <div key={value.id} className="glBenifitBox">
-                              <img src={value.feature_image}></img>
+                              <img src={value.feature_image.file}></img>
                               <h1 className="glBenifitHeading">
                                 {value.feature_name}
                               </h1>

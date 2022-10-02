@@ -29,7 +29,7 @@ function pytDevPage({}) {
     console.log(values);
     axios({
       method: 'post',
-      url: 'https://techmergers.in/api/contact/',
+      url: 'https://ecinfosolutions.com/api/contact/',
       data: values,
     })
       .then(function (response) {
@@ -50,7 +50,7 @@ function pytDevPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'https://techmergers.in/api/python_django/'
+          'https://ecinfosolutions.com/api/python_django/'
         );
 
         if (!response.ok) {
@@ -73,7 +73,7 @@ function pytDevPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'https://techmergers.in/api/aws_cloud/'
+          'https://ecinfosolutions.com/api/aws/'
         );
 
         if (!response.ok) {
@@ -101,7 +101,7 @@ function pytDevPage({}) {
           <div className="pytDevContainer">
             <div className="djangoContainer">
               <div className="fixmyreooImg">
-                <img src={apiData2[0]?.fixmyrepo_image}></img>
+                <img src={apiData2[0]?.fixmyrepo_image.file}></img>
               </div>
               <div className="djangoForm">
                 <pre
@@ -264,7 +264,7 @@ function pytDevPage({}) {
 
             <div className="exmReqContainer">
               <div>
-                <img src={apiData[0]?.fixmyrepo_image2}></img>
+                <img src={apiData[0]?.fixmyrepo_image2.file}></img>
               </div>
               <div>
                 <h1
@@ -294,7 +294,7 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].quote_image}></img>
+                <img src={apiData[0].quote_image.file}></img>
               </div>
             </div>
 
@@ -312,7 +312,7 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].pay_for_hotfix_image}></img>
+                <img src={apiData[0].pay_for_hotfix_image.file}></img>
               </div>
             </div>
 
@@ -331,7 +331,7 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].expert_fixes_your_code_image}></img>
+                <img src={apiData[0].expert_fixes_your_code_image.file}></img>
               </div>
             </div>
 
@@ -351,7 +351,7 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].quality_check_and_delivery_image}></img>
+                <img src={apiData[0].quality_check_and_delivery_image.file}></img>
               </div>
             </div>
 

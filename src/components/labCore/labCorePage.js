@@ -7,7 +7,7 @@ function IndexPage({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('https://techmergers.in/api/labcore/');
+        const response = await fetch('https://ecinfosolutions.com/api/labcore/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -73,14 +73,14 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.dealer_and_grower_management_image}></img>
+                <img src={apiData[0]?.dealer_and_grower_management_image.file}></img>
               </div>
             </div>
 
             <div className="OverviewGoals">
               <div className="mobileImg">
                 <img
-                  src={apiData[0]?.soil_and_water_sample_management_image}
+                  src={apiData[0]?.soil_and_water_sample_management_image.file}
                 ></img>
               </div>
               <div>
@@ -113,7 +113,7 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.field_history_image}></img>
+                <img src={apiData[0]?.field_history_image.file}></img>
               </div>
             </div>
 
@@ -121,7 +121,7 @@ function IndexPage({}) {
               <div className="mobileImg">
                 <img
                   src={
-                    apiData[0]?.gis_visualization_and_precision_management_image
+                    apiData[0]?.gis_visualization_and_precision_management_image.file
                   }
                 ></img>
               </div>
@@ -215,7 +215,7 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.business_image}></img>
+                <img src={apiData[0]?.business_image.file}></img>
               </div>
             </div>
 

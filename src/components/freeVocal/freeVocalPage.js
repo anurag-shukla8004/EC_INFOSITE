@@ -7,7 +7,7 @@ function IndexPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'https://techmergers.in/api/freevocal/'
+          'https://ecinfosolutions.com/api/freevocal/'
         );
 
         if (!response.ok) {
@@ -192,7 +192,7 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.freevocal_site_image}></img>
+                <img src={apiData[0]?.freevocal_site_image.file}></img>
               </div>
             </div>
 

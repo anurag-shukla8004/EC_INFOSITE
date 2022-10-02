@@ -7,7 +7,7 @@ function IndexPage({}) {
     async function getUser() {
       try {
         const response = await fetch(
-          'https://techmergers.in/api/e_commerce/'
+          'https://ecinfosolutions.com/api/e_commerce/'
         );
 
         if (!response.ok) {
@@ -34,7 +34,7 @@ function IndexPage({}) {
           <div className="homeContainer">
             <div className="mobileContainer">
               <div className="mobileImg">
-                <img src={apiData[0]?.ecommerce_image_1}></img>
+                <img src={apiData[0]?.ecommerce_image_1.file}></img>
               </div>
 
               <div
@@ -187,7 +187,7 @@ function IndexPage({}) {
                 }}
               />
               <div className="mobileImg">
-                <img src={apiData[0]?.ecommerce_image_2}></img>
+                <img src={apiData[0]?.ecommerce_image_2.file}></img>
               </div>
             </div>
 
@@ -321,7 +321,7 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.marketplace_image_3}></img>
+                <img src={apiData[0]?.marketplace_image_3.file}></img>
               </div>
             </div>
             <div className="OverviewGoals">
@@ -438,7 +438,7 @@ function IndexPage({}) {
             </h1>
 
             <div className="mobileContainer">
-              {apiData[0]?.sucess_Stories.map((value, index) => {
+              {apiData[0]?.sucess_stories.map((value, index) => {
                 return (
                   <div className="successStory">
                     <h1>{value.compny_name}</h1>

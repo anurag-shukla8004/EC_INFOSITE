@@ -9,7 +9,7 @@ function Index({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('https://techmergers.in/api/leadership/');
+        const response = await fetch('https://ecinfosolutions.com/api/leadership/');
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
         }
@@ -35,7 +35,7 @@ function Index({}) {
           <div className="leaderContainer">
             <div className="groupPhotoContaier">
               <div className="groupimg">
-                <img class="lazyload" src={apiData[0]?.ec_family_photo} alt={apiData[0]?.ec_family_photo}></img>
+                <img class="lazyload" src={apiData[0]?.grp_photo.file} alt={apiData[0]?.grp_photo.file}></img>
               </div>
             </div>
             <div className="groupimgText">
@@ -46,7 +46,7 @@ function Index({}) {
                   whiteSpace: 'pre-wrap',
                 }}
                 dangerouslySetInnerHTML={{
-                  __html: JSON.parse(apiData[0]?.welcome_quote)[0].value,
+                  __html: JSON.parse(apiData[0]?.welcome_blog)[0].value,
                 }}
               />
             </div>
@@ -83,7 +83,7 @@ function Index({}) {
 
               <div className="imgDetailsContainer">
                 <div className="leaderimg">
-                  <img class="lazyload" src={apiData[0]?.leaders[0]?.image} alt={apiData[0]?.leaders[0]?.image}></img>
+                  <img class="lazyload" src={apiData[0]?.leadership[0]?.image_of_leader.file} alt={apiData[0]?.leadership[0]?.image_of_leader.file}></img>
                 </div>
                 <div className="leaderDetails">
                   <pre
@@ -93,7 +93,7 @@ function Index({}) {
                       whiteSpace: 'pre-wrap',
                     }}
                     dangerouslySetInnerHTML={{
-                      __html: JSON.parse(apiData[0]?.leaders[0]?.about_leader)[0]
+                      __html: JSON.parse(apiData[0]?.leadership[0]?.about_leader)[0]
                         .value,
                     }}
                   />
@@ -102,7 +102,7 @@ function Index({}) {
 
               <div className="imgDetailsContainer">
                 <div className="leaderimg">
-                  <img class="lazyload" src={apiData[0]?.leaders[1]?.image} alt={apiData[0]?.leaders[1]?.image}></img>
+                  <img class="lazyload" src={apiData[0]?.leadership[1]?.image_of_leader.file} alt={apiData[0]?.leadership[1]?.image_of_leader.file}></img>
                 </div>
                 <div className="leaderDetails">
                   <pre
@@ -112,7 +112,7 @@ function Index({}) {
                       whiteSpace: 'pre-wrap',
                     }}
                     dangerouslySetInnerHTML={{
-                      __html: JSON.parse(apiData[0]?.leaders[1]?.about_leader)[0]
+                      __html: JSON.parse(apiData[0]?.leadership[1]?.about_leader)[0]
                         .value,
                     }}
                   />
@@ -121,7 +121,7 @@ function Index({}) {
 
               <div className="imgDetailsContainer">
                 <div className="leaderimg">
-                  <img class="lazyload" src={apiData[0]?.leaders[2]?.image} alt={apiData[0]?.leaders[2]?.image}></img>
+                  <img class="lazyload" src={apiData[0]?.leadership[2]?.image_of_leader.file} alt={apiData[0]?.leadership[2]?.image_of_leader.file}></img>
                 </div>
                 <div className="leaderDetails">
                   <pre
@@ -131,7 +131,7 @@ function Index({}) {
                       whiteSpace: 'pre-wrap',
                     }}
                     dangerouslySetInnerHTML={{
-                      __html: JSON.parse(apiData[0]?.leaders[2]?.about_leader)[0]
+                      __html: JSON.parse(apiData[0]?.leadership[2]?.about_leader)[0]
                         .value,
                     }}
                   />
@@ -161,7 +161,7 @@ function Index({}) {
                   whiteSpace: 'pre-wrap',
                 }}
                 dangerouslySetInnerHTML={{
-                  __html: JSON.parse(apiData[0]?.software_defined_business)[0]
+                  __html: JSON.parse(apiData[0]?.software_defined_businesses)[0]
                     .value,
                 }}
               />
@@ -185,7 +185,7 @@ function Index({}) {
               <h1 className="leaderHeaderText">Partnerships & affiliations</h1>
               <div className="partnerShips">
                 {
-                  apiData[0]?.partnerships_and_affection?.map((value, index)=>{
+                  apiData[0]?.parnership_image?.map((value, index)=>{
                     return (
                       <Link key={value.id} href="">
                       <img class="lazyload partnerImg"key={value.id} src={value.file} alt={value.file}></img>

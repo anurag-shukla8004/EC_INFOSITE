@@ -243,7 +243,7 @@ const MobileMenu = () => {
             <div>
               <div onClick={handleClick3}>
                 <a href="#" className={tw(`selectHamMenu `)}>
-                  CONSULTING SERCIVES <RiArrowDownSLine />
+                  CONSULTING SERVICES <RiArrowDownSLine />
                 </a>
               </div>
 
@@ -252,7 +252,7 @@ const MobileMenu = () => {
                 style={{ display: isShown3 ? 'none' : 'flex' }}
               >
                 <Link href="#">AI & Predictive Analytics</Link>
-                <Link href="#">BlockChain: dApps | STO | ICO</Link>
+                <Link href="#">Blockchain: dApps | STO | ICO</Link>
                 <Link href="#">Sales, Service & Marketing CRM</Link>
                 <Link href="app-cost-roi-calculator">ROI Calculator</Link>
                 <Link href="blog">Blog</Link>
@@ -318,7 +318,7 @@ const Navigation = () => {
                     />
                   </div>
                   <div className="dropdown-content">
-                    <Link href="custom-software-development">Leadership</Link>
+                    <Link  href="custom-software-development">  Leadership</Link>
                     <Link href="customers">Client Success</Link>
                     <Link href="#">Careers</Link>
                     <Link href="partner-with-ec/">Partner with EC</Link>
@@ -368,7 +368,7 @@ const Navigation = () => {
                         >
                           <h3 className="TechServTitle">PLATFORM</h3>
 
-                          <Link href="freevocal/">Freevocal</Link>
+                          <Link href="freevocal">Freevocal</Link>
                           <Link href="freedom-ctrm">HeadlessBlog.com</Link>
                           <Link href="#">loT Core</Link>
                           <Link href="agritech">Lab Core</Link>
@@ -416,7 +416,7 @@ const Navigation = () => {
                   </div>
                   <div className="dropdown-content consl">
                     <Link href="#">AI & Predictive Analytics</Link>
-                    <Link href="#">BlockChain: dApps | STO | ICO</Link>
+                    <Link href="#">Blockchain: dApps | STO | ICO</Link>
                     <Link href="#">Sales, Service & Marketing CRM</Link>
                     <Link href="app-cost-roi-calculator">ROI Calculator</Link>
                     <Link href="blog">Blog</Link>
