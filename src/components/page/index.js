@@ -5,6 +5,7 @@ import Navigation from '../../components/navigation/index';
 const Page = ({ children }) => (
   <div>
     <Head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
     <meta name="description" content="EC Infosolutions is a custom software development company that offers software solutions &amp; digital transformation services across the world."/>
       <link rel="icon" href="./ecLogo2.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
