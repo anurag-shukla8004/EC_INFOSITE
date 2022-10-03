@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import React, { useEffect, useState } from 'react';
 import { BiShapeSquare } from 'react-icons/bi';
 import { BsGem, BsPalette } from 'react-icons/bs';
@@ -6,6 +7,7 @@ import { RiPencilRuler2Line } from 'react-icons/ri';
 import 'react-phone-number-input/style.css';
 import Form from '../hubForm/form';
 import Loader from '../loader/index';
+
 
 
 
@@ -42,6 +44,7 @@ function pytDevPage({}) {
         <Loader />
       ) : (
         <div className="pytDevMainContainer">
+          <NextSeo title={apiData[0]?.title} />
           <div className="pytDevContainer">
             <div className="djangoContainer">
               <div className="fixmyreooImg">

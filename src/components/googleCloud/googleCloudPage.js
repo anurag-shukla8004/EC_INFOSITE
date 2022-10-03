@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import {
@@ -46,6 +47,7 @@ function googleCloudPage({}) {
         <Loader />
       ) : (
         <div style={{ marginTop: '100px' }}>
+          <NextSeo title={apiData?.title} />
           <div className="glImg">
             <img src={apiData.google_image.file}></img>
           </div>

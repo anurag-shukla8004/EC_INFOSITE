@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import React, { useEffect, useState } from 'react';
 import { BiShapeSquare } from 'react-icons/bi';
 import { BsGem, BsPalette } from 'react-icons/bs';
@@ -62,6 +63,7 @@ function pytDevPage({}) {
         <Loader />
       ) : (
         <div className="pytDevMainContainer">
+          <NextSeo title={apiData2[0]?.title} />
           <div className="pytDevContainer">
             <div className="djangoContainer">
               <div className="fixmyreooImg">

@@ -1,6 +1,8 @@
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader';
+
 function IndexPage({}) {
   const [apiData, setApiData] = useState([]);
   useEffect(() => {
@@ -33,6 +35,7 @@ function IndexPage({}) {
           <Loader />
         ) : (
           <div className="homeContainer">
+          <NextSeo title={apiData[0]?.title} />
             <div className="mobileContainer">
               <div className="vocalImg">
                 <iframe

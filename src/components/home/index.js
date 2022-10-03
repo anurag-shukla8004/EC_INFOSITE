@@ -1,3 +1,5 @@
+import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader/index';
@@ -28,8 +30,6 @@ function IndexPage({}) {
     getUser();
   }, []);
 
-  console.log('con--->',homeApiData?.image_1?.file)
-
   return (
     <div>
       <div className="homeMainContainer">
@@ -37,9 +37,15 @@ function IndexPage({}) {
           <Loader />
         ) : (
           <div className="homeContainer">
+            <NextSeo title={homeApiData?.title} />
             <div className="mobileContainer">
               <div className="mobileImg">
-                <img src={homeApiData?.image_1?.file} alt={'home'}></img>
+                <Image
+                  width="300"
+                  height="250"
+                  layout="intrinsic"
+                  src={homeApiData?.image_1.file}
+                ></Image>
               </div>
 
               <div
@@ -100,7 +106,12 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img alt={homeApiData.image_2} src={homeApiData.image_2.file}></img>
+                <Image
+                  width="350"
+                  height="150"
+                  layout="responsive"
+                  src={homeApiData?.image_2.file}
+                ></Image>
               </div>
             </div>
 
@@ -135,7 +146,12 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img alt={homeApiData.image_3} src={homeApiData.image_3.file}></img>
+                <Image
+                  width="350"
+                  height="150"
+                  layout="responsive"
+                  src={homeApiData?.image_3.file}
+                ></Image>
               </div>
             </div>
 

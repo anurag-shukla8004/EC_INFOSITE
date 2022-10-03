@@ -1,6 +1,8 @@
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader';
+
 
 function IndexPage({}) {
   const [apiData, setApiData] = useState([]);
@@ -32,6 +34,7 @@ function IndexPage({}) {
           <Loader />
         ) : (
           <div className="homeContainer">
+          <NextSeo title={apiData[0]?.title} />
             <div className="mobileContainer">
               <div className="mobileImg">
                 <img src={apiData[0]?.mobile_App_image.file}></img>

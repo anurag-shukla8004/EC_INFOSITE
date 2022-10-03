@@ -1,6 +1,8 @@
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader';
+
 
 function pricingPage({}) {
   const [update, setUpdate] = useState(false);
@@ -48,6 +50,7 @@ function pricingPage({}) {
         <Loader />
       ) : (
         <div className="pytDevMainContainer">
+          <NextSeo title={apiData?.title} />
           <div className="pytDevContainer">
             <div className="titlecost">
               <p>{apiData?.prizing_title}</p>

@@ -3,13 +3,14 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader/index';
 
+
 const FeatureNewsDetails = ({}) => {
   const [blogApiData, setBlogApiData] = useState([]);
   const [blogImage, setBlogImage] = useState('');
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch(' http://techmergers.in:8000/api/blogs/');
+        const response = await fetch('http://techmergers.in:8000/api/blogs/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -26,6 +27,8 @@ const FeatureNewsDetails = ({}) => {
     getUser();
   }, []);
 
+  console.log(blogApiData)
+
 
   return (
     <div className="homeMainContainer">
@@ -34,6 +37,7 @@ const FeatureNewsDetails = ({}) => {
           <Loader />
         ) : (
           <div className="newsmainContaier">
+          {/* <NextSeo title={blogApiData[0]?.title} /> */}
             {blogApiData &&
               blogApiData.map((blog, id) => {
                 const date = parseISO(blog.created_date);

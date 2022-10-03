@@ -1,7 +1,9 @@
+import { NextSeo } from 'next-seo';
 import { useEffect, useState } from 'react';
 import { AiFillCaretDown } from 'react-icons/ai';
 import { FaHeart } from 'react-icons/fa';
 import Loader from '../loader';
+
 
 function Index({}) {
   const [isShown1, setIsShown1] = useState(false);
@@ -112,6 +114,7 @@ function Index({}) {
         <Loader />
       ) : (
         <div className="clientMainContainer">
+          <NextSeo title={apiData?.title} />
           <div className="clientContainer">
             <div className="ourClientContaier">
               <div className="outClientimg">

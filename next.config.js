@@ -2,7 +2,7 @@ module.exports = {
   compress: true,
   reactStrictMode: true,
   images: {
-    domains: ["ecinfosolutions.com"],
+    domains: ['ecinfosolutions.com'],
   },
 
 

@@ -1,8 +1,10 @@
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader/index';
+
 
 function Index({}) {
   const [apiData, setApiData] = useState([]);
@@ -32,6 +34,7 @@ function Index({}) {
         <Loader />
       ) : (
         <div className="leaderMainContainer">
+          <NextSeo title={apiData[0]?.title} />
           <div className="leaderContainer">
             <div className="groupPhotoContaier">
               <div className="groupimg">
