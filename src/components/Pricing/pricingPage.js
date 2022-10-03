@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader';
@@ -63,7 +64,7 @@ function pricingPage({}) {
                 {apiData?.pafrtner_images.map((value, index) => {
                   return (
                     <Link key={value.id} href="">
-                      <img className="partnerImg" src={value.file}></img>
+                      <Image width='200' height='100' layout='fixed'  className="partnerImg" src={value.file}></Image>
                     </Link>
                   );
                 })}

@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader';
 
@@ -37,7 +38,10 @@ function IndexPage({}) {
           <NextSeo title={apiData[0]?.title} />
             <div className="mobileContainer">
               <div className="mobileImg">
-                <img src={apiData[0]?.ecommerce_image_1.file}></img>
+                <Image
+                  width="300"
+                  height="250"
+                  layout="intrinsic"  src={apiData[0]?.ecommerce_image_1.file}></Image>
               </div>
 
               <div
@@ -190,7 +194,10 @@ function IndexPage({}) {
                 }}
               />
               <div className="mobileImg">
-                <img src={apiData[0]?.ecommerce_image_2.file}></img>
+                <Image
+                  width="300"
+                  height="250"
+                  layout="intrinsic"  src={apiData[0]?.ecommerce_image_2.file}></Image>
               </div>
             </div>
 
@@ -324,7 +331,10 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.marketplace_image_3.file}></img>
+                <Image
+                  width="300"
+                  height="250"
+                  layout="intrinsic"  src={apiData[0]?.marketplace_image_3.file}></Image>
               </div>
             </div>
             <div className="OverviewGoals">

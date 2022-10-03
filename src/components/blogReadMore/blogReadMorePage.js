@@ -51,7 +51,7 @@ function opportunitiesDetailsNews({}) {
            <NextSeo title={blogApiData.title} />
           <div className="opportunitiesDetailsImageContainer">
             <div className="opportunitiesDetailsImagebox">
-              <img src={blogApiData.blog_image} alt="VPN Illustrasi"></img>
+              <img  referrerPolicy="no-referrer" src={blogApiData.blog_image} alt="VPN Illustrasi"></img>
             </div>
             <div className="blogBox">
               <h1 className="mainTitle">{blogApiData.title}</h1>
@@ -85,6 +85,7 @@ function opportunitiesDetailsNews({}) {
             <div className="oppoImageTextContainer">
               <div className="opporDetailsImage">
                 <img
+                 referrerPolicy="no-referrer"
                   src={blogApiData.blog_image}
                   alt="VPN Illustrasi"
                   layout="fill"

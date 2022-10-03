@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader';
@@ -37,7 +38,9 @@ function IndexPage({}) {
           <NextSeo title={apiData[0]?.title} />
             <div className="mobileContainer">
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_App_image.file}></img>
+                <Image width="300"
+                  height="250"
+                  layout="intrinsic" src={apiData[0]?.mobile_App_image.file}></Image>
               </div>
 
               <div
@@ -75,7 +78,9 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img src={apiData[0]?.discovery_phage_image.file}></img>
+                <Image width="350"
+                  height="150"
+                  layout="responsive" src={apiData[0]?.discovery_phage_image.file}></Image>
               </div>
             </div>
 
@@ -89,7 +94,9 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img src={apiData[0]?.engineering_phage_image.file}></img>
+                <Image width="350"
+                  height="150"
+                  layout="responsive" src={apiData[0]?.engineering_phage_image.file}></Image>
               </div>
             </div>
 
@@ -103,7 +110,9 @@ function IndexPage({}) {
               />
 
               <div className="aligeImg">
-                <img src={apiData[0]?.launch_phage_image.file}></img>
+                <Image width="350"
+                  height="150"
+                  layout="responsive" src={apiData[0]?.launch_phage_image.file}></Image>
               </div>
             </div>
 
@@ -123,7 +132,9 @@ function IndexPage({}) {
               />
 
               <div className="mobileImg">
-                <img src={apiData[0]?.crm_screen_image.file}></img>
+                <Image width="300"
+                  height="250"
+                  layout="intrinsic"  src={apiData[0]?.crm_screen_image.file}></Image>
               </div>
             </div>
 
@@ -301,7 +312,9 @@ function IndexPage({}) {
 
             <div className="mobileContainer">
               <div className="mobileImg">
-                <img src={apiData[0]?.screen_image_2.file}></img>
+                <Image width="300"
+                  height="250"
+                  layout="intrinsic"  src={apiData[0]?.screen_image_2.file}></Image>
               </div>
               <div
                 className="mobileTexBox"
@@ -325,13 +338,17 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image.file}></img>
+                <Image width="300"
+                  height="450"
+                  layout="intrinsic"  src={apiData[0]?.mobile_image.file}></Image>
               </div>
             </div>
 
             <div className="mobileContainer" style={{ margin: '50px 0px' }}>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_2.file}></img>
+                <Image width="300"
+                  height="450"
+                  layout="intrinsic"   src={apiData[0]?.mobile_image_2.file}></Image>
               </div>
 
               <div className="evenOddTextBox" style={{ margin: '0px 30px' }}>
@@ -359,13 +376,17 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_3.file}></img>
+                <Image width="300"
+                  height="450"
+                  layout="intrinsic"   src={apiData[0]?.mobile_image_3.file}></Image>
               </div>
             </div>
 
             <div className="mobileContainer" style={{ margin: '50px 0px' }}>
               <div className="mobileImg">
-                <img src={apiData[0]?.desktop_image.file}></img>
+                <Image width="300"
+                  height="450"
+                  layout="intrinsic"   src={apiData[0]?.desktop_image.file}></Image>
               </div>
 
               <div className="evenOddTextBox" style={{ margin: '0px 30px' }}>
@@ -391,13 +412,17 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_4.file}></img>
+                <Image width="300"
+                  height="450"
+                  layout="intrinsic"   src={apiData[0]?.mobile_image_4.file}></Image>
               </div>
             </div>
 
             <div className="mobileContainer" style={{ margin: '50px 0px' }}>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_5.file}></img>
+                <Image width="300"
+                  height="450"
+                  layout="intrinsic"   src={apiData[0]?.mobile_image_5.file}></Image>
               </div>
 
               <div className="evenOddTextBox" style={{ margin: '0px 30px' }}>
@@ -423,13 +448,17 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_6.file}></img>
+                <Image width="300"
+                  height="450"
+                  layout="intrinsic"   src={apiData[0]?.mobile_image_6.file}></Image>
               </div>
             </div>
 
             <div className="mobileContainer" style={{ margin: '50px 0px' }}>
               <div className="mobileImg">
-                <img src={apiData[0]?.mobile_image_7.file}></img>
+                <Image width="300"
+                  height="450"
+                  layout="intrinsic"   src={apiData[0]?.mobile_image_7.file}></Image>
               </div>
 
               <div className="evenOddTextBox" style={{ margin: '0px 30px' }}>

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { BiShapeSquare } from 'react-icons/bi';
 import { BsGem, BsPalette } from 'react-icons/bs';
@@ -95,7 +96,7 @@ function pytDevPage({}) {
 
   return (
     <>
-      {apiData == '' ? (
+      {apiData == '' || apiData2 == '' ? (
         <Loader />
       ) : (
         <div className="pytDevMainContainer">
@@ -103,7 +104,7 @@ function pytDevPage({}) {
           <div className="pytDevContainer">
             <div className="djangoContainer">
               <div className="fixmyreooImg">
-                <img src={apiData2[0]?.fixmyrepo_image.file}></img>
+                <Image width='350' height='500' layout='responsive' src={apiData2[0]?.fixmyrepo_image.file}></Image>
               </div>
               <div className="djangoForm">
                 <pre
@@ -266,7 +267,7 @@ function pytDevPage({}) {
 
             <div className="exmReqContainer">
               <div>
-                <img src={apiData[0]?.fixmyrepo_image2.file}></img>
+                <Image width='300' height='100' layout='fixed' src={apiData[0]?.fixmyrepo_image2.file}></Image>
               </div>
               <div>
                 <h1
@@ -296,7 +297,10 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].quote_image.file}></img>
+                <Image
+                  width="300"
+                  height="180"
+                  layout="responsive" src={apiData[0].quote_image.file}></Image>
               </div>
             </div>
 
@@ -314,7 +318,10 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].pay_for_hotfix_image.file}></img>
+                <Image
+                  width="300"
+                  height="180"
+                  layout="responsive" src={apiData[0].pay_for_hotfix_image.file}></Image>
               </div>
             </div>
 
@@ -333,7 +340,10 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].expert_fixes_your_code_image.file}></img>
+                <Image
+                  width="300"
+                  height="180"
+                  layout="responsive" src={apiData[0].expert_fixes_your_code_image.file}></Image>
               </div>
             </div>
 
@@ -353,7 +363,10 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].quality_check_and_delivery_image.file}></img>
+                <Image
+                  width="300"
+                  height="190"
+                  layout="responsive" src={apiData[0].quality_check_and_delivery_image.file}></Image>
               </div>
             </div>
 

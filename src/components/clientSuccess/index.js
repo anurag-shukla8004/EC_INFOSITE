@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { AiFillCaretDown } from 'react-icons/ai';
 import { FaHeart } from 'react-icons/fa';
@@ -118,7 +119,7 @@ function Index({}) {
           <div className="clientContainer">
             <div className="ourClientContaier">
               <div className="outClientimg">
-                <img src={apiData.globle_business_image.file}></img>
+                <Image width='400' height='120' layout='responsive' src={apiData.globle_business_image.file}></Image>
               </div>
             </div>
             <div className="ourClientimgText">
@@ -158,7 +159,7 @@ function Index({}) {
                   {apiData.client_category[0].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                        <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -183,7 +184,7 @@ function Index({}) {
                   {apiData.client_category[1].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -207,7 +208,7 @@ function Index({}) {
                   {apiData.client_category[2].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -230,7 +231,7 @@ function Index({}) {
                   {apiData.client_category[3].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id}className="partnerImg" src={value.file}></img>
+                        <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -254,7 +255,7 @@ function Index({}) {
                   {apiData.client_category[4].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -278,7 +279,7 @@ function Index({}) {
                   {apiData.client_category[5].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -302,7 +303,7 @@ function Index({}) {
                   {apiData.client_category[6].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -326,7 +327,7 @@ function Index({}) {
                   {apiData.client_category[7].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -350,7 +351,7 @@ function Index({}) {
                   {apiData.client_category[8].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -374,7 +375,7 @@ function Index({}) {
                   {apiData.client_category[9].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -398,7 +399,7 @@ function Index({}) {
                   {apiData.client_category[10].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -422,7 +423,7 @@ function Index({}) {
                   {apiData.client_category[11].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}
@@ -446,7 +447,7 @@ function Index({}) {
                   {apiData.client_category[12].client_logo.map(
                     (value, index) => {
                       return (
-                        <img key={value.id} className="partnerImg" src={value.file}></img>
+                          <Image width='200' height='100' layout='fixed'  key={value.id} className="partnerImg" src={value.file}></Image>
                       );
                     }
                   )}

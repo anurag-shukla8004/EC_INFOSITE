@@ -1,7 +1,10 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader';
+
+
 
 function IndexPage({}) {
   const [apiData, setApiData] = useState([]);
@@ -195,7 +198,10 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.freevocal_site_image.file}></img>
+                <Image
+                  width="300"
+                  height="250"
+                  layout="intrinsic" src={apiData[0]?.freevocal_site_image.file}></Image>
               </div>
             </div>
 

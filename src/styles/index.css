@@ -635,3 +635,14 @@ h2 {
     justify-content: center;
   }
 }
+
+.userImg{
+   width: 80% !important;
+   /* object-fit: cover !important; */
+   margin: 0px !important;
+   height: auto !important;
+   min-width: unset !important;
+   max-width: unset !important;
+   min-height: unset !important;
+   max-height: unset !important;
+}

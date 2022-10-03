@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { BiShapeSquare } from 'react-icons/bi';
 import { BsGem, BsPalette } from 'react-icons/bs';
@@ -7,6 +8,7 @@ import { RiPencilRuler2Line } from 'react-icons/ri';
 import 'react-phone-number-input/style.css';
 import Form from '../hubForm/form';
 import Loader from '../loader/index';
+
 
 
 function pytDevPage({}) {
@@ -67,7 +69,7 @@ function pytDevPage({}) {
           <div className="pytDevContainer">
             <div className="djangoContainer">
               <div className="fixmyreooImg">
-                <img src={apiData2[0]?.fixmy_repo_image1.file}></img>
+                <Image width='350' height='500' layout='responsive' src={apiData2[0]?.fixmy_repo_image1.file}></Image>
               </div>
               <div className="djangoForm">
                 <pre
@@ -283,7 +285,7 @@ function pytDevPage({}) {
 
             <div className="exmReqContainer">
               <div>
-                <img src={apiData[0]?.fixmyrepo_image2.file}></img>
+                <Image width='300' height='100' layout='fixed'  src={apiData[0]?.fixmyrepo_image2.file}></Image>
               </div>
               <div>
                 <h1
@@ -313,7 +315,7 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].quote_image.file}></img>
+                <img  referrerPolicy="no-referrer" src={apiData[0].quote_image.file}></img>
               </div>
             </div>
 
@@ -331,7 +333,7 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].pay_for_hotfix_image.file}></img>
+                <img  referrerPolicy="no-referrer" src={apiData[0].pay_for_hotfix_image.file}></img>
               </div>
             </div>
 
@@ -350,7 +352,7 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].expert_fixes_your_code_image.file}></img>
+                <img  referrerPolicy="no-referrer" src={apiData[0].expert_fixes_your_code_image.file}></img>
               </div>
             </div>
 
@@ -370,7 +372,7 @@ function pytDevPage({}) {
                 />
               </div>
               <div className="fixImg">
-                <img src={apiData[0].quality_check_and_delivery_image.file}></img>
+                <img  referrerPolicy="no-referrer" src={apiData[0].quality_check_and_delivery_image.file}></img>
               </div>
             </div>
 

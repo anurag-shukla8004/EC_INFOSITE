@@ -1,6 +1,7 @@
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader/index';
@@ -38,7 +39,7 @@ function Index({}) {
           <div className="leaderContainer">
             <div className="groupPhotoContaier">
               <div className="groupimg">
-                <img class="lazyload" src={apiData[0]?.grp_photo.file} alt={apiData[0]?.grp_photo.file}></img>
+                <Image width='100%' height='40' layout='responsive' objectFit='cover'  class="lazyload" src={apiData[0]?.grp_photo.file} alt={apiData[0]?.grp_photo.file}></Image>
               </div>
             </div>
             <div className="groupimgText">
@@ -86,7 +87,7 @@ function Index({}) {
 
               <div className="imgDetailsContainer">
                 <div className="leaderimg">
-                  <img class="lazyload" src={apiData[0]?.leadership[0]?.image_of_leader.file} alt={apiData[0]?.leadership[0]?.image_of_leader.file}></img>
+                  <Image width='200' height='150' layout='responsive' objectFit='cover'   class="lazyload userImg" src={apiData[0]?.leadership[0]?.image_of_leader.file} alt={apiData[0]?.leadership[0]?.image_of_leader.file}></Image>
                 </div>
                 <div className="leaderDetails">
                   <pre
@@ -105,7 +106,8 @@ function Index({}) {
 
               <div className="imgDetailsContainer">
                 <div className="leaderimg">
-                  <img class="lazyload" src={apiData[0]?.leadership[1]?.image_of_leader.file} alt={apiData[0]?.leadership[1]?.image_of_leader.file}></img>
+                
+                  <Image width='200' height='150' layout='responsive' objectFit='cover'   class="lazyload userImg" src={apiData[0]?.leadership[1]?.image_of_leader.file} alt={apiData[0]?.leadership[1]?.image_of_leader.file}></Image>
                 </div>
                 <div className="leaderDetails">
                   <pre
@@ -124,7 +126,7 @@ function Index({}) {
 
               <div className="imgDetailsContainer">
                 <div className="leaderimg">
-                  <img class="lazyload" src={apiData[0]?.leadership[2]?.image_of_leader.file} alt={apiData[0]?.leadership[2]?.image_of_leader.file}></img>
+                  <Image width='200' height='150' layout='responsive' objectFit='cover'   class="lazyload userImg" src={apiData[0]?.leadership[2]?.image_of_leader.file} alt={apiData[0]?.leadership[2]?.image_of_leader.file}></Image>
                 </div>
                 <div className="leaderDetails">
                   <pre
@@ -191,7 +193,7 @@ function Index({}) {
                   apiData[0]?.parnership_image?.map((value, index)=>{
                     return (
                       <Link key={value.id} href="">
-                      <img class="lazyload partnerImg"key={value.id} src={value.file} alt={value.file}></img>
+                      <Image width='200' height='100' layout='fixed' class="lazyload partnerImg" key={value.id} src={value.file} alt={value.file}></Image>
                     </Link>
                     )
                   })

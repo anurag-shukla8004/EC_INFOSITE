@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import {
@@ -49,7 +50,7 @@ function googleCloudPage({}) {
         <div style={{ marginTop: '100px' }}>
           <NextSeo title={apiData?.title} />
           <div className="glImg">
-            <img src={apiData.google_image.file}></img>
+            <Image width='100%' height='25' layout='responsive' src={apiData.google_image.file}></Image>
           </div>
           <div className="homeMainContainer">
             <div className="homeContainer">
@@ -350,7 +351,7 @@ function googleCloudPage({}) {
                         if (index < 3) {
                           return (
                             <div key={value.id} className="glBenifitBox">
-                              <img src={value.feature_image.file}></img>
+                              <Image width='115' height='115' layout='intrinsic' src={value.feature_image.file}></Image>
                               <h1 className="glBenifitHeading">
                                 {value.feature_name}
                               </h1>
@@ -375,7 +376,7 @@ function googleCloudPage({}) {
                         if (index > 2) {
                           return (
                             <div key={value.id} className="glBenifitBox">
-                              <img src={value.feature_image.file}></img>
+                              <Image width='115' height='115' layout='intrinsic' src={value.feature_image.file}></Image>
                               <h1 className="glBenifitHeading">
                                 {value.feature_name}
                               </h1>

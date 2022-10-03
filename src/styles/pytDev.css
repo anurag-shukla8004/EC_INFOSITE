@@ -351,9 +351,9 @@
     width: 90%;
   }
   .fixImg {
-    width: 70%;
+    width: 65%;
     text-align: center;
-    display: flex;
+    display: block;
     justify-content: center;
   }
   .askQuetext p {

@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader/index';
@@ -76,13 +77,19 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.account_dashboard_image.file}></img>
+                <Image
+                  width="550"
+                  height="300"
+                  layout="intrinsic" src={apiData[0]?.account_dashboard_image.file}></Image>
               </div>
             </div>
 
             <div className="OverviewGoals">
               <div className="mobileImg">
-                <img src={apiData[0]?.energy_points_dashboard.file}></img>
+                <Image
+                  width="550"
+                  height="300"
+                  layout="intrinsic" src={apiData[0]?.energy_points_dashboard.file}></Image>
               </div>
               <div>
                 <pre
@@ -115,13 +122,19 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.production_analytics_image.file}></img>
+                <Image
+                  width="550"
+                  height="300"
+                  layout="intrinsic" src={apiData[0]?.production_analytics_image.file}></Image>
               </div>
             </div>
 
             <div className="OverviewGoals">
               <div className="mobileImg">
-              <img src={apiData[0]?.cloud_crm_for_sales_automation_image.file}></img>
+              <Image
+                  width="550"
+                  height="300"
+                  layout="intrinsic" src={apiData[0]?.cloud_crm_for_sales_automation_image.file}></Image>
               </div>
               <div>
                 <pre

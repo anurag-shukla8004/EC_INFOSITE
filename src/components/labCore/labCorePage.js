@@ -1,7 +1,9 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Loader from '../loader/index';
+
 
 function IndexPage({}) {
   const [apiData, setApiData] = useState([]);
@@ -75,15 +77,21 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.dealer_and_grower_management_image.file}></img>
+                <Image
+                  width="550"
+                  height="450"
+                  layout="intrinsic" src={apiData[0]?.dealer_and_grower_management_image.file}></Image>
               </div>
             </div>
 
             <div className="OverviewGoals">
               <div className="mobileImg">
-                <img
+                <Image
+                  width="550"
+                  height="450"
+                  layout="intrinsic"
                   src={apiData[0]?.soil_and_water_sample_management_image.file}
-                ></img>
+                ></Image>
               </div>
               <div>
                 <pre
@@ -115,17 +123,23 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.field_history_image.file}></img>
+                <Image
+                  width="550"
+                  height="450"
+                  layout="intrinsic" src={apiData[0]?.field_history_image.file}></Image>
               </div>
             </div>
 
             <div className="OverviewGoals">
               <div className="mobileImg">
-                <img
+                <Image
+                  width="550"
+                  height="450"
+                  layout="intrinsic"
                   src={
                     apiData[0]?.gis_visualization_and_precision_management_image.file
                   }
-                ></img>
+                ></Image>
               </div>
               <div>
                 <pre
@@ -217,7 +231,10 @@ function IndexPage({}) {
                 />
               </div>
               <div className="mobileImg">
-                <img src={apiData[0]?.business_image.file}></img>
+                <Image
+                  width="300"
+                  height="250"
+                  layout="intrinsic" src={apiData[0]?.business_image.file}></Image>
               </div>
             </div>
 

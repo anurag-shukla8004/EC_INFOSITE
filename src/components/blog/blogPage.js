@@ -37,7 +37,6 @@ const FeatureNewsDetails = ({}) => {
           <Loader />
         ) : (
           <div className="newsmainContaier">
-          {/* <NextSeo title={blogApiData[0]?.title} /> */}
             {blogApiData &&
               blogApiData.map((blog, id) => {
                 const date = parseISO(blog.created_date);
