@@ -23,7 +23,7 @@ function opportunitiesDetailsNews({}) {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch(`http://techmergers.in:8000/api/blogs/${id}`);
+        const response = await fetch(`https://ecinfosolutions.com/api/blogs/${id}`);
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -41,6 +41,8 @@ function opportunitiesDetailsNews({}) {
   }, [id]);
 
 
+  console.log('blogRead---->', (blogApiData[0]?.blog_image?.file))
+
   return (
     <>
       {blogApiData == '' ? (
@@ -48,29 +50,29 @@ function opportunitiesDetailsNews({}) {
       ) : (
        
         <div className="opportunitiesDetailsContainer">
-           <NextSeo title={blogApiData.title} />
+           <NextSeo title={blogApiData[0]?.title} />
           <div className="opportunitiesDetailsImageContainer">
             <div className="opportunitiesDetailsImagebox">
-              <img  referrerPolicy="no-referrer" src={blogApiData.blog_image} alt="VPN Illustrasi"></img>
+              <img  referrerPolicy="no-referrer" src={(blogApiData[0]?.blog_image?.file)} alt="VPN Illustrasi"></img>
             </div>
             <div className="blogBox">
-              <h1 className="mainTitle">{blogApiData.title}</h1>
+              <h1 className="mainTitle">{blogApiData[0]?.title}</h1>
               <div className="smallBlogBox">
                 <div className="smallBlogInBox">
                   <CgFileDocument />
                   <span className="smallblogText">
-                    {blogApiData?.author?.name}
+                    {blogApiData[0]?.blog_author?.title}
                   </span>
                 </div>
                 <div className="smallBlogInBox">
                   <FiFolder />
-                  <span className="smallblogText">{blogApiData.tags}</span>
+                  <span className="smallblogText">{blogApiData[0]?.tag}</span>
                 </div>
               </div>
               <div className="smallBlogBox">
                 <div className="smallBlogInBox">
                   <AiOutlineTags />
-                  <span className="smallblogText">{blogApiData.sub_tags}</span>
+                  <span className="smallblogText">{blogApiData[0]?.sub_tag}</span>
                 </div>
                 <div className="smallBlogInBox">
                   <FaRegComment />
@@ -86,7 +88,7 @@ function opportunitiesDetailsNews({}) {
               <div className="opporDetailsImage">
                 <img
                  referrerPolicy="no-referrer"
-                  src={blogApiData.blog_image}
+                 src={(blogApiData[0]?.blog_image?.file)}
                   alt="VPN Illustrasi"
                   layout="fill"
                   quality={100}
@@ -99,13 +101,13 @@ function opportunitiesDetailsNews({}) {
           </div>
 
           <div className="opporDetailsText">
-            <PostBody content={JSON.parse(blogApiData.blog_body)[0]?.value} />
+            <PostBody content={JSON.parse(blogApiData[0]?.blog_body)[0]?.value} />
           </div>
 
           <div className="aboutAuthorBox">
             <p className="aboutTheAuthor">About the author</p>
 
-            <h4 className="authorName">{blogApiData.author.name}</h4>
+            <h4 className="authorName">{blogApiData[0]?.blog_author?.title}</h4>
           
             <pre
               className="authorPara"
@@ -114,7 +116,7 @@ function opportunitiesDetailsNews({}) {
                 whiteSpace: 'pre-wrap',
               }}
               dangerouslySetInnerHTML={{
-                __html: JSON.parse(blogApiData.author.about_author)[0]?.value,
+                __html: JSON.parse(blogApiData[0]?.blog_author?.about_author)[0]?.value,
               }}
             />
           </div>

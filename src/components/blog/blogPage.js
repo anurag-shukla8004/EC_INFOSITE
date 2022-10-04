@@ -10,7 +10,7 @@ const FeatureNewsDetails = ({}) => {
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await fetch('http://techmergers.in:8000/api/blogs/');
+        const response = await fetch('https://ecinfosolutions.com/api/blogs/');
 
         if (!response.ok) {
           throw new Error(`Error! status: ${response.status}`);
@@ -38,16 +38,16 @@ const FeatureNewsDetails = ({}) => {
         ) : (
           <div className="newsmainContaier">
             {blogApiData &&
-              blogApiData.map((blog, id) => {
-                const date = parseISO(blog.created_date);
+              blogApiData?.map((blog, id) => {
+                const date = parseISO(blog?.blog_author?.first_published_at);
 
                 return (
                   <Link
-                    key={blog.id}
+                    key={blog?.blog_category?.id}
                     href={{
                       pathname: '/blogReadMore',
                       query: {
-                        id: blog.id,
+                        id: blog.slug,
                         title: blog.title,
                       },
                     }}
@@ -65,7 +65,7 @@ const FeatureNewsDetails = ({}) => {
                             >
                               <img
                                 alt="img"
-                                src={blog?.blog_image}
+                                src={blog?.blog_image?.file}
                                 width="60px"
                                 referrerPolicy="no-referrer"
                                 height="45px"
@@ -83,7 +83,7 @@ const FeatureNewsDetails = ({}) => {
                                 whiteSpace: 'pre-wrap',
                               }}
                               dangerouslySetInnerHTML={{
-                                __html: JSON.parse(blog.short_description)[0]
+                                __html: JSON.parse(blog?.short_description_of_blog)[0]
                                   ?.value,
                               }}
                             />
