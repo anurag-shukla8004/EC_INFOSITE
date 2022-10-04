@@ -41,7 +41,7 @@ function opportunitiesDetailsNews({}) {
   }, [id]);
 
 
-  console.log('blogRead---->', (blogApiData[0]?.blog_image?.file))
+  console.log('blogRead---->', "https://ecinfosolutions.com"+(blogApiData[0]?.blog_image?.file))
 
   return (
     <>
@@ -53,7 +53,7 @@ function opportunitiesDetailsNews({}) {
            <NextSeo title={blogApiData[0]?.title} />
           <div className="opportunitiesDetailsImageContainer">
             <div className="opportunitiesDetailsImagebox">
-              <img  referrerPolicy="no-referrer" src={(blogApiData[0]?.blog_image?.file)} alt="VPN Illustrasi"></img>
+              <img  referrerPolicy="no-referrer" src={"https://ecinfosolutions.com"+(blogApiData[0]?.blog_image?.file)} alt="VPN Illustrasi"></img>
             </div>
             <div className="blogBox">
               <h1 className="mainTitle">{blogApiData[0]?.title}</h1>
@@ -88,7 +88,7 @@ function opportunitiesDetailsNews({}) {
               <div className="opporDetailsImage">
                 <img
                  referrerPolicy="no-referrer"
-                 src={(blogApiData[0]?.blog_image?.file)}
+                 src={"https://ecinfosolutions.com"+(blogApiData[0]?.blog_image?.file)} 
                   alt="VPN Illustrasi"
                   layout="fill"
                   quality={100}
