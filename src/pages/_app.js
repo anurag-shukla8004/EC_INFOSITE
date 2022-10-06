@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Script from 'next/script';
 import React, { useEffect } from 'react';
 import { setup } from 'twind';
 import '../styles/404.css';
@@ -20,7 +21,6 @@ import '../styles/pytDev.css';
 import '../styles/registration.css';
 import '../styles/teamService.css';
 import twindConfig from '../twind.config';
-import Script from 'next/script';
 
 
 if (typeof window !== `undefined`) {
@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const script = document.createElement('script');
 
-    script.src = 'http://js.hs-scripts.com/9316836.js';
+    script.src = 'https://js.hs-scripts.com/9316836.js';
     script.async = true;
 
     document.body.appendChild(script);
